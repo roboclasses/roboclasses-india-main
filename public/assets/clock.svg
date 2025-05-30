@@ -1,0 +1,14 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.33334C4.318 1.33334 1.33333 4.31801 1.33333 8.00001C1.33333 11.682 4.318 14.6667 8 14.6667C11.682 14.6667 14.6667 11.682 14.6667 8.00001C14.6667 4.31801 11.682 1.33334 8 1.33334ZM8 13.3333C5.054 13.3333 2.66667 10.946 2.66667 8.00001C2.66667 5.05401 5.054 2.66668 8 2.66668C10.946 2.66668 13.3333 5.05401 13.3333 8.00001C13.3333 10.946 10.946 13.3333 8 13.3333Z" fill="url(#paint0_linear_clock)"/>
+<path d="M8.66667 4.66667H7.33333V8.66667L10.6667 10.6667L11.3333 9.66667L8.66667 8V4.66667Z" fill="url(#paint1_linear_clock)"/>
+<defs>
+<linearGradient id="paint0_linear_clock" x1="1.33333" y1="1.33334" x2="14.6667" y2="14.6667" gradientUnits="userSpaceOnUse">
+<stop stop-color="#41B1C7" stop-opacity="0.8"/>
+<stop offset="1" stop-color="#90B233"/>
+</linearGradient>
+<linearGradient id="paint1_linear_clock" x1="7.33333" y1="4.66667" x2="11.3333" y2="10.6667" gradientUnits="userSpaceOnUse">
+<stop stop-color="#41B1C7"/>
+<stop offset="1" stop-color="#90B233"/>
+</linearGradient>
+</defs>
+</svg>

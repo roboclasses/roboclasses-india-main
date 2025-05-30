@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "label": "ELECTRONIC ROBOTICS",
+    "src": "/assets/microbit.webp",
+    "course": "Microbit Robotics Classes Beginner Course with Kit",
+    "originalPrice": "INR 1,950",
+    "overridenPrice": " - INR 1,750",
+    "emi": "INR 437.5 /Month *4",
+    "age": "6-9 years",
+    "classes": "15 classes"
+  },
+  {
+    "id": 2,
+    "label": "ELECTRONIC ROBOTICS",
+    "src": "/assets/arduino.webp",
+    "course": " Arduino Robotics Classes Beginner Course",
+    "originalPrice": "INR 1,950",
+    "overridenPrice": " - INR 1,750",
+    "emi": "INR 437.5 /Month *4",
+    "age": "9-13 years",
+    "classes": "15 classes"
+  }
+]
