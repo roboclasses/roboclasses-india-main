@@ -17,6 +17,7 @@ import {
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormMessage,
@@ -29,6 +30,7 @@ import { handlePostEnquiry } from "@/app/services/actions/EnquiryFormAction";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { Label } from "@/components/ui/label";
 
 
 const FormSchema = z.object({
@@ -71,18 +73,19 @@ export function DialogDemo() {
       <DialogTrigger asChild>
         <GradientButton name="Free Classes" icon={<FaRegCalendarAlt size={20} />} type="button" />
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[900px] justify-center dark:bg-sky-50 dark:text-black">
+      <DialogContent className="sm:max-w-[900px] justify-center bg-white dark:bg-sky-50 dark:text-black">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
             className="w-full flex flex-col gap-4 items-center h-auto space-y-2 p-10 rounded-xl "
           >
-            <DialogHeader>
-              <DialogTitle className="text-4xl">Free Class</DialogTitle>
+            <DialogHeader className="flex flex-col items-center justify-center gap-2">
+              <DialogTitle className="lg:text-4xl text-lg">Free Class Form</DialogTitle>
+              <Label className="lg:text-sm text-xs">Please enter your details! Submit when done</Label>
             </DialogHeader>
 
             {/* Child Full Name and Age */}
-            <div className="flex flex-row items-center gap-4">
+            <div className="flex lg:flex-row flex-col items-center gap-4">
               <FormField
                 control={form.control}
                 name="name"
@@ -98,6 +101,7 @@ export function DialogDemo() {
                         className="w-96 h-14 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
                       />
                     </FormControl>
+                    <FormDescription>This field is for child full name.</FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -118,14 +122,15 @@ export function DialogDemo() {
                         className="w-96 h-14 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
                       />
                     </FormControl>
+                    <FormDescription>This field is for child age.</FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
               />
             </div>
 
-            {/* Child Email and Phone  */}
-            <div className="flex flex-row items-center gap-4">
+            {/* Email and Phone  */}
+            <div className="flex lg:flex-row flex-col items-center gap-4">
               <FormField
                 control={form.control}
                 name="email"
@@ -133,7 +138,7 @@ export function DialogDemo() {
                   <FormItem>
                     <FormControl>
                       <Input
-                        placeholder="Enter Child Email Address"
+                        placeholder="Enter Email Address"
                         type="email"
                         required
                         title="Email"
@@ -141,6 +146,7 @@ export function DialogDemo() {
                         className="w-96 h-14 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
                       />
                     </FormControl>
+                    <FormDescription>This field is for child or parent email address.</FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -155,10 +161,11 @@ export function DialogDemo() {
                       <PhoneInput
                         country={"in"}
                         {...field}
-                        inputStyle={{ width: "450px", height: "40px" }}
+                        inputStyle={{ width: "390px", height: "45px" }}
                         inputProps={{ ref: field.ref, required: true }}                    
                       />
                     </FormControl>
+                    <FormDescription>This field is for child or parent mobile.</FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -167,7 +174,7 @@ export function DialogDemo() {
             </div>
 
             <DialogFooter>
-              <Button type="submit" className="px-8 py-6 shadow-md">
+              <Button type="submit" className="h-12 shadow-md focus:bg-accent-foreground focus:text-white">
                 Submit
               </Button>
             </DialogFooter>

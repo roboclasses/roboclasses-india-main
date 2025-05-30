@@ -21,6 +21,7 @@ import { handlePostEnquiry } from "@/app/services/actions/EnquiryFormAction";
 import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import BlueButton from "../button-demo/BlueButton";
 
 
 const FormSchema = z.object({
@@ -125,7 +126,7 @@ async function onSubmit(data: z.infer<typeof FormSchema>) {
                     <PhoneInput
                       country={"in"}
                       {...field}
-                      inputStyle={{ width: "300px", height: "40px" }}
+                      inputStyle={{ width: "320px", height: "40px" }}
                       inputProps={{ ref: field.ref, required: true }}
                     />
                   </FormControl>
@@ -157,11 +158,9 @@ async function onSubmit(data: z.infer<typeof FormSchema>) {
           </div>
 
           <div className="flex justify-center pt-2">
-            <ButtonDemo
+            <BlueButton
               name="Submit"
-              type="button"
-              className="px-6 py-2 bg-sky-500 text-white rounded-xl
-            hover:bg-slate-300 hover:text-sky-500 transition-all duration-300 delay-75 ease-in-out"
+              type="submit"
             />
           </div>
         </div>
