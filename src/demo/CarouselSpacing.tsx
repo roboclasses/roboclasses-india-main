@@ -25,9 +25,9 @@ export function CarouselSpacing() {
             key={item.id}
             className="pl-1 md:basis-1/2 lg:basis-1/3 "
           >
-            <div className="p-4">
+            <div className="px-10">
               <Card
-                className="max-w-full relative h-[580px] border-none shadow-2xl
+                className="max-w-full relative h-[600px] border-none shadow-2xl
                 dark:shadow-none dark:bg-black mb-12 rounded-xl"
               >
                 <CardContent className="flex flex-col aspect-square items-center justify-center p-2">
