@@ -88,9 +88,6 @@ const config = {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(100deg, rgb(65, 177, 199) 26%, rgb(144, 178, 51) 100%)",
-        "custom-form-gradient":
-          "linear-gradient(100deg, #065f46 26%, white 120%)",
-
           "robo-romp-gradient": 'linear-gradient(to bottom right, #5CC3E0, #A5C33D)'
       },
     },
