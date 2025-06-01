@@ -5,9 +5,9 @@ import "swiper/css";
 import Data from "../../data/roboticsData.json";
 import CodeData from "../../data/programmingData.json";
 import StemData from "../../data/stemData.json";
-import BlueButton from "@/demo/button-demo/BlueButton";
 import { CardDemo } from "@/demo/CardDemo";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+import CyanButton from "@/demo/button-demo/CyanButton";
 
 const Features = () => {
   const [isFilter, setIsFilter] = useState(false);
@@ -64,7 +64,7 @@ const Features = () => {
       </div>
       <div className="flex flex-row justify-between pl-5 items-center">
         <p className="font-extrabold">All Courses</p>
-        <BlueButton
+        <CyanButton
           name={isShowAll ? "Show Less" : "Show All"}
           type="button"
           onClick={handleShowAll}

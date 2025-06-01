@@ -78,19 +78,16 @@ export function FormDemo() {
         className=" space-y-2 p-5 rounded-xl bg-[#F0F0F0]/50 mt-5 text-black flex flex-col items-center"
       >
         <div className="flex flex-col items-center gap-2">
-          <p className="text-2xl font-bold">Enquire Now</p>
-          <p
-            className="text-xs font-semibold text-gray-600"
-            style={{ letterSpacing: "0.05em" }}
-          >
+          <p className="text-3xl font-bold">Enquire Now</p>
+          <p className="text-slate-800 text-xs font-semibold" style={{ letterSpacing: "0.05em" }}>
             Learn from our best teachers
           </p>
           <div className="flex flex-row items-center gap-1">
-            <hr className="border-1 border-zinc-400 w-16 rounded-lg" />
-            <p className="text-md font-extrabold text-accent-foreground">
+            <hr className="border-1 border-slate-400 w-16 rounded-lg" />
+            <p className="text-md font-extrabold text-slate-800">
               Select the session mode
             </p>
-            <hr className="border-1 border-zinc-400 w-16 rounded-lg" />
+            <hr className="border-1 border-slate-400 w-16 rounded-lg" />
           </div>
 
           {/* Class Mode (Offline/Online) */}
@@ -110,7 +107,7 @@ export function FormDemo() {
                       className={cn(
                         field.value === "online"
                           ? "bg-custom-gradient text-white"
-                          : "text-gray-500"
+                          : "text-slate-500"
                       )}
                     >
                       Online
@@ -120,7 +117,7 @@ export function FormDemo() {
                       className={cn(
                         field.value === "offline"
                           ? "bg-custom-gradient text-white"
-                          : "text-gray-500"
+                          : "text-slate-500"
                       )}
                     >
                       Offline
@@ -134,7 +131,7 @@ export function FormDemo() {
 
           <div className="flex flex-row items-center gap-1">
             <hr className="border-1 border-zinc-400 w-20 rounded-lg" />
-            <p className="text-md font-semibold px-2 text-accent-foreground">Enter Your Details</p>
+            <p className="text-md font-semibold px-2 text-zinc-800">Enter Your Details</p>
             <hr className="border-1 border-zinc-400 w-20 rounded-lg" />
           </div>
         </div>
@@ -151,7 +148,7 @@ export function FormDemo() {
                   {...field}
                   required
                   type="text"
-                  className="w-[340px] border-0 border-slate-300 rounded-lg focus:ring-4 ring-cyan-500 shadow-none"
+                  className="w-[340px] bg-white border-0 border-slate-300 rounded-lg focus:ring-4 ring-cyan-500 shadow-none"
                 />
               </FormControl>
               <FormMessage />
@@ -171,7 +168,7 @@ export function FormDemo() {
                   required
                   type="number"
                   {...field}
-                  className="w-[340px] border-0 border-slate-300 rounded-lg focus:ring-4 ring-cyan-500 shadow-none"
+                  className="w-[340px] bg-white border-0 border-slate-300 rounded-lg focus:ring-4 ring-cyan-500 shadow-none"
                 />
               </FormControl>
               <FormMessage />
@@ -210,7 +207,7 @@ export function FormDemo() {
                   {...field}
                   required
                   type="email"
-                  className="w-[340px] border-0 border-slate-300 rounded-lg focus:ring-4 ring-cyan-500 shadow-none"
+                  className="w-[340px] bg-white border-0 border-slate-300 rounded-lg focus:ring-4 ring-cyan-500 shadow-none"
                 />
               </FormControl>
               <FormMessage />

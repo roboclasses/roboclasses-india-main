@@ -1,19 +1,19 @@
 "use client";
-import BlueButton from "@/demo/button-demo/BlueButton";
+
+import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+
 import { CardDemo } from "@/demo/CardDemo";
-import React, { useState } from "react";
-import "swiper/css";
+import { PROGRAMMING_COURSES, STEM_CLASSES } from "@/constants/links";
+import CyanButton from "@/demo/button-demo/CyanButton";
+
 import Data from "../../data/roboticsData.json";
 import PData from "../../data/programmingData.json";
 import SData from "../../data/stemData.json";
 import OData from "../../data/OnlineCoursesData.json";
+
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import {
-  PROGRAMMING_COURSES,
-  ROBOTICS_COURSES,
-  STEM_CLASSES,
-} from "@/constants/links";
-import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+
 
 const CardsSection = () => {
   const [isFilter, setIsFilter] = useState(false);
@@ -54,10 +54,10 @@ const CardsSection = () => {
     : OData;
 
   return (
-    <div className="flex flex-col px-52 gap-6 py-20">
+    <div className="flex flex-col px-52 gap-10 py-20">
       <div className="flex flex-col items-center">
-        <p className="text-4xl font-extrabold mb-4">Featured Courses</p>
-        <p className="text-sm font-bold text-gray-500" style={{ letterSpacing: "0.09em" }}>
+        <p className="lg:text-5xl text-xl font-extrabold bg-clip-text text-transparent bg-custom-gradient mb-6">Featured Courses</p>
+        <p className="lg:text-base text-sm" style={{ letterSpacing: "0.05em" }}>
           See age appropriate courses
         </p>
 
@@ -83,7 +83,7 @@ const CardsSection = () => {
       <div>
       <div className="flex flex-row justify-between items-center px-16">
         <p className="font-extrabold text-2xl">Robotics Courses</p>
-        <BlueButton
+        <CyanButton
           name="Show All"
           type="button"
           onClick={() => router.push(ROBOTICS_COURSES)}
@@ -106,7 +106,7 @@ const CardsSection = () => {
       <div>
       <div className="flex flex-row justify-between items-center px-16">
         <p className="font-extrabold text-2xl">Programming Courses</p>
-        <BlueButton
+        <CyanButton
           name="Show All"
           type="button"
           onClick={() => router.push(PROGRAMMING_COURSES)}
@@ -129,7 +129,7 @@ const CardsSection = () => {
       <div>
       <div className="flex flex-row justify-between items-center px-16">
         <p className="font-extrabold text-2xl">STEM Classes</p>
-        <BlueButton
+        <CyanButton
           name="Show All"
           type="button"
           onClick={() => router.push(STEM_CLASSES)}
@@ -152,7 +152,7 @@ const CardsSection = () => {
       <div>
       <div className="flex flex-row justify-between items-center px-16">
         <p className="font-extrabold text-2xl">Online Courses</p>
-        <BlueButton
+        <CyanButton
           name="Show All"
           type="button"
           onClick={() => router.push(STEM_CLASSES)}
@@ -171,6 +171,7 @@ const CardsSection = () => {
         </CarouselContent>
       </Carousel>
     </div>
+
     </div>
   );
 };

@@ -1,10 +1,10 @@
 
-import BlueButton from "@/demo/button-demo/BlueButton";
 import React from "react";
 import Data from "../../data/trendingData.json";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
+import CyanButton from "@/demo/button-demo/CyanButton";
 
 const TrendingCarouselFe = () => {
   return (
@@ -42,7 +42,7 @@ const TrendingCarouselFe = () => {
                     href={`/blogs/trending-blogs/${item.id}`}
                     className="absolute bottom-4"
                   >
-                    <BlueButton name="Read More" type="button" />
+                    <CyanButton name="Read More" type="button" />
                   </Link>
                 </div>
               </span>

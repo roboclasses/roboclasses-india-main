@@ -1,20 +1,21 @@
 "use client";
-import BlueButton from "@/demo/button-demo/BlueButton";
+
+import { Card, CardContent, CardHeader } from "./ui/card";
+
+import CyanButton from "@/demo/button-demo/CyanButton";
+import Data from "../data/parentsData.json";
+import { STUDENT_SPEAKS } from "@/constants/links";
+import { FaQuoteLeft } from "react-icons/fa";
+
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
+
 import "swiper/css";
 import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
-import Image from "next/image";
-import Data from "../data/parentsData.json";
-import { QUOTE } from "@/constants/Images";
-import { usePathname, useRouter } from "next/navigation";
-import { STUDENT_SPEAKS } from "@/constants/links";
-import { MessageSquareQuoteIcon, Quote, QuoteIcon, TextQuote } from "lucide-react";
-import { FaQuoteLeft } from "react-icons/fa";
-import { TbQuote } from "react-icons/tb";
-import { IoIosQuote, IoMdQuote } from "react-icons/io";
+
 
 const ParentsCorner = () => {
   const pathname = usePathname();
@@ -22,9 +23,9 @@ const ParentsCorner = () => {
 
   return (
     <div className="flex flex-col items-center p-20">
-      <div className="flex flex-col items-center gap-4">
-        <p className="text-4xl font-extrabold">Parent’s corner</p>
-        <p className="text-sm font-bold text-gray-500" style={{ letterSpacing: "0.09em" }}>
+      <div className="flex flex-col items-center gap-6">
+        <p className="text-5xl font-extrabold bg-clip-text text-transparent bg-custom-gradient">Parent’s corner</p>
+        <p className="lg:text-base" style={{ letterSpacing: "0.05em" }}>
           What do parents have to say
         </p>
       </div>
@@ -67,10 +68,8 @@ const ParentsCorner = () => {
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <FaQuoteLeft className="text-lg" />
-                    <p className="font-mono text-lg w-[270px] line-clamp-6 mt-5 text-balance">
-                      {item.review}
-                    </p>
+                    <FaQuoteLeft className="text-lg text-accent-foreground" />
+                    <p className="text-lg w-[270px] line-clamp-6 mt-5 text-balance" style={{letterSpacing: '0.05em'}}>{item.review}</p>
                   </CardContent>
                 </Card>
               </SwiperSlide>
@@ -79,7 +78,7 @@ const ParentsCorner = () => {
         </div>
       </section>
       {pathname !== STUDENT_SPEAKS && (
-        <BlueButton
+        <CyanButton
           name="View All"
           type="button"
           onClick={() => router.push(STUDENT_SPEAKS)}

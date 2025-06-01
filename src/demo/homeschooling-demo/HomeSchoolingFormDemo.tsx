@@ -23,10 +23,10 @@ import { toast } from "@/components/ui/use-toast";
 
 import Image from "next/image";
 import { handlePostEnquiry } from "@/app/services/actions/EnquiryFormAction";
-import BlueButton from "../button-demo/BlueButton";
 
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import CyanButton from "../button-demo/CyanButton";
 
 
 const FormSchema = z.object({
@@ -180,7 +180,7 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
 
           </div>
 
-          <BlueButton name="Submit" type="submit" />
+          <CyanButton name="Submit" type="submit" />
         </div>
       </form>
     </Form>

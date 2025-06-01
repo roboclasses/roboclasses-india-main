@@ -21,7 +21,7 @@ import { handlePostEnquiry } from "@/app/services/actions/EnquiryFormAction";
 import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import BlueButton from "../button-demo/BlueButton";
+import CyanButton from "../button-demo/CyanButton";
 
 
 const FormSchema = z.object({
@@ -158,7 +158,7 @@ async function onSubmit(data: z.infer<typeof FormSchema>) {
           </div>
 
           <div className="flex justify-center pt-2">
-            <BlueButton
+            <CyanButton
               name="Submit"
               type="submit"
             />

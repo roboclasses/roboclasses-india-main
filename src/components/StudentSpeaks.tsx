@@ -14,7 +14,7 @@ const StudentSpeaks = () => {
         <div className="absolute top-0 right-0 w-36 h-36 bg-gradient-to-l from-green-200/40 to-transparent rounded-bl-full"></div>
         <div className="grid grid-cols-2 items-center space-x-72">
           <div className="text-white space-y-6">
-            <h1 className="font-bold text-4xl">STEM Certified Programs</h1>
+            <h1 className="font-extrabold text-5xl">STEM Certified Programs</h1>
             <ol
               className="list-disc list-inside ml-6 space-y-2"
               style={{ letterSpacing: "0.05em" }}

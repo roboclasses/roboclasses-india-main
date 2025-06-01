@@ -8,12 +8,12 @@ import {
 } from "@/components/ui/carousel";
 
 import Data from "../data/trendingData.json";
-import BlueButton from "./button-demo/BlueButton";
 import { TRENDING_BLOGS } from "@/constants/links";
 
 import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import CyanButton from "./button-demo/CyanButton";
 
 
 export function CarouselSpacing() {
@@ -40,7 +40,7 @@ export function CarouselSpacing() {
                   />
                   <div className="flex flex-col gap-4 p-4">
                     <div className="text-sm font-semibold">
-                      <ul className="list-disc list-inside text-sky-500">
+                      <ul className="list-disc list-inside text-cyan-500">
                         <li>Education</li>
                       </ul>
                     </div>
@@ -53,7 +53,7 @@ export function CarouselSpacing() {
                     href={`${TRENDING_BLOGS}/${item.id}`}
                     className="absolute bottom-5"
                   >
-                    <BlueButton name="Read More" type="button" />
+                    <CyanButton name="Read More" type="button" />
                   </Link>
                 </CardContent>
               </Card>
