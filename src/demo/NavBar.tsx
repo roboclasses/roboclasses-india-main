@@ -1,22 +1,27 @@
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// import { ModeToggle } from "@/themes/ModeToggle";
-
 import { NavigationMenuDemo } from "./NavigationMenuDemo";
 import { DialogDemo } from "./DialogDemo";
-// import { PopoverDemo } from "./PopoverDemo";
 import { LOGO } from "@/constants/Images";
+import MobileNavSheet from "./MobileNav";
+// import { PopoverDemo } from "./PopoverDemo";
+// import { ModeToggle } from "@/themes/ModeToggle";
+
 
 
 const NavBar = () => {
 
   return (
-    <nav className="flex flex-row justify-center gap-40 px-3 py-6 shadow-md rounded-b-3xl">
+    <nav className="flex lg:justify-center justify-between items-center lg:gap-40 px-3 py-6 shadow-md rounded-b-3xl">
+       <div className="flex items-center gap-6">
+        {/* Hamburger menu (Hidden on desktop) */}
+        <div className="flex lg:hidden">
+          <MobileNavSheet />
+        </div>
 
-      {/* Logo */}
+       {/* Logo */}
       <Link href={"/"} aria-label="Roboclasses Home">
         <Image
           src={LOGO}
@@ -28,24 +33,20 @@ const NavBar = () => {
           priority
         />
       </Link>
+      </div>
 
-      {/* Links Section (Hidden on mobile and tablet) */}
+      {/* Nav menu Section (Hidden on mobile and tablet) */}
       <div className="lg:flex hidden">
         <NavigationMenuDemo />
       </div>
 
-      {/* Input and Button Section */}
-      {/* <div className="flex flex-row gap-4 items-center "> */}
-        {/* <div className="w-full lg:w-auto">
-         <PopoverDemo />
-        </div> */}
-        <DialogDemo />
-      {/* </div> */}
+      <div className="flex items-center gap-6">
+        <DialogDemo /> 
 
-      {/* Mode Toggle */}
-      {/* <div>
-        <ModeToggle />
-      </div> */}
+        {/* Theme */}
+        {/* <ModeToggle /> */}
+      </div>
+
     </nav>
   );
 };

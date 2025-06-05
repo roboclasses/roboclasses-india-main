@@ -1,4 +1,4 @@
-"use client";
+'use client' 
 
 import * as React from "react";
 import Link from "next/link";
@@ -13,25 +13,20 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import {
-  PROGRAMMING_COURSES,
-  ROBOTICS_COURSES,
-  STEM_CLASSES,
-} from "@/constants/links";
 import { usePathname } from "next/navigation";
 
 const courses: { title: string; href: string }[] = [
   {
     title: "Robotics Courses",
-    href: ROBOTICS_COURSES,
+    href: "/collections/robotics-courses",
   },
   {
     title: "Programming Courses",
-    href: PROGRAMMING_COURSES,
+    href: "/collections/programming-courses",
   },
   {
     title: "STEM Classes",
-    href: STEM_CLASSES,
+    href: "/collections/stem-classes",
   },
 ];
 
@@ -54,7 +49,7 @@ export function NavigationMenuDemo() {
   const pathname = usePathname();
 
   return (
-    <NavigationMenu className="text-2xl text-gray-600 dark:text-slate-400"  style={{ letterSpacing: "0.05em", }}>
+    <NavigationMenu className="text-2xl text-slate-600 dark:text-slate-400"  style={{ letterSpacing: "0.05em", }}>
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
@@ -69,7 +64,7 @@ export function NavigationMenuDemo() {
             <ul className="grid lg:grid-cols-3 w-[400px] gap-3 p-4 md:w-[500px] lg:w-[900px]">
               {courses.map((course) => (
                 <Link href={course.href} key={course.title}>
-                  <ListItem title={course.title} className={cn(pathname === course.href && 'text-cyan-500')}/>
+                  <ListItem title={course.title} className={cn('hover:text-white transition-transform duration-150 ease-in-out', pathname === course.href && 'text-cyan-500')}/>
                 </Link>
               ))}
             </ul>
@@ -95,7 +90,7 @@ export function NavigationMenuDemo() {
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[900px]">
               {aboutUs.map((about) => (
                 <Link href={about.href} key={about.title}>
-                  <ListItem title={about.title} className={cn(pathname === about.href && 'text-cyan-500')}/>
+                  <ListItem title={about.title} className={cn('hover:text-white transition-transform duration-150 ease-in-out', pathname === about.href && 'text-cyan-500')}/>
                 </Link>
               ))}
             </ul>
@@ -104,7 +99,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <Link href="/pages/contact" legacyBehavior passHref>
             <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),'font-bold', pathname === '/pages/contact' && 'text-cyan-500')}>
-           CONTACT US
+              CONTACT US
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -112,7 +107,7 @@ export function NavigationMenuDemo() {
           <NavigationMenuTrigger className="font-bold">EXSISTING STUDENTS</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[900px] text-right">
-              <ListItem title="My Account" href={""} />
+              <ListItem title="My Account" href={"#"} className="hover:text-white transition-transform duration-150 ease-in-out"/>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
