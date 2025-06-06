@@ -75,16 +75,16 @@ export function FormDemo() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className=" space-y-2 p-5 rounded-xl bg-[#F0F0F0]/50 mt-5 text-black flex flex-col items-center"
+        className="space-y-2 p-5 rounded-xl bg-[#F0F0F0]/50 mt-5 text-black flex flex-col items-center lg:w-[380px] w-[360px]"
       >
         <div className="flex flex-col items-center gap-2">
-          <p className="text-3xl font-bold">Enquire Now</p>
-          <p className="text-slate-800 text-xs font-semibold" style={{ letterSpacing: "0.05em" }}>
+          <p className="lg:text-3xl text-xl font-bold">Enquire Now</p>
+          <p className="text-slate-800 text-xs lg:font-semibold" style={{ letterSpacing: "0.05em" }}>
             Learn from our best teachers
           </p>
           <div className="flex flex-row items-center gap-1">
             <hr className="border-1 border-slate-400 w-16 rounded-lg" />
-            <p className="text-md font-extrabold text-slate-800">
+            <p className="lg:text-md text-sm font-extrabold text-slate-800">
               Select the session mode
             </p>
             <hr className="border-1 border-slate-400 w-16 rounded-lg" />
@@ -131,7 +131,7 @@ export function FormDemo() {
 
           <div className="flex flex-row items-center gap-1">
             <hr className="border-1 border-zinc-400 w-20 rounded-lg" />
-            <p className="text-md font-semibold px-2 text-zinc-800">Enter Your Details</p>
+            <p className="lg:text-md text-sm font-semibold px-2 text-zinc-800">Enter Your Details</p>
             <hr className="border-1 border-zinc-400 w-20 rounded-lg" />
           </div>
         </div>

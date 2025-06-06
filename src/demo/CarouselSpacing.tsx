@@ -18,18 +18,17 @@ import CyanButton from "./button-demo/CyanButton";
 
 export function CarouselSpacing() {
   return (
-    <Carousel className="max-w-7xl">
+    <Carousel className="lg:max-w-7xl max-w-sm">
       <CarouselContent className="-ml-1">
         {Data.map((item) => (
           <CarouselItem
             key={item.id}
-            className="pl-1 md:basis-1/2 lg:basis-1/3 "
+            className="pl-1 md:basis-1/2 lg:basis-1/3"
           >
             <div className="px-10">
-              <Card
-                className="max-w-full relative h-[600px] border-none shadow-2xl
-                dark:shadow-none dark:bg-black mb-12 rounded-xl"
-              >
+              <Card className="max-w-full relative lg:h-[600px] h-[570px] border-none shadow-2xl
+                dark:shadow-none dark:bg-black mb-12 rounded-xl"> 
+
                 <CardContent className="flex flex-col aspect-square items-center justify-center p-2">
                   <Image
                     src={item.src}
@@ -39,12 +38,12 @@ export function CarouselSpacing() {
                     className="transform transition-transform duration-300 hover:scale-110 h-[250px] w-full rounded-2xl"
                   />
                   <div className="flex flex-col gap-4 p-4">
-                    <div className="text-sm font-semibold">
+                    <div className="lg:text-sm text-xs font-semibold">
                       <ul className="list-disc list-inside text-cyan-500">
                         <li>Education</li>
                       </ul>
                     </div>
-                    <p className="text-2xl font-extrabold">{item.title}</p>
+                    <p className="lg:text-2xl text-xl font-extrabold">{item.title}</p>
                     <p className="text-sm text-[#808080] line-clamp-3" style={{ letterSpacing: "0.05em" }}>
                       {item.desc}
                     </p>

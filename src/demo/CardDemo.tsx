@@ -37,7 +37,7 @@ export function CardDemo({
   const validHref = href || "/";
 
   return (
-    <Card className="w-[400px] h-[720px] dark:bg-slate-800/40 relative dark:shadow-none shadow-2xl m-16 border-none rounded-lg">
+    <Card className="lg:w-[400px] w-[360px] h-[720px] dark:bg-slate-800/40 relative dark:shadow-none shadow-2xl m-16 border-none rounded-lg">
       <Image
         src={src}
         alt={"feature-image"}
@@ -110,7 +110,7 @@ export function CardDemo({
         </div>
       </CardContent>
 
-      <CardFooter className="flex flex-row gap-16 items-center justify-center absolute bottom-0">
+      <CardFooter className="flex flex-row lg:gap-16 gap-8 items-center justify-center absolute bottom-0">
         <DialogDemo />
         <Link href={validHref}>
           <Button

@@ -63,10 +63,11 @@ const HeroSection = () => {
   }, [count1, count2, count3, pathname]); // <-- Animation re-triggers on every route change
 
   return (
-    <div className="mt-[30px] ">
+    <div className="mt-[30px]">
       {/* Hero Section */}
       <div
-        className="bg-cover bg-center h-[330px] xl:h-[630px] flex flex-row gap-72 justify-center items-center overflow-hidden rounded-t-3xl"
+        className="bg-cover bg-center h-[500px] lg:h-[630px] flex lg:flex-row flex-col lg:gap-72 lg:justify-center 
+        items-center overflow-hidden rounded-t-3xl lg:rounded-b-none rounded-b-3xl"
         style={{ backgroundImage: `url(${BACKGROUND_IMG})` }}
       >
         <div className="lg:flex hidden flex-col gap-8">
@@ -113,9 +114,10 @@ const HeroSection = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="flex flex-row gap-56 justify-center py-10 bg-custom-gradient relative rounded-b-3xl">
-        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-l from-green-200/40 to-transparent rounded-bl-full"></div>
-        <div className="absolute bottom-0 left-0 w-24 h-24 bg-gray-200/20 rounded-tr-full"></div>
+      <div className="lg:flex hidden flex-row lg:gap-56 gap-5 justify-center lg:py-10 py-5 bg-custom-gradient relative rounded-b-3xl">
+
+        <div className="lg:flex hidden absolute top-0 right-0 w-24 h-24 bg-gradient-to-l from-green-200/40 to-transparent rounded-bl-full"></div>
+        <div className="lg:flex hidden absolute bottom-0 left-0 w-24 h-24 bg-gray-200/20 rounded-tr-full"></div>
 
         {stats.map((item, index) => {
           let animatedValue;
@@ -131,19 +133,19 @@ const HeroSection = () => {
               className="flex flex-col gap-2 items-center text-white"
             >
               {isAnimated && animatedValue ? (
-                <motion.p className="text-3xl font-bold">
+                <motion.p className="lg:text-3xl text-xs font-bold">
                   {animatedValue}
                 </motion.p>
               ) : (
                 <p
                   className={`${
-                    index === 0 ? "text-5xl" : "text-3xl"
+                    index === 0 ? "lg:text-5xl text-xs" : "lg:text-3xl text-xs"
                   } font-bold`}
                 >
                   {item.title}
                 </p>
               )}
-              <p className="text-sm">{item.desc}</p>
+              <p className="lg:text-sm text-xs">{item.desc}</p>
             </div>
           );
         })}

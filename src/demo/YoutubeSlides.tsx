@@ -11,9 +11,9 @@ export function YoutubeSlides() {
   ];
 
   return (
-    <div className="flex flex-row justify-center items-center gap-5 py-6">
+    <div className="grid lg:grid-cols-4 grid-cols-2 justify-center items-center gap-5 py-6">
       {Videos.map((video) => (
-        <div className="bg-white rounded-lg shadow-md p-6" key={video.title}>
+        <div className="bg-white rounded-lg shadow-md lg:p-6" key={video.title}>
           <iframe
             src={video.src}
             allowFullScreen
@@ -21,7 +21,7 @@ export function YoutubeSlides() {
             sandbox="allow-popups allow-scripts allow-same-origin"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             loading="lazy"
-            className="w-full h-40 rounded"
+            className="lg:w-full w-[150px] h-40 rounded"
           />
         </div>
       ))}

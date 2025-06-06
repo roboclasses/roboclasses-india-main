@@ -28,12 +28,12 @@ const ParentsCorner = () => {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col items-center p-20">
-      <div className="flex flex-col items-center gap-6">
-        <p className="text-5xl font-extrabold bg-clip-text text-transparent bg-custom-gradient">
+    <div className="flex flex-col items-center lg:p-20 p-10">
+      <div className="flex flex-col items-center lg:gap-6 gap-2">
+        <p className="lg:text-5xl text-2xl font-extrabold bg-clip-text text-transparent bg-custom-gradient">
           Parent’s corner
         </p>
-        <p className="lg:text-base" style={{ letterSpacing: "0.05em" }}>
+        <p className="lg:text-base text-xs" style={{ letterSpacing: "0.05em" }}>
           What do parents have to say
         </p>
       </div>
@@ -85,7 +85,7 @@ const ParentsCorner = () => {
           </Swiper>
         </div>
       </section> */}
-      <Carousel className="max-w-6xl">
+      <Carousel className="lg:max-w-6xl max-w-sm">
         <CarouselContent className="-ml-1">
           {Data.map((item) => (
             <CarouselItem

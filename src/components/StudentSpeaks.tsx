@@ -10,11 +10,11 @@ import WhatsAppButton from "@/demo/button-demo/WhatsAppButton";
 const StudentSpeaks = () => {
   return (
     <>
-      <div className="flex flex-row items-center justify-center p-20 relative bg-custom-gradient rounded-3xl">
-        <div className="absolute top-0 right-0 w-36 h-36 bg-gradient-to-l from-green-200/40 to-transparent rounded-bl-full"></div>
-        <div className="grid grid-cols-2 items-center space-x-72">
-          <div className="text-white space-y-6">
-            <h1 className="font-extrabold text-5xl">STEM Certified Programs</h1>
+      <div className="flex lg:flex-row flex-col items-center justify-center lg:p-20 p-10 relative bg-custom-gradient rounded-3xl">
+        <div className="lg:flex hidden absolute top-0 right-0 w-36 h-36 bg-gradient-to-l from-green-200/40 to-transparent rounded-bl-full"></div>
+        <div className="grid lg:grid-cols-2 grid-cols-1 items-center lg:space-x-72 space-x-40">
+          <div className="text-white space-y-6 text-pretty">
+            <h1 className="font-extrabold lg:text-5xl text-2xl">STEM Certified Programs</h1>
             <ol
               className="list-disc list-inside ml-6 space-y-2"
               style={{ letterSpacing: "0.05em" }}
@@ -42,7 +42,7 @@ const StudentSpeaks = () => {
             />
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 w-36 h-36 bg-gray-200/20 rounded-tr-full"></div>
+        <div className="lg:flex hidden absolute bottom-0 left-0 w-36 h-36 bg-gray-200/20 rounded-tr-full"></div>
       </div>
     </>
   );

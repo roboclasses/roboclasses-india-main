@@ -12,10 +12,10 @@ const TrendingCarouselFe = () => {
   const router = useRouter();
 
   return (
-    <div className={`flex flex-col gap-10 items-center p-20 dark:bg-slate-900`}>
-      <div className="flex flex-col gap-6 items-center">
-        <p className="lg:text-5xl text-xl font-extrabold bg-clip-text text-transparent bg-custom-gradient p-2">What’s trending today</p>
-        <p className="lg:text-base text-sm" style={{ letterSpacing: "0.05em" }}>See age appropriate courses</p>
+    <div className='flex flex-col lg:gap-10 gap-8 items-center lg:p-20 p-10 dark:bg-slate-900'>
+      <div className="flex flex-col lg:gap-6 gap-2 items-center">
+        <p className="lg:text-5xl text-2xl font-extrabold bg-clip-text text-transparent bg-custom-gradient lg:p-2">What’s trending today</p>
+        <p className="lg:text-base text-xs lg:mb-0 mb-2" style={{ letterSpacing: "0.05em" }}>See age appropriate courses</p>
         <CyanButton
           name="See All"
           type="button"

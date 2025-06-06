@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${comicNeue.variable} antialiased`}>
+      <body className={`${openSans.variable} ${comicNeue.variable} antialiased overflow-x-hidden`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
