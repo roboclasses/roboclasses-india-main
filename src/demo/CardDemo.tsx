@@ -37,7 +37,7 @@ export function CardDemo({
   const validHref = href || "/";
 
   return (
-    <Card className="lg:w-[400px] w-[360px] h-[720px] dark:bg-slate-800/40 relative dark:shadow-none shadow-2xl m-16 border-none rounded-lg">
+    <Card className="lg:w-[400px] w-[360px] h-[740px] dark:bg-slate-800/40 relative dark:shadow-none shadow-2xl m-16 border-none rounded-lg">
       <Image
         src={src}
         alt={"feature-image"}

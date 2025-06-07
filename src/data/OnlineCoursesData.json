@@ -6,7 +6,7 @@
     "originalPrice": "INR 1,950",
     "overridenPrice": " - INR 1,750",
     "emi": "INR 437.5 /Month *4",
-    "age": "6-9 years",
+    "age": "7-10 years",
     "classes": "15 classes"
   },{
     "id": 24,
@@ -16,7 +16,7 @@
     "originalPrice": "INR 1,950",
     "overridenPrice": " - INR 1,750",
     "emi": "INR 437.5 /Month *4",
-    "age": "9-13 years",
+    "age": "10-13 years",
     "classes": "15 classes"
   }, {
     "id":25,
@@ -26,7 +26,7 @@
     "originalPrice": "INR 750",
     "overridenPrice": " - INR 600",
     "emi": " INR 150 /Month *4 ",
-    "age": "7+ years",
+    "age": "7-10 years",
     "classes": "15 classes"
   }, {
     "id":26,
@@ -36,7 +36,7 @@
     "originalPrice": "INR 1,800",
     "overridenPrice": " - INR 1,500",
     "emi": " INR 375 /Month *4 ",
-    "age": "12-18 years",
+    "age": "13+ years",
     "classes": "30 classes"
   },{
     "id":27,
@@ -46,7 +46,7 @@
     "originalPrice": "INR 5,400",
     "overridenPrice": " - INR 4,320",
     "emi": " INR 1080 /Month *4 ",
-    "age": "14-18 years",
+    "age": "13+ years",
     "classes": "24 classes"
   },{
     "id":28,
@@ -56,6 +56,6 @@
     "originalPrice": "INR 850",
     "overridenPrice": " - INR 720",
     "emi": "  4 Payments of INR 180 /Month ",
-    "age": "4-6 years",
+    "age": "7-10 years",
     "classes": "12 classes"
   }]

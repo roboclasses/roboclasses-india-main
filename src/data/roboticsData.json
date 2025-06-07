@@ -7,18 +7,40 @@
     "originalPrice": "INR 1,950",
     "overridenPrice": " - INR 1,750",
     "emi": "INR 437.5 /Month *4",
-    "age": "6-9 years",
+    "age": "7-10 years",
     "classes": "15 classes"
   },
   {
     "id": 2,
     "label": "ELECTRONIC ROBOTICS",
     "src": "/assets/arduino.webp",
-    "course": " Arduino Robotics Classes Beginner Course",
+    "course": "Arduino Robotics Classes Beginner Course",
     "originalPrice": "INR 1,950",
     "overridenPrice": " - INR 1,750",
     "emi": "INR 437.5 /Month *4",
-    "age": "9-13 years",
+    "age": "10-13 years",
+    "classes": "15 classes"
+  },
+  {
+    "id": 3,
+    "label": "ELECTRONIC ROBOTICS",
+    "src": "/assets/iot.webp",
+    "course": "Internet of things(IoT) with Arduino Beginner level Course",
+    "originalPrice": "INR 1,950",
+    "overridenPrice": " - INR 1,750",
+    "emi": "INR 437.5 /Month *4",
+    "age": "10-13 years",
+    "classes": "15 classes"
+  },
+    {
+    "id": 4,
+    "label": "ELECTRONIC ROBOTICS",
+    "src": "/assets/iot.webp",
+    "course": "Internet of things(IoT) with Arduino Intermediate level Course",
+    "originalPrice": "INR 1,950",
+    "overridenPrice": " - INR 1,750",
+    "emi": "INR 437.5 /Month *4",
+    "age": "10-13 years",
     "classes": "15 classes"
   }
 ]
