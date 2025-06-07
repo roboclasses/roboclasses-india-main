@@ -36,9 +36,10 @@ const StudentSpeaks = () => {
           <div>
             <Image
               src={STEM_ACCREDITED}
-              height={400}
+              height={300}
               width={400}
               alt="stem-accredited-image"
+              className="rounded-3xl"
             />
           </div>
         </div>

@@ -71,7 +71,7 @@ export const INSTA_LINK = "/assets/insta-link.webp";
 export const FIRST_PRIZE = "/assets/1st.webp";
 export const SECONED_PRIZE = "/assets/2nd.webp";
 export const THIRD_PRIZE = "/assets/3rd.webp";
-export const STEM_ACCREDITED = "/assets/stem-accredited.avif";
+export const STEM_ACCREDITED = "/assets/stem-accredited-2.png";
 export const STEM_COURSES = "/assets/book.svg"
 export const FLEXIBLE_TIME = "/assets/clock.svg"
 
