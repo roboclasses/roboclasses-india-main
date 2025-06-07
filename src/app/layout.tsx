@@ -25,8 +25,8 @@ const comicNeue = Comic_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "Kids' Spa Courses & Wellness",
-  description: "Fun and relaxing spa courses for kids, plus wellness services for the whole family.",
+  title: "Coding and Robotics Courses for Kids",
+  description: "Unlock your child potential with ROBO CLASSES - Coding and Robotics Courses for Kids.",
 };
 
 
