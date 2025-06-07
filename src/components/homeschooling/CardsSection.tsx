@@ -3,7 +3,6 @@
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 
 import { CardDemo } from "@/demo/CardDemo";
-import { PROGRAMMING_COURSES, STEM_CLASSES } from "@/constants/links";
 import CyanButton from "@/demo/button-demo/CyanButton";
 
 // import Data from "../../data/roboticsData.json";
@@ -85,7 +84,7 @@ const CardsSection = () => {
         <CyanButton
           name="Show All"
           type="button"
-          onClick={() => router.push(PROGRAMMING_COURSES)}
+          onClick={() => router.push('/collections/programming-courses')}
         />
       </div>
 
@@ -111,7 +110,7 @@ const CardsSection = () => {
         <CyanButton
           name="Show All"
           type="button"
-          onClick={() => router.push(STEM_CLASSES)}
+          onClick={() => router.push('/collections/stem-classes')}
         />
       </div>
 
@@ -137,7 +136,7 @@ const CardsSection = () => {
         <CyanButton
           name="Show All"
           type="button"
-          onClick={() => router.push(STEM_CLASSES)}
+          onClick={() => router.push('/collections/stem-classes')}
         />
       </div>
 

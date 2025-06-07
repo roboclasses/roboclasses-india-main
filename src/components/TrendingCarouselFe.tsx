@@ -1,6 +1,5 @@
 "use client"; 
 
-import { TRENDING_BLOGS } from "@/constants/links";
 import { CarouselSpacing } from "@/demo/CarouselSpacing";
 
 import React from "react";
@@ -19,7 +18,7 @@ const TrendingCarouselFe = () => {
         <CyanButton
           name="See All"
           type="button"
-          onClick={() => router.push(TRENDING_BLOGS)}
+          onClick={() => router.push('/blogs/trending-blogs')}
         />
       </div>
       <CarouselSpacing />

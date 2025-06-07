@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader } from "./ui/card";
 
 import CyanButton from "@/demo/button-demo/CyanButton";
 import Data from "../data/parentsData.json";
-import { STUDENT_SPEAKS } from "@/constants/links";
 import { FaQuoteLeft } from "react-icons/fa";
 
 import React from "react";
@@ -135,11 +134,11 @@ const ParentsCorner = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-      {pathname !== STUDENT_SPEAKS && (
+      {pathname !== '/pages/student-speaks' && (
         <CyanButton
           name="View All"
           type="button"
-          onClick={() => router.push(STUDENT_SPEAKS)}
+          onClick={() => router.push('/pages/student-speaks')}
         />
       )}
     </div>

@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/carousel";
 
 import Data from "../data/trendingData.json";
-import { TRENDING_BLOGS } from "@/constants/links";
 
 import * as React from "react";
 import Image from "next/image";
@@ -49,7 +48,7 @@ export function CarouselSpacing() {
                     </p>
                   </div>
                   <Link
-                    href={`${TRENDING_BLOGS}/${item.id}`}
+                    href={`${'/blogs/trending-blogs'}/${item.id}`}
                     className="absolute bottom-5"
                   >
                     <CyanButton name="Read More" type="button" />

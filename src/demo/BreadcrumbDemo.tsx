@@ -1,4 +1,5 @@
-"use client";
+"use client"
+
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -7,7 +8,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-import { TRENDING_BLOGS } from "@/constants/links";
 import Link from "next/link";
 
 export function BreadcrumbDemo({ title }: alertTypes) {
@@ -26,7 +26,7 @@ export function BreadcrumbDemo({ title }: alertTypes) {
         <BreadcrumbItem>
           <Link
             className="font-semibold transition-colors hover:text-foreground dark:hover:underline dark:text-black"
-            href={TRENDING_BLOGS}
+            href={'/blogs/trending-blogs'}
           >
             Blogs
           </Link>

@@ -1,4 +1,7 @@
-'use server' 
+'use server'
+
+import { PrivyrApiUrl } from "@/constants/links";
+
 
 export const handlePostEnquiry = async (formData:{
 name: string,
@@ -15,13 +18,10 @@ requirement?: string,
 }) => {
   if (!formData) return { error: "Form data not found" };
   try {
-    const response = await fetch(
-      "https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/Wez9PSMD",
+    const response = await fetch(PrivyrApiUrl,
       {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: {"Content-Type": "application/json",},
         body: JSON.stringify(formData),
       }
     );
