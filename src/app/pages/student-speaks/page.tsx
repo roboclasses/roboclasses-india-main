@@ -1,4 +1,4 @@
-import ParentsCorner from '@/components/ParentsCorner'
+import ParentsCorner from '@/demo/student-speaks-demo/ParentsCorner'
 import React from 'react'
 
 const page = () => {
