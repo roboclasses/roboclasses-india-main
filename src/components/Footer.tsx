@@ -121,6 +121,7 @@ const Footer = () => {
                   height={25}
                   width={25}
                   role="button"
+                  className="transform transition-transform duration-300 ease-in-out hover:scale-110"
                 />
               ))}
             </div>
