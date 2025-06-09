@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "slug": "microbit-robotics-classes-beginner-course-with-kit",
     "label": "ELECTRONIC ROBOTICS",
     "src": "/assets/microbit.webp",
     "course": "Microbit Robotics Classes Beginner Course with Kit",
@@ -12,6 +13,7 @@
   },
   {
     "id": 2,
+    "slug": "arduino-robotics-classes-beginner-course",
     "label": "ELECTRONIC ROBOTICS",
     "src": "/assets/arduino.webp",
     "course": "Arduino Robotics Classes Beginner Course",
@@ -23,6 +25,7 @@
   },
   {
     "id": 3,
+    "slug": "internet-of-thingsiot-with-arduino-beginner-level-course",
     "label": "ELECTRONIC ROBOTICS",
     "src": "/assets/iot.webp",
     "course": "Internet of things(IoT) with Arduino Beginner level Course",
@@ -34,6 +37,7 @@
   },
     {
     "id": 4,
+    "slug": "internet-of-thingsiot-with-arduino-intermidiate-level-course",
     "label": "ELECTRONIC ROBOTICS",
     "src": "/assets/iot.webp",
     "course": "Internet of things(IoT) with Arduino Intermediate level Course",

@@ -5,7 +5,7 @@ import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import { CardDemo } from "@/demo/CardDemo";
 import CyanButton from "@/demo/button-demo/CyanButton";
 
-import Data from "../../data/roboticsData.json";
+import RData from "../../data/roboticsData.json";
 import PData from "../../data/programmingData.json";
 import OData from "../../data/OnlineCoursesData.json";
 
@@ -33,8 +33,8 @@ const CardsSection = () => {
 
   //filter logic for robotics cards
   const filteredAgeR = isFilter
-    ? Data.filter((item) => item.age === selectedAge)
-    : Data;
+    ? RData.filter((item) => item.age === selectedAge)
+    : RData;
 
   //filter logic for programming cards
   const filteredAgeP = isFilter
@@ -91,7 +91,7 @@ const CardsSection = () => {
               className="lg:pl-1 md:basis-1/2 lg:basis-1/3 flex items-center justify-center"
             >
               <div>
-                <CardDemo {...item} href={`/collections/${item.id}`} />
+                <CardDemo {...item} href={`/collections/products/${item.slug}`} />
               </div>
             </CarouselItem>
           ))}
@@ -117,7 +117,7 @@ const CardsSection = () => {
               className="lg:pl-1 md:basis-1/2 lg:basis-1/3 flex items-center justify-center"
             >
               <div>
-                <CardDemo {...item} href={`/collections/${item.id}`} />
+                <CardDemo {...item} href={`/collections/${item.slug}`} />
               </div>
             </CarouselItem>
           ))}
@@ -143,7 +143,7 @@ const CardsSection = () => {
               className="pl-1 md:basis-1/2 lg:basis-1/3 flex items-center justify-center"
             >
               <div>
-                <CardDemo {...item} href={`/collections/${item.id}`} />
+                <CardDemo {...item} href={`/collections/${item.slug}`} />
               </div>
             </CarouselItem>
           ))}
