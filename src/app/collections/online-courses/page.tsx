@@ -17,7 +17,7 @@ const page = () => {
       <RightCourse />
       <LearningPath />
       <SchoolSection />
-      <AboutRobotics title="online courses" course="online courses" />
+      <AboutRobotics title="online courses"/>
       <CarouselFe />
       <Faq />
     </div>

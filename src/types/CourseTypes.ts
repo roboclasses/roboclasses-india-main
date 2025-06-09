@@ -1,5 +1,4 @@
 export interface cardType{
-    title?:string;
+    title:string;
     course?:string;
-    
   }
