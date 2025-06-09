@@ -2,7 +2,7 @@
 
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 
-import Data from "../../data/stemData.json";
+import OnlineCoursesData from "@/data/OnlineCoursesData.json";
 import { CardDemo } from "@/demo/CardDemo";
 
 import "swiper/css";
@@ -27,16 +27,15 @@ const Features = () => {
   };
 
   //filter logic for cards
-  const filteredAge = isFilter
-    ? Data.filter((item) => item.age === selectedAge)
-    : Data;
+  const filteredData = isFilter
+    ? OnlineCoursesData.filter((item) => item.age === selectedAge)
+    : OnlineCoursesData;
 
   return (
     <div className="flex flex-col px-52 gap-6 py-20">
       <div className="flex flex-col items-center">
-        <p className="text-4xl font-extrabold mb-4">STEM Classes</p>
-        <p className="text-sm font-bold text-gray-500" style={{ letterSpacing: "0.09em" }} 
-        >See age appropriate courses</p>
+        <p className="text-4xl font-extrabold mb-4">Online Courses</p>
+        <p className="text-sm font-bold text-gray-500" style={{ letterSpacing: "0.09em" }} >See age appropriate courses</p>
         <div className="p-4 flex justity-center items-center">
           <div className="bg-custom-gradient dark:bg-slate-300 p-2 rounded-[30px] font-medium flex gap-2 md:gap-6 shadow-md">
             {ageGroups.map((age) => (
@@ -54,10 +53,10 @@ const Features = () => {
           </div>
         </div>
       </div>
-        <p className="font-extrabold px-16 text-2xl">STEM Courses</p>
+        <p className="font-extrabold px-16 text-2xl">Online Courses</p>
       <Carousel className="w-full max-w-8xl cursor-grab">
         <CarouselContent className="-ml-1">
-          {filteredAge.map((item, index) => (
+          {filteredData.map((item, index) => (
             <CarouselItem
               key={index}
               className="pl-1 md:basis-1/2 lg:basis-1/3"

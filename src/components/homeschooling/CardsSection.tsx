@@ -7,7 +7,6 @@ import CyanButton from "@/demo/button-demo/CyanButton";
 
 import Data from "../../data/roboticsData.json";
 import PData from "../../data/programmingData.json";
-// import SData from "../../data/stemData.json";
 import OData from "../../data/OnlineCoursesData.json";
 
 import React, { useState } from "react";
@@ -18,14 +17,6 @@ const CardsSection = () => {
   const [isFilter, setIsFilter] = useState(false);
   const [selectedAge, setSelectedAge] = useState<string>("All ages");
   const router = useRouter();
-
-  // const ageGroups = [
-  //   "All ages",
-  //   "4-6 years",
-  //   "6-9 years",
-  //   "9-13 years",
-  //   "13+ years",
-  // ];
 
     const ageGroups = [
     "All ages",
@@ -50,10 +41,6 @@ const CardsSection = () => {
     ? PData.filter((item) => item.age === selectedAge)
     : PData;
 
-  //filter logic for STEM cards
-  // const filteredAgeS = isFilter
-  //   ? SData.filter((item) => item.age === selectedAge)
-  //   : SData;
 
   //filter logic for Online course cards
   const filteredAgeO = isFilter
@@ -138,39 +125,13 @@ const CardsSection = () => {
       </Carousel>
       </React.Fragment>
 
-      {/* <React.Fragment>
-      <div className="flex flex-row justify-between items-center lg:px-8 px-3">
-        <p className="font-extrabold lg:text-2xl">STEM Classes</p>
-        <CyanButton
-          name="Show All"
-          type="button"
-          onClick={() => router.push('/collections/stem-classes')}
-        />
-      </div>
-
-      <Carousel className="w-full cursor-grab">
-        <CarouselContent className="lg:-ml-1">
-          {filteredAgeS.map((item, index) => (
-            <CarouselItem
-              key={index}
-              className="pl-1 md:basis-1/2 lg:basis-1/3 flex items-center justify-center"
-            >
-              <div>
-                <CardDemo {...item} href={`/collections/${item.id}`} />
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-      </Carousel>
-      </React.Fragment> */}
-
       <React.Fragment>
       <div className="flex flex-row justify-between items-center lg:px-8 px-3">
         <p className="font-extrabold lg:text-2xl">Online Courses</p>
         <CyanButton
           name="Show All"
           type="button"
-          onClick={() => router.push('/collections/stem-classes')}
+          onClick={() => router.push('/collections/online-courses')}
         />
       </div>
 

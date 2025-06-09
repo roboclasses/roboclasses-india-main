@@ -26,7 +26,7 @@ const CoursesData = [
     href: "/collections/programming-courses",
     title: "Programming Courses",
   },
-  { id: 3, href: "/collections/stem-classes", title: "STEM Classes" },
+  { id: 3, href: "/collections/online-courses", title: "Online Courses" },
 ];
 
 const AboutUsData = [

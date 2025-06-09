@@ -25,8 +25,8 @@ const courses: { title: string; href: string }[] = [
     href: "/collections/programming-courses",
   },
   {
-    title: "STEM Classes",
-    href: "/collections/stem-classes",
+    title: "Online Courses",
+    href: "/collections/online-courses",
   },
 ];
 
