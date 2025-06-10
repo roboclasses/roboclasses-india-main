@@ -1,14 +1,8 @@
-const Features = dynamic(() => import("@/components/collections/Features"));
-
-import dynamic from "next/dynamic";
+import Features from "@/components/collections/Features";
 import React from "react";
 
 const page = () => {
-  return (
-    <div>
-      <Features />
-    </div>
-  );
+  return <Features />
 };
 
 export default page;
