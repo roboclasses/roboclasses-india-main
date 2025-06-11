@@ -26,7 +26,7 @@ import { FaCertificate } from "react-icons/fa";
 interface Params {params: { slug: string }}
 
 const page = ({ params }: Params) => {
-  const product: Product | undefined = Data.find((item) => item.slug === params.slug);
+  const product: Product | undefined = Data.find((item) => item.slug.trim().toLowerCase() === params.slug.trim().toLowerCase());
 
   // Handle edge cases
   if (!product) return notFound();
