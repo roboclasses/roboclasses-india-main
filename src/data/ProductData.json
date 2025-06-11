@@ -1,0 +1,498 @@
+[
+    {
+        "id": 1,
+        "slug": "microbit-robotics-classes-beginner-course-with-kit",
+        "herotitle": "Microbit Robotics Classes Beginner Course with Kit",
+        "featureage": "8+ years",
+        "featurebatchsize": "1:1 classes",
+        "featureclasses": "15 classes",
+        "learncoursescard": [
+            {
+                "id": 1,
+                "title": "What is Microbit?",
+                "desc": "The BBC micro:bit: the pocket-sized computer transforming digital skills learning and enables users to create interactive electronic objects.Microbit kit is included with this course."
+            },
+            {
+                "id": 2,
+                "title": "Why Python for AI?",
+                "desc": "Python has rich library, it is also object oriented, easy to program. It can be also used as frontend language. That’s why it is used in artificial intelligence."
+            },
+            {
+                "id": 3,
+                "title": "Work with rich python libraries",
+                "desc": "Python offers a vast choice of libraries for AI development, which contain base-level items that save coding time. These libraries also make it easy to access, handle, and transform data."
+            },
+            {
+                "id": 4,
+                "title": "Creative thinking",
+                "desc": "Hands on learning experience that promotes children’s creative thinking, teamwork, and problem-solving skills."
+            }
+        ],
+        "learnsyllabus": [
+            {
+                "id": 1,
+                "title": "Day 1: Introduction to Micro:Bit & MakeCode"
+            },
+            {
+                "id": 2,
+                "title": "Day 2: Display Emojis"
+            },
+            {
+                "id": 3,
+                "title": "Day 3: Animated Animals"
+            },
+            {
+                "id": 4,
+                "title": "Day 4: Flashing Emotions"
+            },
+            {
+                "id": 5,
+                "title": "Day 5: Assessment 1"
+            },
+            {
+                "id": 6,
+                "title": "Day 6: Press The Smile"
+            },
+            {
+                "id": 7,
+                "title": "Day 7: Counter – Make A Counter And Add A Timer"
+            },
+            {
+                "id": 8,
+                "title": "Day 8: Touch Emotion Badge"
+            },
+            {
+                "id": 9,
+                "title": "Day 9: Clap Heart"
+            },
+            {
+                "id": 10,
+                "title": "Day 10: Assessment 2"
+            },
+            {
+                "id": 11,
+                "title": "Day 11: Digital Dice"
+            },
+            {
+                "id": 12,
+                "title": "Day 12: Step Counter"
+            },
+            {
+                "id": 13,
+                "title": "Day 13: Sunlight Sensor"
+            },
+            {
+                "id": 14,
+                "title": "Day 14: Rock Paper"
+            },
+            {
+                "id": 15,
+                "title": "Day 15: Final Assessment"
+            }
+        ],
+        "learnbenefits": [
+            {
+                "id": 1,
+                "benefit": "Microbit improves coding and electronics skills."
+            },
+            {
+                "id": 2,
+                "benefit": "Develop efficient problem-solving and coding skills"
+            },
+            {
+                "id": 3,
+                "benefit": "Design projects that combine hardware and software components to collect and exchange data."
+            },
+            {
+                "id": 4,
+                "benefit": "Work with variables, data arrays and cloud data."
+            },
+            {
+                "id": 5,
+                "benefit": "Apply critical thinking and develop life skills for the careers of tomorrow."
+            }
+        ],
+        "enrolltitle": "Microbit Robotics Classes Beginner Course with Kit",
+        "enrollbatch": "Microbit kit",
+        "enrollclass": "15 online classes with live teacher"
+    },
+    {
+        "id": 2,
+        "slug": "arduino-robotics-classes-beginner-course",
+        "herotitle": "Arduino Robotics Classes Beginner Course",
+        "featureage": "10+ years",
+        "featurebatchsize": "1:1 classes",
+        "featureclasses": "12 classes",
+        "learncoursescard": [
+            {
+                "id": 1,
+                "title": "What is Arduino robotics kit?",
+                "desc": "Open-source electronic prototyping platform which enables users to create interactive electronic objects."
+            },
+            {
+                "id": 2,
+                "title": "Learn while having fun",
+                "desc": "Children & adults alike enjoys building things  while using easy to use kit which make them learn 21st century skills"
+            },
+            {
+                "id": 3,
+                "title": "STEAM based learning",
+                "desc": "We provide hands-on Science, Technology, Engineering, Arts and Mathematics solutions with lessons that are adaptable to students across all ages and abilities."
+            },
+            {
+                "id": 4,
+                "title": "Creative thinking",
+                "desc": "Hands on learning experience that promotes children’s creative thinking, teamwork, and problem-solving skills."
+            }
+        ],
+        "learnsyllabus": [
+            {
+                "id": 1,
+                "title": "Day 1: Introduction to Electricity"
+            },
+            {
+                "id": 2,
+                "title": "Day 2: Understanding Current, Voltage, and Circuit"
+            },
+            {
+                "id": 3,
+                "title": "Day 3: What Is a Breadboard?"
+            },
+            {
+                "id": 4,
+                "title": "Day 4: Input and Output Components"
+            },
+            {
+                "id": 5,
+                "title": "Day 5: Activity: LED Glow Circuit"
+            },
+            {
+                "id": 6,
+                "title": "Day 6: Understanding Resistors"
+            },
+            {
+                "id": 7,
+                "title": "Day 7: Ohm’s Law"
+            },
+            {
+                "id": 8,
+                "title": "Day 8: Activity: LED/Buzzer Circuit Using Resistor"
+            },
+            {
+                "id": 9,
+                "title": "Day 9: Series and Parallel Connections"
+            },
+            {
+                "id": 10,
+                "title": "Day 10: Activity: LED Using Push Button"
+            },
+            {
+                "id": 11,
+                "title": "Day 11: Conductors and Insulators"
+            },
+            {
+                "id": 12,
+                "title": "Day 12: Understanding Transistors"
+            },
+            {
+                "id": 13,
+                "title": "Day 13: Activity: Body Is a Good Conductor of Electricity"
+            },
+            {
+                "id": 14,
+                "title": "Day 14: Activity: Transistor as an Amplifier"
+            },
+            {
+                "id": 15,
+                "title": "Day 15: Introduction to Light Dependent Resistor (LDR)"
+            },
+            {
+                "id": 16,
+                "title": "Day 16: Activity: Street Light Circuit"
+            },
+            {
+                "id": 17,
+                "title": "Day 17: 555 Timer Integrated Circuit"
+            },
+            {
+                "id": 18,
+                "title": "Day 18: Understanding Capacitors"
+            },
+            {
+                "id": 19,
+                "title": "Day 19: Activity: LED Blink"
+            },
+            {
+                "id": 20,
+                "title": "Day 20: Seven Segment Display"
+            },
+            {
+                "id": 21,
+                "title": "Day 21: 4026 IC Pin Configuration"
+            },
+            {
+                "id": 22,
+                "title": "Day 22: Activity: 7-Segment Display Circuit"
+            },
+            {
+                "id": 23,
+                "title": "Day 23: BT 66 Musical Generator Integrated Circuit"
+            },
+            {
+                "id": 24,
+                "title": "Day 24: Introduction to Arduino Microcontroller"
+            },
+            {
+                "id": 25,
+                "title": "Day 25: Arduino IDE Software Introduction"
+            },
+            {
+                "id": 26,
+                "title": "Day 26: While and For Loop"
+            },
+            {
+                "id": 27,
+                "title": "Day 27: Understanding Potentiometer"
+            },
+            {
+                "id": 28,
+                "title": "Day 28: Activity: LED Glow-Fade-Blink Circuit"
+            }
+        ],
+        "learnbenefits": [
+            {
+                "id": 1,
+                "benefit": "Improves coding and electronics skills"
+            },
+            {
+                "id": 2,
+                "benefit": "Develop efficient problem-solving and coding skills"
+            },
+            {
+                "id": 3,
+                "benefit": "Design projects that combine hardware and software components to collect and exchange data"
+            },
+            {
+                "id": 4,
+                "benefit": "Work with electronics, sensors, and get introduced to the world of electronic robotics"
+            },
+            {
+                "id": 5,
+                "benefit": "Apply critical thinking and develop life skills for the careers of tomorrow"
+            }
+        ],
+        "enrolltitle": "Arduino Robotics Classes Beginner Course",
+        "enrollbatch": "Arduino Robotics",
+        "enrollclass": "12 online classes with live teacher"
+    },
+    {
+        "id": 3,
+        "slug": "internet-of-thingsiot-with-arduino-beginner-level-course",
+        "herotitle": "Internet of things(IoT) with Arduino Beginner level Course",
+        "featureage": "10+ years",
+        "featurebatchsize": "1:1 classes",
+        "featureclasses": "12 classes",
+        "learncoursescard": [
+            {
+                "id": 1,
+                "title": "What is Arduino robotics kit?",
+                "desc": "Open-source electronic prototyping platform which enables users to create interactive electronic objects."
+            },
+            {
+                "id": 2,
+                "title": "Learn while having fun",
+                "desc": "Children & adults alike enjoys building things  while using easy to use kit which make them learn 21st century skills"
+            },
+            {
+                "id": 3,
+                "title": "STEAM based learning",
+                "desc": "We provide hands-on Science, Technology, Engineering, Arts and Mathematics solutions with lessons that are adaptable to students across all ages and abilities."
+            },
+            {
+                "id": 4,
+                "title": "Creative thinking",
+                "desc": "Hands on learning experience that promotes children’s creative thinking, teamwork, and problem-solving skills."
+            }
+        ],
+        "learnsyllabus": [
+            {
+                "id": 1,
+                "title": "Day 1: What is IoT? & Meet ESP32"
+            },
+            {
+                "id": 2,
+                "title": "Day 2: Exploring Sensors"
+            },
+            {
+                "id": 3,
+                "title": "Day 3: Push Button Magic!"
+            },
+            {
+                "id": 4,
+                "title": "Day 4: Talking to ESP32!"
+            },
+            {
+                "id": 5,
+                "title": "Day 5: ESP32 & Wi-Fi"
+            },
+            {
+                "id": 6,
+                "title": "Day 6: Assessment"
+            },
+            {
+                "id": 7,
+                "title": "Day 7: Control with Blynk"
+            },
+            {
+                "id": 8,
+                "title": "Day 8: Build a Web Control Panel"
+            },
+            {
+                "id": 9,
+                "title": "Day 9: Smart Night Lamp"
+            },
+            {
+                "id": 10,
+                "title": "Day 10: Motion Alert!"
+            },
+            {
+                "id": 11,
+                "title": "Day 11: Save Data on Google Sheets"
+            },
+            {
+                "id": 12,
+                "title": "Day 12: Final Assessment (Smart Home Starter)"
+            }
+        ],
+        "learnbenefits": [
+            {
+                "id": 1,
+                "benefit": "Arduino improves coding and electronics skills."
+            },
+            {
+                "id": 2,
+                "benefit": "Develop efficient problem-solving and coding skills"
+            },
+            {
+                "id": 3,
+                "benefit": "Design projects that combine hardware and software components to collect and exchange data"
+            },
+            {
+                "id": 4,
+                "benefit": "Work with electronics, sensors, and get introduced to the world of electronic robotics"
+            },
+            {
+                "id": 5,
+                "benefit": "Apply critical thinking and develop life skills for the careers of tomorrow"
+            }
+        ],
+        "enrolltitle": "Internet of things(IoT) with Arduino Beginner level Course",
+        "enrollbatch": "Internet of things(IoT)",
+        "enrollclass": "12 online classes with live teacher"
+    },
+    {
+        "id": 4,
+        "slug": "internet-of-thingsiot-with-arduino-intermidiate-level-course",
+        "herotitle": "Internet of things(IoT) with Arduino Intermediate level Course",
+        "featureage": "10+ years",
+        "featurebatchsize": "1:1 classes",
+        "featureclasses": "12 classes",
+        "learncoursescard": [
+            {
+                "id": 1,
+                "title": "What is Arduino robotics kit?",
+                "desc": "Open-source electronic prototyping platform which enables users to create interactive electronic objects."
+            },
+            {
+                "id": 2,
+                "title": "Learn while having fun",
+                "desc": "Children & adults alike enjoys building things  while using easy to use kit which make them learn 21st century skills"
+            },
+            {
+                "id": 3,
+                "title": "STEAM based learning",
+                "desc": "We provide hands-on Science, Technology, Engineering, Arts and Mathematics solutions with lessons that are adaptable to students across all ages and abilities."
+            },
+            {
+                "id": 4,
+                "title": "Creative thinking",
+                "desc": "Hands on learning experience that promotes children’s creative thinking, teamwork, and problem-solving skills."
+            }
+        ],
+        "learnsyllabus": [
+            {
+                "id": 1,
+                "title": "Day 1: OLED Display & ESP32"
+            },
+            {
+                "id": 2,
+                "title": "Day 2: DIY Weather Station"
+            },
+            {
+                "id": 3,
+                "title": "Day 3: Move with Motors!"
+            },
+            {
+                "id": 4,
+                "title": "Day 4: Smart Irrigation System"
+            },
+            {
+                "id": 5,
+                "title": "Day 5: Google Assistant Magic"
+            },
+            {
+                "id": 6,
+                "title": "Day 6: Assessment"
+            },
+            {
+                "id": 7,
+                "title": "Day 7: Gesture-Controlled Device"
+            },
+            {
+                "id": 8,
+                "title": "Day 8: RFID-Based Door Lock"
+            },
+            {
+                "id": 9,
+                "title": "Day 9: SMS Alerts with ESP32"
+            },
+            {
+                "id": 10,
+                "title": "Day 10: Scheduled Events with RTC"
+            },
+            {
+                "id": 11,
+                "title": "Day 11: Home Automation Web App"
+            },
+            {
+                "id": 12,
+                "title": "Day 12: Final Assessment (Smart Doorbell)"
+            }
+        ],
+        "learnbenefits": [
+            {
+                "id": 1,
+                "benefit": "Arduino improves coding and electronics skills."
+            },
+            {
+                "id": 2,
+                "benefit": "Develop efficient problem-solving and coding skills"
+            },
+            {
+                "id": 3,
+                "benefit": "Design projects that combine hardware and software components to collect and exchange data"
+            },
+            {
+                "id": 4,
+                "benefit": "Work with electronics, sensors, and get introduced to the world of electronic robotics"
+            },
+            {
+                "id": 5,
+                "benefit": "Apply critical thinking and develop life skills for the careers of tomorrow"
+            }
+        ],
+        "enrolltitle": "Internet of things(IoT) with Arduino Intermidiate level Course",
+        "enrollbatch": "Internet of things(IoT)",
+        "enrollclass": "12 online classes with live teacher"
+    }
+]

@@ -2,15 +2,16 @@
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ProductType } from "@/types/ProductTypes";
 
-export default function CourseEnrollCardDemo() {
+export default function CourseEnrollCardDemo({enrolltitle, enrollclass, enrollbatch}:ProductType) {
   return (
     <div className="w-full max-w-lg mx-auto">
       <Card className="bg-white shadow-lg rounded-lg overflow-hidden">
         {/* Header */}
         <div className="bg-gradient-to-r from-orange-400 to-orange-500 text-white p-3 rounded-t-lg">
           <h2 className="font-medium text-lg">
-            MIT APP Inventor Mobile App Development Course
+            {enrolltitle}
           </h2>
         </div>
 
@@ -22,11 +23,11 @@ export default function CourseEnrollCardDemo() {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <span className="text-black mr-2 mt-1 text-2xl font-bold">•</span>
-                <span>36 online classes with live teacher</span>
+                <span>{enrollclass}</span>
               </li>
               <li className="flex items-center">
                 <span className="text-black mr-2 mt-1 text-2xl font-bold">•</span>
-                <span>1:1 classes</span>
+                <span>{enrollbatch}</span>
               </li>
             </ul>
           </div>

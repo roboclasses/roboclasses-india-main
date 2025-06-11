@@ -1,8 +1,9 @@
 import { DollarSign, Users, BookOpen, Video, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { ProductType } from "@/types/ProductTypes"
 
-export default function PriceCardDemo() {
+export default function PriceCardDemo({featureage, featurebatchsize, featureclasses}:ProductType) {
   return (
     <Card className="w-full bg-white shadow-none border-0">
       <CardContent className="p-6">
@@ -24,7 +25,7 @@ export default function PriceCardDemo() {
             <Users className="w-4 h-4 text-orange-500" />
             <div>
               <p className="text-sm text-gray-500 font-medium">Age</p>
-              <p className="text-lg font-semibold text-gray-900">12 - 18 years</p>
+              <p className="text-lg font-semibold text-gray-900">{featureage}</p>
             </div>
           </div>
 
@@ -42,7 +43,7 @@ export default function PriceCardDemo() {
             <Users className="w-4 h-4 text-orange-500" />
             <div>
               <p className="text-sm text-gray-500 font-medium">Batch size</p>
-              <p className="text-lg font-semibold text-gray-900">1 Kid</p>
+              <p className="text-lg font-semibold text-gray-900">{featurebatchsize}</p>
             </div>
           </div>
 
@@ -51,7 +52,7 @@ export default function PriceCardDemo() {
             <BookOpen className="w-4 h-4 text-orange-500" />
             <div>
               <p className="text-sm text-gray-500 font-medium">Classes</p>
-              <p className="text-lg font-semibold text-gray-900">30</p>
+              <p className="text-lg font-semibold text-gray-900">{featureclasses}</p>
             </div>
           </div>
 
