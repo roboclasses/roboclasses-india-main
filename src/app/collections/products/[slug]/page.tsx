@@ -1,3 +1,11 @@
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Card } from "@/components/ui/card";
+
 import CarouselFe from "@/components/CarouselFe";
 import Enroll from "@/components/collections/products/Enroll";
 import Feature from "@/components/collections/products/Feature";
@@ -5,24 +13,19 @@ import HeroSection from "@/components/collections/products/Hero";
 import Level from "@/components/collections/products/Level";
 import ParentsCorner from "@/components/ParentsCorner";
 import Faq from "@/components/robotics/Faq";
-import React from "react";
+
 import Data from "@/data/ProductData.json";
-import { notFound } from "next/navigation";
 import { Product } from "@/types/ProductTypes";
-import { TbBookFilled } from "react-icons/tb";
-import { Card } from "@/components/ui/card";
 import { DialogDemo } from "@/demo/DialogDemo";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+
+import React from "react";
+import { notFound } from "next/navigation";
+import { TbBookFilled } from "react-icons/tb";
 import { FaCertificate } from "react-icons/fa";
 
-interface ParamsType {params: { slug: string }}
+interface Params {params: { slug: string }}
 
-const page = ({ params }: ParamsType) => {
+const page = ({ params }: Params) => {
   const product: Product | undefined = Data.find((item) => item.slug === params.slug);
 
   // Handle edge cases
