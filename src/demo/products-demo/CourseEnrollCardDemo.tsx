@@ -53,7 +53,7 @@ export default function CourseEnrollCardDemo({enrolltitle, enrollclass, enrollba
           </div> */}
 
           <Button className="w-full bg-cyan-500 hover:bg-cyan-600 text-white rounded-full focus:bg-accent-foreground focus:text-cyan-500">
-            Enroll Now
+            Register for a Trial Class
           </Button>
         </div>
       </Card>

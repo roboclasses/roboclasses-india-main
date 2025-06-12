@@ -59,7 +59,7 @@ const page = ({ params }: Params) => {
               className="flex flex-col flex-wrap gap-6 items-center"
               style={{ letterSpacing: "0.05em" }}
             >
-              <p className="font-bold lg:text-xl text-orange-700 flex gap-2 items-center">
+              <p className="font-bold lg:text-xl text-orange-500 flex gap-2 items-center">
                 <TbBookFilled size={20} />
                 Learn
               </p>
@@ -98,9 +98,10 @@ const page = ({ params }: Params) => {
               collapsible
               className="w-full font-bold p-5"
               style={{ letterSpacing: "0.05em" }}
+              defaultValue="item-1"
             >
               <AccordionItem value="item-1">
-                <AccordionTrigger className="lg:text-2xl text-xl font-extrabold">
+                <AccordionTrigger className="lg:text-2xl text-xl font-extrabold" >
                   Syllabus
                 </AccordionTrigger>
                 <AccordionContent className="text-accent space-y-2">
@@ -118,7 +119,7 @@ const page = ({ params }: Params) => {
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 w-[1100px]">
             {/* Benefits */}
             <div className="space-y-6">
-              <h1 className="flex items-center gap-2 text-orange-700 font-bold lg:text-xl text-lg">
+              <h1 className="flex items-center gap-2 text-orange-500 font-bold lg:text-xl text-lg">
                 <TbBookFilled size={20} /> Benefits
               </h1>
               <div
@@ -138,7 +139,7 @@ const page = ({ params }: Params) => {
 
             {/* Certification */}
             <div className="space-y-6 text-balance">
-              <h1 className="flex items-center gap-2 text-orange-700 font-bold lg:text-xl text-lg">
+              <h1 className="flex items-center gap-2 text-orange-500 font-bold lg:text-xl text-lg">
                 <FaCertificate /> Certification
               </h1>
               <p className="font-medium ml-6">
