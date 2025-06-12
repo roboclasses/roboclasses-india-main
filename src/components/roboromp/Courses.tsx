@@ -3,13 +3,12 @@ import React from "react";
 
 import Data from "../../data/roboticsData.json";
 import CodeData from "../../data/programmingData.json";
-import StemData from "../../data/stemData.json";
 import { CardDemo } from "@/demo/CardDemo";
 
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 
 const Courses = () => {
-  const allData = [...Data, ...CodeData, ...StemData];
+  const allData = [...Data, ...CodeData];
 
   return (
     <div className="flex flex-col px-52 gap-6 py-20">

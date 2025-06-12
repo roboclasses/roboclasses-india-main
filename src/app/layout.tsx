@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import { Open_Sans, Comic_Neue } from "next/font/google";
 
@@ -8,7 +7,7 @@ import { ThemeProvider } from "@/themes/ThemeProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster";
-
+import GoogleAnalytics from "@/components/common/GoogleAnalytics";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -26,9 +25,9 @@ const comicNeue = Comic_Neue({
 
 export const metadata: Metadata = {
   title: "Coding and Robotics Courses for Kids",
-  description: "Unlock your child potential with ROBO CLASSES - Coding and Robotics Courses for Kids.",
+  description:
+    "Unlock your child potential with ROBO CLASSES - Coding and Robotics Courses for Kids.",
 };
-
 
 export default function RootLayout({
   children,
@@ -37,7 +36,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${comicNeue.variable} antialiased overflow-x-hidden`}>
+      <head>
+       <GoogleAnalytics />
+      </head>
+      <body
+        className={`${openSans.variable} ${comicNeue.variable} antialiased overflow-x-hidden`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
