@@ -115,7 +115,7 @@ export function CardDemo({
         <Link href={validHref}>
           <Button
             variant="outline"
-            className="px-6 h-12 bg-muted hover:bg-muted/50 focus:bg-muted/100 dark:hover:bg-black"
+            className="px-6 h-12 bg-muted/50 hover:bg-muted focus:bg-muted/100 dark:hover:bg-black"
           >
             Course Details
           </Button>
