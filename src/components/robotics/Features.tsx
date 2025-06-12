@@ -55,7 +55,7 @@ const Features = () => {
               key={index}
               className="pl-1 md:basis-1/2 lg:basis-1/3"
             >
-              <CardDemo {...item} href={`/collections/${item.id}`} />
+              <CardDemo {...item} href={`/courses/${item.slug}`} />
             </CarouselItem>
           ))}
         </CarouselContent>

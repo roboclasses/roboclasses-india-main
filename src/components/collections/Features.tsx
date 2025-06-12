@@ -72,7 +72,7 @@ const Features = () => {
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 ">
           {filteredData.map((item, index) => (
             <div key={index}>
-              <CardDemo {...item} href={`/collections/${item.id}`} />
+              <CardDemo {...item} href={`/courses/${item.slug}`} />
             </div>
           ))}
         </div>

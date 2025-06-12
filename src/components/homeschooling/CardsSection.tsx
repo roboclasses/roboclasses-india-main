@@ -91,7 +91,7 @@ const CardsSection = () => {
               className="lg:pl-1 md:basis-1/2 lg:basis-1/3 flex items-center justify-center"
             >
               <div>
-                <CardDemo {...item} href={`/collections/products/${item.slug}`} />
+                <CardDemo {...item} href={`/courses/${item.slug}`} />
               </div>
             </CarouselItem>
           ))}
@@ -117,7 +117,7 @@ const CardsSection = () => {
               className="lg:pl-1 md:basis-1/2 lg:basis-1/3 flex items-center justify-center"
             >
               <div>
-                <CardDemo {...item} href={`/collections/${item.slug}`} />
+                <CardDemo {...item} href={`/courses/${item.slug}`} />
               </div>
             </CarouselItem>
           ))}
@@ -143,7 +143,7 @@ const CardsSection = () => {
               className="pl-1 md:basis-1/2 lg:basis-1/3 flex items-center justify-center"
             >
               <div>
-                <CardDemo {...item} href={`/collections/${item.slug}`} />
+                <CardDemo {...item} href={`/courses/${item.slug}`} />
               </div>
             </CarouselItem>
           ))}
