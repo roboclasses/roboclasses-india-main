@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { DHRUV_YT, SUDAL_YT, TINUK_YT, VIVVAN_YT } from "@/constants/videos";
 
-export function YoutubeSlides() {
+const YoutubeSlides=()=> {
   const Videos = [
     { id: 1, src: VIVVAN_YT, title: "Carnival Robotics project by Vivaan" },
     { id: 2, src: DHRUV_YT, title: "Robotics Car By Dhruv" },
@@ -11,9 +11,10 @@ export function YoutubeSlides() {
   ];
 
   return (
-    <div className="grid lg:grid-cols-4 grid-cols-2 justify-center items-center gap-5 py-6">
+    <div className="grid lg:grid-cols-2 grid-cols-2 justify-center items-center gap-6 py-10">
       {Videos.map((video) => (
-        <div className="bg-white rounded-lg shadow-md lg:p-6" key={video.title}>
+        <div className="bg-white rounded-lg shadow-md 
+        p-2" key={video.title}>
           <iframe
             src={video.src}
             allowFullScreen
@@ -21,10 +22,12 @@ export function YoutubeSlides() {
             sandbox="allow-popups allow-scripts allow-same-origin"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             loading="lazy"
-            className="lg:w-full w-[150px] h-40 rounded"
+            className="lg:w-[600px] w-[150px] lg:h-64 h-40 rounded"
           />
         </div>
       ))}
     </div>
   );
 }
+
+export default YoutubeSlides;

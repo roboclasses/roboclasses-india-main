@@ -1,10 +1,9 @@
 "use client";
 
+import React from "react";
 import { YOUTUBE } from "@/constants/links";
 import CyanButton from "@/demo/button-demo/CyanButton";
-import { YoutubeSlides } from "@/demo/YoutubeSlides";
-
-import React from "react";
+import YoutubeSlides from "@/demo/YoutubeSlides";
 
 const CarouselFe = () => {
   const handleRoute = () => {
