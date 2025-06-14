@@ -8,7 +8,7 @@ import TrendingCarouselFe from '@/components/TrendingCarouselFe'
 
 const page = () => {
   return (
-    <div className='px-16 py-8 shadow-[inset_0_4px_8px_rgba(0,0,0,0.1)] bg-slate-100 space-y-8'>
+    <div className='px-16 py-8  bg-white space-y-8'>
       <HeroSection />
       <TrendingCarouselFe />
       <CarouselFe />
