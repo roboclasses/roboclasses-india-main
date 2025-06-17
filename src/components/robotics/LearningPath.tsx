@@ -56,7 +56,7 @@ const LearningPath = () => {
               />
               <div className="flex flex-col items-center gap-2 absolute bottom-12">
                 <strong className="font-extrabold">{item.age}</strong>
-                <p className="text-sm text-center">{item.description}</p>
+                <p className="lg:text-sm text-xs text-center">{item.description}</p>
               </div>
             </CardContent>
           </Card>
@@ -64,9 +64,6 @@ const LearningPath = () => {
         <div className="absolute bottom-2 left-20 lg:flex hidden">
           <ProgressBarDemo />
         </div>
-      </div>
-      <div>
-        <WhatsAppButton />
       </div>
     </div>
   );
