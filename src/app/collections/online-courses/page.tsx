@@ -11,7 +11,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className='px-16 py-8  bg-white space-y-8'>
+    <div className='lg:px-16 lg:py-8 px-4 py-2 bg-white space-y-8 w-screen min-h-dvh'>
       <HeroSection title="Online Courses" />
       <Features />
       <RightCourse />
