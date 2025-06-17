@@ -80,8 +80,8 @@ export function DialogDemo() {
             className="w-full flex flex-col gap-4 items-center h-auto space-y-2 p-10 rounded-xl "
           >
             <DialogHeader className="flex flex-col items-center justify-center gap-2">
-              <DialogTitle className="lg:text-4xl text-lg">Free Class Form</DialogTitle>
-              <Label className="lg:text-sm text-xs">Please enter your details! Submit when done</Label>
+              <DialogTitle className="lg:text-4xl text-2xl">Free Class Form</DialogTitle>
+              <Label className="lg:text-sm text-xs" style={{letterSpacing: '0.05em'}}>Please enter your actual details! Submit when done.</Label>
             </DialogHeader>
 
             {/* Child Full Name and Age */}
@@ -101,7 +101,7 @@ export function DialogDemo() {
                         className="w-96 h-14 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
                       />
                     </FormControl>
-                    <FormDescription>This field is for child full name.</FormDescription>
+                    <FormDescription>This field is for child full name</FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -122,7 +122,7 @@ export function DialogDemo() {
                         className="w-96 h-14 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
                       />
                     </FormControl>
-                    <FormDescription>This field is for child age.</FormDescription>
+                    <FormDescription>This field is for child age</FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -146,7 +146,7 @@ export function DialogDemo() {
                         className="w-96 h-14 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
                       />
                     </FormControl>
-                    <FormDescription>This field is for child or parent email address.</FormDescription>
+                    <FormDescription>This field is for child or parent email address</FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -165,7 +165,7 @@ export function DialogDemo() {
                         inputProps={{ ref: field.ref, required: true }}                    
                       />
                     </FormControl>
-                    <FormDescription>This field is for child or parent mobile.</FormDescription>
+                    <FormDescription>This field is for child or parent mobile</FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
