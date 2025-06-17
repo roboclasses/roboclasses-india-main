@@ -14,7 +14,7 @@ import MobileNavSheet from "./MobileNav";
 const NavBar = () => {
 
   return (
-    <nav className="flex lg:justify-center justify-between items-center lg:gap-40 px-3 py-6 shadow-md rounded-b-3xl">
+    <nav className="flex lg:justify-center justify-between items-center lg:gap-40 px-2 py-4 shadow-md rounded-b-3xl">
        <div className="flex items-center gap-6">
         {/* Hamburger menu (Hidden on desktop) */}
         <div className="flex lg:hidden">

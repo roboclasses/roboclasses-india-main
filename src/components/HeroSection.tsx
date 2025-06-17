@@ -10,9 +10,21 @@ import { FaCirclePlay, FaDiamond } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Data from "@/data/parentsData.json";
+import AnimatedCourseText from "./AnimatedCourseText";
 
 const HeroSection = () => {
   const pathname = usePathname(); // This detects route changes
+
+  const CourseTitles = [
+    "Future",
+    "Microbit",
+    "Arduino",
+    "IOT",
+    "Python",
+    "Scratch",
+    "AI",
+    "Data Science",
+  ];
 
   const stats = [
     { title: "STEM", desc: "ACCREDITED PROGRAM" },
@@ -76,9 +88,10 @@ const HeroSection = () => {
             <p>thinking and skills</p>
             <div className="flex gap-1 items-center">
               <p>of the</p>
-              <p className="text-transparent bg-clip-text bg-custom-gradient flex items-end gap-1">
-                future <FaDiamond size={14} className="text-lime-400/40" />
-              </p>
+              <div className="flex gap-1 items-end">
+                <AnimatedCourseText titles={CourseTitles} />
+                <FaDiamond size={20} className="text-lime-400/40 ml-1" />
+              </div>
             </div>
           </div>
           <p className="text-accent">Coding and Robotics courses for kids!</p>
@@ -115,7 +128,6 @@ const HeroSection = () => {
 
       {/* Stats Section */}
       <div className="lg:flex hidden flex-row lg:gap-56 gap-5 justify-center lg:py-10 py-5 bg-custom-gradient relative rounded-b-3xl">
-
         <div className="lg:flex hidden absolute top-0 right-0 w-24 h-24 bg-gradient-to-l from-green-200/40 to-transparent rounded-bl-full"></div>
         <div className="lg:flex hidden absolute bottom-0 left-0 w-24 h-24 bg-gray-200/20 rounded-tr-full"></div>
 
