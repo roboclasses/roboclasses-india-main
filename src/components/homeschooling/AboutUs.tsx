@@ -17,7 +17,7 @@ const AboutUs = () => {
         </p>
       </div>
       <div className="flex flex-col flex-wrap gap-6 items-center" style={{ letterSpacing: "0.05em" }} >
-        <p className="font-bold lg:text-xl text-orange-700">Why study with us?</p>
+        <p className="font-bold lg:text-xl text-orange-500">Why study with us?</p>
 
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
           {AboutHomeSchooling.map((about) => (
