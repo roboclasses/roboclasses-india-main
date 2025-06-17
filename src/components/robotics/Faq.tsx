@@ -22,14 +22,13 @@ const Faq = () => {
           Additional information
         </p>
       </div>
-      <Carousel className="max-w-7xl -space-x-3">
-        <CarouselContent className="-ml-1 pr-72">
+      <Carousel className="lg:max-w-7xl max-w-sm -space-x-3">
+        <CarouselContent className="-ml-1 lg:pr-72">
           {FaqData.map((item) => (
-            <CarouselItem
-              key={item.id}
-              className="pl-1 md:basis-1/2 lg:basis-1/3"
-            >
+            <CarouselItem key={item.id} className="pl-1 md:basis-1/2 lg:basis-1/3 flex items-center justify-center">
+              <div>
               <FaqCard {...item} />
+              </div>
             </CarouselItem>
           ))}
         </CarouselContent>

@@ -11,13 +11,7 @@ const Features = () => {
   const [isFilter, setIsFilter] = useState(false);
   const [selectedAge, setSelectedAge] = useState<string>("All ages");
 
-  const ageGroups = [
-    "All ages",
-    "4-6 years",
-    "6-9 years",
-    "9-13 years",
-    "13+ years",
-  ];
+  const ageGroups = ["All ages", "7-10 years", "10-13 years", "13+ years"];
 
   const handleAgeFilter = (age: string) => {
     setSelectedAge(age);
@@ -30,36 +24,49 @@ const Features = () => {
     : Data;
 
   return (
-    <div className="flex flex-col px-52 gap-6 py-20">
+    <div className="flex flex-col lg:px-52 gap-10 lg:py-20 py-10">
       <div className="flex flex-col items-center">
-        <p className="text-4xl font-extrabold mb-4">Robotics Courses</p>
-        <p className="text-sm font-bold text-gray-500" style={{ letterSpacing: "0.09em" }}>
+        <p className="lg:text-5xl text-2xl font-extrabold bg-clip-text text-transparent bg-custom-gradient lg:mb-6 mb-2">
+          Robotics Courses
+        </p>
+        <p className="lg:text-base text-xs" style={{ letterSpacing: "0.09em" }}>
           See age appropriate courses
         </p>
         <div className="p-4 flex justity-center items-center">
-          <div className="bg-custom-gradient dark:bg-slate-300 p-2 rounded-[30px] font-medium flex gap-2 md:gap-6 shadow-md">
+          <div className="bg-custom-gradient p-2 rounded-full font-medium flex gap-2 md:gap-6 shadow-md">
             {ageGroups.map((age) => (
-              <button key={age} onClick={() => handleAgeFilter(age)} className={`text-xs font-semibold md:text-sm p-2 md:px-4 rounded-full cursor-pointer 
-                transition-colors duration-300 ease-in-out ${ selectedAge === age ? "bg-white text-[#16A34A]" : "text-white"}`} >
+              <button
+                key={age}
+                onClick={() => handleAgeFilter(age)}
+                className={`text-xs font-bold md:text-sm p-2 md:px-4 rounded-full cursor-pointer 
+                transition-colors duration-300 ease-in-out ${
+                  selectedAge === age ? "bg-white text-[#16A34A]" : "text-white"
+                }`}
+              >
                 {age}
               </button>
             ))}
           </div>
         </div>
       </div>
-      <p className="font-extrabold text-2xl px-16">Robotics Courses</p>
-      <Carousel className="w-full cursor-grab">
-        <CarouselContent className="-ml-1 ">
-          {filteredAge.map((item, index) => (
-            <CarouselItem
-              key={index}
-              className="pl-1 md:basis-1/2 lg:basis-1/3"
-            >
-              <CardDemo {...item} href={`/courses/${item.slug}`} />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-      </Carousel>
+
+      <React.Fragment>
+        <p className="font-extrabold lg:text-2xl">Robotics Courses</p>
+        <Carousel className="w-full cursor-grab">
+          <CarouselContent className="lg:-ml-1 ">
+            {filteredAge.map((item, index) => (
+              <CarouselItem
+                key={index}
+                className="lg:pl-1 md:basis-1/2 lg:basis-1/3 flex items-center justify-center"
+              >
+                <div>
+                  <CardDemo {...item} href={`/courses/${item.slug}`} />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </React.Fragment>
     </div>
   );
 };

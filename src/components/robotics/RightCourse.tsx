@@ -16,7 +16,7 @@ const RightCourse = () => {
           <div className="flex flex-col items-center gap-6 text-white">
             <h1 className="lg:font-extrabold font-bold lg:text-5xl text-2xl text-center">Which are the latest, in demand course?</h1>
             <ol
-              className="list-disc list-inside ml-6 space-y-2"
+              className="list-disc list-inside ml-6 space-y-2 lg:text-base text-sm"
               style={{ letterSpacing: "0.05em" }}
             >
               <li>
@@ -25,7 +25,7 @@ const RightCourse = () => {
               <li>How will my child use what he has learnt and how will it help him?</li>
               <li>Speak to our specialist who can guide you and help you decide.</li>
             </ol>
-            <div className="space-y-1" style={{ letterSpacing: "0.05em" }}>
+            <div className="space-y-1 lg:text-base text-sm" style={{ letterSpacing: "0.05em" }}>
               <p>
                 Speak to our specialist who can guide you and help you decide.
               </p>
