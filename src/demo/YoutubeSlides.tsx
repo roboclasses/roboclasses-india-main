@@ -13,8 +13,7 @@ const YoutubeSlides=()=> {
   return (
     <div className="grid lg:grid-cols-2 grid-cols-2 justify-center items-center gap-6 py-10">
       {Videos.map((video) => (
-        <div className="bg-white rounded-lg shadow-md 
-        p-2" key={video.title}>
+        <div className="lg:bg-white rounded-lg lg:shadow-md p-2" key={video.title}>
           <iframe
             src={video.src}
             allowFullScreen
