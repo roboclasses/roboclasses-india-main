@@ -7,6 +7,7 @@ import { z } from "zod";
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormMessage,
@@ -20,6 +21,7 @@ import { handlePostEnquiry } from "@/app/services/actions/EnquiryFormAction";
 
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import CyanButton from "../button-demo/CyanButton";
 
 
 const FormSchema = z.object({
@@ -63,16 +65,17 @@ export function ContactForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-full flex flex-col justify-center items-center gap-8 border-t-8 border-orange-500 bg-white dark:bg-gray-800 dark:text-white h-auto space-y-2 p-10 rounded-lg shadow-2xl"
-      >
-        <div className="flex flex-col gap-2 items-center">
-          <p className="text-3xl font-bold">Any question / remarks ?</p>
-          <p className="text-sm font-bold text-gray-500">
+        className="lg:w-3/5 flex flex-col justify-center items-center gap-8 
+        border-t-8 border-orange-500 bg-white dark:bg-gray-800 dark:text-white h-auto space-y-2 p-10 rounded-lg shadow-2xl">
+
+        <div className="flex flex-col gap-2 items-center text-center">
+          <p className="lg:text-3xl text-xl font-bold">Any question / remarks ?</p>
+          <p className="lg:text-sm text-xs font-bold text-gray-500">
             Write us a line and we will get in touch
           </p>
         </div>
-        <div className="flex flex-col gap-4 items-center dark:text-black">
 
+        <div className="flex flex-col gap-4 items-center dark:text-black">
           {/* Student Name */}
           <FormField
             control={form.control}
@@ -86,9 +89,10 @@ export function ContactForm() {
                     required
                     title="Student Name"
                     {...field}
-                    className="w-[930px] h-12 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                    className="lg:w-[450px] w-[280px] h-12 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
                   />
                 </FormControl>
+                <FormDescription>This field is for student name.</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -107,9 +111,10 @@ export function ContactForm() {
                     required
                     title="Student Age"
                     {...field}
-                    className="w-[930px] h-12 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                    className="lg:w-[450px] w-[280px] h-12 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
                   />
                 </FormControl>
+                <FormDescription>This field is for student age.</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -128,15 +133,17 @@ export function ContactForm() {
                     required
                     title="Email"
                     {...field}
-                    className="w-[930px] h-12 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                    className="lg:w-[450px] w-[280px] h-12 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
                   />
                 </FormControl>
+                <FormDescription>This field is for email address.</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
           />
 
           {/* Student Mobile */}
+          <div className="w-full max-w-md">
           <FormField
             control={form.control}
             name="mobile"
@@ -146,14 +153,16 @@ export function ContactForm() {
                   <PhoneInput
                     country={"in"}
                     {...field}
-                    inputStyle={{ width: "930px", height: "40px" }}
+                    inputStyle={{ width: "100%", height: "40px" }}
                     inputProps={{ ref: field.ref, required: true }}
                   />
                 </FormControl>
+                <FormDescription>This field is for mobile number.</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
           />
+          </div>
 
           {/* Description */}
           <FormField
@@ -166,22 +175,17 @@ export function ContactForm() {
                     {...field}
                     placeholder="Type your message here."
                     title="Description"
-                    className="w-[930px] h-[120px] rounded-lg focus:shadow-md border-2 border-sky-500 dark:bg-white dark:text-black"
+                    className="lg:w-[450px] w-[280px] h-[120px] rounded-lg focus:shadow-md border-2 border-cyan-500 dark:bg-white dark:text-black"
                   />
                 </FormControl>
+                <FormDescription>This text area is for additional message.</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
           />
         </div>
-        <div>
-          <ButtonDemo
-            name="Submit"
-            type="submit"
-            className="bg-sky-500 px-10 py-6 text-white rounded-full hover:bg-slate-300 hover:text-sky-500
-            transition-all duration-300 delay-75 ease-in-out"
-          />
-        </div>
+
+          <CyanButton name="Submit" type="submit"/>
       </form>
     </Form>
   );

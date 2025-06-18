@@ -3,7 +3,7 @@ import React from 'react'
 
 const Feature = () => {
   return (
-    <div className='p-20'>
+    <div className='lg:p-20 p-10 flex items-center justify-center'>
       <ContactForm />
     </div>
   )
