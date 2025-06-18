@@ -7,6 +7,7 @@ import { z } from "zod";
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormMessage,
@@ -77,15 +78,12 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
         onSubmit={form.handleSubmit(onSubmit)}
         className="lg:w-4/5 flex lg:flex-row flex-col border-t-8 border-orange-500
          gap-16 bg-white dark:bg-gray-800 dark:text-white items-center h-auto space-y-2 p-10 rounded-lg shadow-2xl">
-        <div>
           <Image src={src} alt="homeschooling-image" height={444} width={444} />
-        </div>
         <div className="flex flex-col gap-6 items-center">
           <p className="lg:text-4xl text-2xl font-bold text-center">{title}</p>
 
           {/* Name and Age */}
-          <div className="flex lg:flex-row flex-col items-center gap-4">
-
+          <div className="flex lg:flex-row flex-col items-center gap-4 w-full">
             <FormField
               control={form.control}
               name="name"
@@ -98,9 +96,10 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
                       required
                       title="Child Name"
                       {...field}
-                      className="lg:w-80 w-60 h-12 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                      className="w-80 h-12 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
                     />
                   </FormControl>
+                  <FormDescription>This field is for child name.</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -118,11 +117,12 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
                     <FormControl>
                       <SelectTrigger
                         title="Child Age"
-                        className="lg:w-80 w-60 h-12 border-2 border-sky-500 rounded-full "
+                        className="w-80 h-12 border-2 border-cyan-500 rounded-full "
                       >
                         <SelectValue placeholder="Select age group" />
                       </SelectTrigger>
                     </FormControl>
+                    <FormDescription>This field is for child age.</FormDescription>
                     <SelectContent>
                       <SelectItem value="6-9">6-9 Years</SelectItem>
                       <SelectItem value="9-12">9-12 Years</SelectItem>
@@ -133,12 +133,10 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
                 </FormItem>
               )}
             />
-           
           </div>
 
           {/* Email and Mobile */}
-          <div className="flex lg:flex-row flex-col items-center gap-4">
-
+          <div className="flex lg:flex-row flex-col items-center gap-4 w-full">
             <FormField
               control={form.control}
               name="email"
@@ -151,14 +149,16 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
                       required
                       title="Child Email"
                       {...field}
-                      className="lg:w-80 w-60 h-12 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                      className="w-80 h-12 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
                     />
                   </FormControl>
+                  <FormDescription>This field is for email address.</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
 
+            <div className="w-full max-w-md">
             <FormField
               control={form.control}
               name="mobile"
@@ -168,15 +168,16 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
                     <PhoneInput
                       country={"in"}
                       {...field}
-                      inputStyle={{ width: "320px", height: "40px" }}
+                      inputStyle={{ width: "100%", height: "40px" }}
                       inputProps={{ ref: field.ref, required: true }}
                     />
                   </FormControl>
+                  <FormDescription>This field is for mobile number.</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
-
+            </div>
           </div>
 
           <CyanButton name="Submit" type="submit" />

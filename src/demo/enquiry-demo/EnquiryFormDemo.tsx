@@ -21,6 +21,7 @@ import { handlePostEnquiry } from "@/app/services/actions/EnquiryFormAction";
 
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import CyanButton from "../button-demo/CyanButton";
 
 const FormSchema = z.object({
   name: z
@@ -236,14 +237,7 @@ export function EnquiryFormDemo() {
             )}
           />
         </div>
-        <div>
-          <ButtonDemo
-            name="Submit"
-            type="submit"
-            className="bg-cyan-500 px-10 py-6 text-white rounded-full hover:bg-cyan-600 focus:bg-accent-foreground focus:text-cyan-500
-            transition-colors duration-300 ease-in-out"
-          />
-        </div>
+          <CyanButton name="Submit" type="submit" />
       </form>
     </Form>
   );
