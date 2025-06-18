@@ -16,7 +16,7 @@ export function BreadcrumbDemo({ title }: alertTypes) {
       <BreadcrumbList className="text-gray-500">
         <BreadcrumbItem>
           <Link
-            className=" font-semibold transition-colors hover:text-foreground dark:hover:underline dark:text-black"
+            className="lg:font-semibold lg:text-base text-xs transition-colors hover:text-foreground dark:hover:underline dark:text-black"
             href="/"
           >
             Home
@@ -25,7 +25,7 @@ export function BreadcrumbDemo({ title }: alertTypes) {
         <BreadcrumbSeparator />
         <BreadcrumbItem>
           <Link
-            className="font-semibold transition-colors hover:text-foreground dark:hover:underline dark:text-black"
+            className="lg:font-semibold lg:text-base text-xs transition-colors hover:text-foreground dark:hover:underline dark:text-black"
             href={'/blogs/trending-blogs'}
           >
             Blogs
@@ -33,7 +33,7 @@ export function BreadcrumbDemo({ title }: alertTypes) {
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbPage className='font-semibold'>{title}</BreadcrumbPage>
+          <BreadcrumbPage className='font-semibold lg:text-base text-xs'>{title}</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
