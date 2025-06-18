@@ -3,10 +3,10 @@ import React from "react";
 
 const BulkEnquiry = () => {
   return (
-    <div className="flex flex-col gap-20 justify-center p-20">
-      <div className="flex flex-col gap-2 justify-center text-center ">
-        <p className="text-4xl font-extrabold">School/University (bulk) enquiry</p>
-      </div>
+    <div className="flex flex-col items-center lg:gap-20 gap-10 lg:p-20 p-10">
+      <p className="lg:text-4xl text-2xl font-extrabold text-center">
+        School/University (bulk) enquiry
+      </p>
       <EnquiryFormDemo />
     </div>
   );
