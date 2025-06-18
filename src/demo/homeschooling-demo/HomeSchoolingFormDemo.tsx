@@ -75,17 +75,16 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-4/5 flex flex-row border-t-8 border-orange-500
-         gap-16 bg-white dark:bg-gray-800 dark:text-white items-center h-auto space-y-2 p-10 rounded-lg shadow-2xl"
-      >
+        className="lg:w-4/5 flex lg:flex-row flex-col border-t-8 border-orange-500
+         gap-16 bg-white dark:bg-gray-800 dark:text-white items-center h-auto space-y-2 p-10 rounded-lg shadow-2xl">
         <div>
           <Image src={src} alt="homeschooling-image" height={444} width={444} />
         </div>
         <div className="flex flex-col gap-6 items-center">
-          <p className="text-4xl font-bold mb-5">{title}</p>
+          <p className="lg:text-4xl text-2xl font-bold text-center">{title}</p>
 
           {/* Name and Age */}
-          <div className="flex flex-row items-center gap-4">
+          <div className="flex lg:flex-row flex-col items-center gap-4">
 
             <FormField
               control={form.control}
@@ -99,7 +98,7 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
                       required
                       title="Child Name"
                       {...field}
-                      className="w-80 h-12 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                      className="lg:w-80 w-60 h-12 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
                     />
                   </FormControl>
                   <FormMessage />
@@ -119,7 +118,7 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
                     <FormControl>
                       <SelectTrigger
                         title="Child Age"
-                        className="w-80 h-12 border-2 border-sky-500 rounded-full "
+                        className="lg:w-80 w-60 h-12 border-2 border-sky-500 rounded-full "
                       >
                         <SelectValue placeholder="Select age group" />
                       </SelectTrigger>
@@ -138,7 +137,7 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
           </div>
 
           {/* Email and Mobile */}
-          <div className="flex flex-row items-center gap-4">
+          <div className="flex lg:flex-row flex-col items-center gap-4">
 
             <FormField
               control={form.control}
@@ -152,7 +151,7 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
                       required
                       title="Child Email"
                       {...field}
-                      className="w-80 h-12 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                      className="lg:w-80 w-60 h-12 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
                     />
                   </FormControl>
                   <FormMessage />

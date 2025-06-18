@@ -6,14 +6,12 @@ import RoundedButton from "../button-demo/RoundedButton";
 
 export function EnrollCardDemo({ title }: cardType) {
   return (
-    <Card className="w-[500px] h-[310px] bg-custom-gradient rounded-xl flex border-none">
-      <div className="p-4">
-        <CardHeader className="flex-wrap gap-10">
+    <Card className="w-[500px] lg:h-[300px] h-[340px] bg-[#F0F0F0]/50 rounded-xl flex flex-col items-center justify-center border-t-8 border-orange-500">
+        <CardHeader className="flex flex-col gap-4 items-center text-center">
           <div className="flex flex-col gap-4 text-wrap text-white">
-            <p className="text-4xl font-bold">{title}</p>
+            <p className="lg:text-4xl text-2xl font-bold" style={{ letterSpacing: "0.05em" }}>{title}</p>
             <div>
-              <p className="text-xl" style={{ letterSpacing: "0.05em" }} >Special discount on all courses for</p>
-              <p className="text-xl" style={{ letterSpacing: "0.05em" }} >home schooled students</p>
+              <p className="lg:text-xl text-sm" style={{ letterSpacing: "0.05em" }} >Special discount on all courses for home schooled students</p>
             </div>
           </div>
         </CardHeader>
@@ -23,7 +21,6 @@ export function EnrollCardDemo({ title }: cardType) {
             type="button"
           />
         </CardFooter>
-      </div>
     </Card>
   );
 }
