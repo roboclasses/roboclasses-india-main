@@ -1,4 +1,4 @@
-'use client' 
+"use client";
 
 import * as React from "react";
 import Link from "next/link";
@@ -48,23 +48,48 @@ const aboutUs: { title: string; href: string }[] = [
 export function NavigationMenuDemo() {
   const pathname = usePathname();
 
+  // Helper function to determine if a link is active
+  const isActive = (href: string) => href === pathname;
+
   return (
-    <NavigationMenu className="text-2xl text-slate-600 dark:text-slate-400"  style={{ letterSpacing: "0.05em", }}>
+    <NavigationMenu
+      className="text-2xl text-slate-600 dark:text-slate-400"
+      style={{ letterSpacing: "0.05em" }}
+    >
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
-            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),'font-bold', pathname ==='/' && 'text-cyan-500')}>
-             HOME
+            <NavigationMenuLink
+              className={cn(
+                navigationMenuTriggerStyle(),
+                "font-bold",
+                isActive("/") && "text-cyan-500"
+              )}
+            >
+              HOME
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className={cn("font-bold", pathname.startsWith('/collections') && 'text-cyan-500')}>COURSES</NavigationMenuTrigger>
+          <NavigationMenuTrigger
+            className={cn(
+              "font-bold",
+              isActive("/collections") && "text-cyan-500"
+            )}
+          >
+            COURSES
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid lg:grid-cols-3 w-[400px] gap-3 p-4 md:w-[500px] lg:w-[900px]">
               {courses.map((course) => (
                 <Link href={course.href} key={course.title}>
-                  <ListItem title={course.title} className={cn('hover:text-white transition-transform duration-150 ease-in-out', pathname === course.href && 'text-cyan-500')}/>
+                  <ListItem
+                    title={course.title}
+                    className={cn(
+                      "hover:text-white transition-transform duration-150 ease-in-out",
+                      isActive(course.href) && "text-cyan-500"
+                    )}
+                  />
                 </Link>
               ))}
             </ul>
@@ -72,25 +97,53 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/pages/homeschooling" legacyBehavior passHref>
-            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),'font-bold', pathname === '/pages/homeschooling' && 'text-cyan-500') }>
-             HOMESCHOOLING
+            <NavigationMenuLink
+              className={cn(
+                navigationMenuTriggerStyle(),
+                "font-bold",
+                isActive("/pages/homeschooling") && "text-cyan-500"
+              )}
+            >
+              HOMESCHOOLING
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/pages/school-college-enquiry" legacyBehavior passHref>
-            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),'font-bold', pathname === '/pages/school-college-enquiry' && 'text-cyan-500')}>
+            <NavigationMenuLink
+              className={cn(
+                navigationMenuTriggerStyle(),
+                "font-bold",
+                isActive("/pages/school-college-enquiry") && "text-cyan-500"
+              )}
+            >
               SCHOOL/COLLEGE ENQUIRY
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className={cn("font-bold", (pathname.startsWith('/blogs') || pathname.startsWith('/pages/community') || pathname.startsWith('/pages/coding-and-robotics-courses')) && 'text-cyan-500')}>ABOUT US</NavigationMenuTrigger>
+          <NavigationMenuTrigger
+            className={cn(
+              "font-bold",
+              (pathname.startsWith("/blogs") ||
+                pathname.startsWith("/pages/community") ||
+                pathname.startsWith("/pages/coding-and-robotics-courses")) &&
+                "text-cyan-500"
+            )}
+          >
+            ABOUT US
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[900px]">
               {aboutUs.map((about) => (
                 <Link href={about.href} key={about.title}>
-                  <ListItem title={about.title} className={cn('hover:text-white transition-transform duration-150 ease-in-out', pathname === about.href && 'text-cyan-500')}/>
+                  <ListItem
+                    title={about.title}
+                    className={cn(
+                      "hover:text-white transition-transform duration-150 ease-in-out",
+                      pathname === about.href && "text-cyan-500"
+                    )}
+                  />
                 </Link>
               ))}
             </ul>
@@ -98,16 +151,28 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/pages/contact" legacyBehavior passHref>
-            <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),'font-bold', pathname === '/pages/contact' && 'text-cyan-500')}>
+            <NavigationMenuLink
+              className={cn(
+                navigationMenuTriggerStyle(),
+                "font-bold",
+                isActive("/pages/contact") && "text-cyan-500"
+              )}
+            >
               CONTACT US
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="font-bold">EXSISTING STUDENTS</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="font-bold">
+            EXSISTING STUDENTS
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[900px] text-right">
-              <ListItem title="My Account" href={"#"} className="hover:text-white transition-transform duration-150 ease-in-out"/>
+              <ListItem
+                title="My Account"
+                href={"#"}
+                className="hover:text-white transition-transform duration-150 ease-in-out"
+              />
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
