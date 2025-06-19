@@ -1,7 +1,7 @@
 "use client";
+
 import { Card, CardContent } from "@/components/ui/card";
-import { AIML, BIKE, CAR, PLANE, VR } from "@/constants/Images";
-import WhatsAppButton from "@/demo/button-demo/WhatsAppButton";
+import { RIGHT_COURSE } from "@/constants/Images";
 import ProgressBarDemo from "@/demo/robotics-demo/ProgressBarDemo";
 import Image from "next/image";
 import React from "react";
@@ -42,13 +42,13 @@ const LearningPath = () => {
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-6 relative">
         {Items.map((item) => (
           <Card
-            className="lg:w-[220px] w-[150px] lg:h-[250px] h-[200px] dark:bg-slate-800/40 shadow-md hover:shadow-2xl transition-shadow duration-150 delay-75 
+            className="lg:w-[220px] w-[150px] lg:h-[260px] h-[200px] dark:bg-slate-800/40 shadow-md hover:shadow-2xl transition-shadow duration-150 delay-75 
             ease-linear dark:shadow-black relative bg-muted"
             key={item.age}
           >
             <CardContent className="flex flex-col items-center gap-4 py-4">
               <Image
-                src={AIML}
+                src={RIGHT_COURSE}
                 alt="resource-image"
                 width={146.44}
                 height={90}

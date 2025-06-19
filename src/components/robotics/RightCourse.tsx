@@ -2,10 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-
-import { PLANE } from "@/constants/Images";
 import WhatsAppButton from "@/demo/button-demo/WhatsAppButton";
-
+import { RIGHT_COURSE } from "@/constants/Images";
 
 const RightCourse = () => {
   return (
@@ -35,9 +33,9 @@ const RightCourse = () => {
           </div>
           <div>
             <Image
-              src={PLANE}
-              height={200}
-              width={300}
+              src={RIGHT_COURSE}
+              height={400}
+              width={500}
               alt="plane-image"
             />
           </div>
