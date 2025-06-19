@@ -215,7 +215,7 @@ export function FormDemo() {
           )}
         />
 
-        <ButtonDemo name="Submit" type="submit" className="w-full focus:bg-accent-foreground focus:text-white"/>
+        <ButtonDemo name="Submit" type="submit" className="w-[340px] focus:bg-accent-foreground focus:text-white"/>
       </form>
     </Form>
   );

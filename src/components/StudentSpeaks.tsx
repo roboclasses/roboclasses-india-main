@@ -16,7 +16,7 @@ const StudentSpeaks = () => {
           <div className="text-white space-y-6 text-pretty">
             <h1 className="font-extrabold lg:text-5xl text-2xl">STEM Certified Programs</h1>
             <ol
-              className="list-disc list-inside ml-6 space-y-2"
+              className="list-disc list-inside ml-6 space-y-2 lg:text-base text-sm"
               style={{ letterSpacing: "0.05em" }}
             >
               <li>
@@ -25,7 +25,7 @@ const StudentSpeaks = () => {
               <li>Add a high trust and credibility to your Resume.</li>
               <li>Reliable and authentic curriculum for the 21st century.</li>
             </ol>
-            <div className="space-y-1" style={{ letterSpacing: "0.05em" }}>
+            <div className="space-y-1 lg:text-base text-sm" style={{ letterSpacing: "0.05em" }}>
               <p>
                 Speak to our specialist who can guide you and help you decide.
               </p>

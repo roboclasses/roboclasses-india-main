@@ -79,7 +79,7 @@ const CardsSection = () => {
         <CyanButton
           name="Show All"
           type="button"
-          onClick={() => router.push('/collections/programming-courses')}
+          onClick={() => router.push('/collections/robotics-courses')}
         />
       </div>
 

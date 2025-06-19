@@ -10,7 +10,7 @@ export function EnrollCardDemo() {
       <CardHeader className="flex flex-col gap-4 items-center text-center">
         <div className="flex flex-col gap-4 text-wrap text-white">
           <p className="lg:text-4xl text-2xl font-bold">
-            Robotics,STEM and programming courses for kids
+            Robotics and programming courses for kids
           </p>
           <p className="lg:text-xl text-sm">
             Building critical thinking and skills of the future
