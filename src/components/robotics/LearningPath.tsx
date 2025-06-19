@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
-import { RIGHT_COURSE } from "@/constants/Images";
+import { ADVANCE_CODING_AND_ROBOTICS, AI_ML, AR_VR, CODING_AND_ROBOTICS, RIGHT_COURSE } from "@/constants/Images";
 import ProgressBarDemo from "@/demo/robotics-demo/ProgressBarDemo";
 import Image from "next/image";
 import React from "react";
@@ -10,20 +10,24 @@ const LearningPath = () => {
   const Items = [
     {
       id: 1,
+      src: CODING_AND_ROBOTICS,
       age: "6 - 9",
       description: "Introduction to Robotics and programming",
     },
     {
       id: 2,
+      src: ADVANCE_CODING_AND_ROBOTICS,
       age: "9 - 13",
       description: "Advance Robotics and programming",
     },
     {
       id: 3,
+      src: AR_VR,
       age: "13 - 18",
       description: "Programming  AR, VR course, Iot and advanced robotics courses",
     },
     { id: 4, 
+      src: AI_ML,
       age: "18+", 
       description: "Machine Learning and AI"
     },
@@ -42,13 +46,13 @@ const LearningPath = () => {
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-6 relative">
         {Items.map((item) => (
           <Card
-            className="lg:w-[220px] w-[150px] lg:h-[260px] h-[200px] dark:bg-slate-800/40 shadow-md hover:shadow-2xl transition-shadow duration-150 delay-75 
+            className="lg:w-[220px] w-[150px] lg:h-[260px] h-[230px] dark:bg-slate-800/40 shadow-md hover:shadow-2xl transition-shadow duration-150 delay-75 
             ease-linear dark:shadow-black relative bg-muted"
             key={item.age}
           >
             <CardContent className="flex flex-col items-center gap-4 py-4">
               <Image
-                src={RIGHT_COURSE}
+                src={item.src}
                 alt="resource-image"
                 width={146.44}
                 height={90}

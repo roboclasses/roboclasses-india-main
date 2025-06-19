@@ -74,5 +74,11 @@ export const THIRD_PRIZE = "/assets/3rd.webp";
 export const STEM_ACCREDITED = "/assets/stem-accredited-2.png";
 export const STEM_COURSES = "/assets/book.svg"
 export const FLEXIBLE_TIME = "/assets/clock.svg"
+export const CODING_AND_ROBOTICS = "/assets/robo.png"
+export const AR_VR = "/assets/ar-vr.png"
+export const ADVANCE_CODING_AND_ROBOTICS = "/assets/adv-robo.png"
+export const AI_ML = "/assets/ai-ml.png"
+
+
 
 
