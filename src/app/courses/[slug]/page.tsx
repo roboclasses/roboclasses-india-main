@@ -32,8 +32,7 @@ const page = ({ params }: Params) => {
   if (!product) return notFound();
 
   return (
-    <>
-      <div className="lg:px-16 px-4 lg:py-8 py-2  bg-white space-y-20 w-screen min-h-dvh">
+      <div className="lg:px-16 px-4 lg:py-8 py-2 bg-white space-y-20 w-screen min-h-dvh">
         <HeroSection herotitle={product.herotitle} />
         <Feature
           featureage={product.featureage}
@@ -41,15 +40,15 @@ const page = ({ params }: Params) => {
           featureclasses={product.featureclasses}
         />
 
-        <div className="flex flex-col items-center justify-center gap-20 lg:px-20 px-10">
+        <div className="flex flex-col items-center justify-center lg:gap-20 gap-10 lg:px-20 px-10">
           {/* Learn section */}
           <div className="flex flex-col gap-6 items-center">
             <div className="flex flex-col text-center items-center">
-              <p className="font-extrabold lg:text-4xl text-xl bg-clip-text text-transparent bg-custom-gradient lg:p-2">
+              <p className="font-extrabold lg:text-4xl text-2xl bg-clip-text text-transparent bg-custom-gradient lg:p-2">
                 Course details
               </p>
               <p
-                className="lg:text-base text-xs"
+                className="lg:text-base text-sm"
                 style={{ letterSpacing: "0.05em" }}
               >
                 Quick overview
@@ -92,7 +91,7 @@ const page = ({ params }: Params) => {
           </div>
 
           {/* Syllabus section */}
-          <Card className="w-[1100px] bg-custom-gradient text-white">
+          <Card className="lg:w-[1100px] bg-custom-gradient text-white">
             <Accordion
               type="single"
               collapsible
@@ -104,7 +103,7 @@ const page = ({ params }: Params) => {
                 <AccordionTrigger className="lg:text-2xl text-xl font-extrabold" >
                   Syllabus
                 </AccordionTrigger>
-                <AccordionContent className="text-accent space-y-2">
+                <AccordionContent className="text-accent lg:text-base text-sm space-y-2">
                   {product.learnsyllabus.map((item) => (
                     <ul key={item.id} className="list-disc list-inside">
                       <li>{item.title}</li>
@@ -116,14 +115,14 @@ const page = ({ params }: Params) => {
           </Card>
 
           {/* Benefits and certification section */}
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 w-[1100px]">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 lg:w-[1100px]">
             {/* Benefits */}
             <div className="space-y-6">
               <h1 className="flex items-center gap-2 text-orange-500 font-bold lg:text-xl text-lg">
                 <TbBookFilled size={20} /> Benefits
               </h1>
               <div
-                className="space-y-2 ml-6 text-balance"
+                className="space-y-2 ml-6 text-balance lg:text-base text-sm"
                 style={{ letterSpacing: "0.05em" }}
               >
                 {product.learnbenefits.map((item) => (
@@ -142,7 +141,7 @@ const page = ({ params }: Params) => {
               <h1 className="flex items-center gap-2 text-orange-500 font-bold lg:text-xl text-lg">
                 <FaCertificate /> Certification
               </h1>
-              <p className="font-medium ml-6">
+              <p className="font-medium ml-6 lg:text-base text-sm" style={{letterSpacing: '0.05em'}}>
                 Certificate will be awarded after successful completion of each
                 level. Student can opt for advance level once they finish their
                 basic level course.
@@ -161,7 +160,6 @@ const page = ({ params }: Params) => {
         <CarouselFe />
         <Faq />
       </div>
-    </>
   );
 };
 

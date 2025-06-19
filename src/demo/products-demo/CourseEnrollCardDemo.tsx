@@ -1,8 +1,8 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { ProductType } from "@/types/ProductTypes";
+import RoundedButton from "../button-demo/RoundedButton";
 
 export default function CourseEnrollCardDemo({enrolltitle, enrollclass, enrollbatch}:ProductType) {
   return (
@@ -52,9 +52,7 @@ export default function CourseEnrollCardDemo({enrolltitle, enrollclass, enrollba
             </div>
           </div> */}
 
-          <Button className="w-full bg-cyan-500 hover:bg-cyan-600 text-white rounded-full focus:bg-accent-foreground focus:text-cyan-500">
-            Register for a Trial Class
-          </Button>
+          <RoundedButton name="Register for a Trial Class" type="button"/>
         </div>
       </Card>
     </div>
