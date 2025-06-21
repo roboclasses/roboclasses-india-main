@@ -141,8 +141,8 @@ const Footer = () => {
       </div>
               
       <div className="lg:text-sm text-xs text-white bottom-0 text-center p-2 flex flex-col items-center gap-1">
-        <hr className="border-1 rounded border-white w-2/3 my-2" />© ISB Edtech FZE -
-        2024, All rights reserved.
+        <hr className="border-1 rounded border-white w-2/3 my-2" />
+        &copy; ISB Edtech FZE - 2024, All rights reserved.
       </div>
     </div>
   );
