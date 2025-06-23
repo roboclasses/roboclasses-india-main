@@ -42,21 +42,21 @@
     "desc": "Robotics is an integral part of STEM. Getting started with robotics helps us in learning electronics and programming languages. STEM robotics has made a respectable amount of space for itself in the curriculum, creatively and otherwise in last few years."
   },
   {
-    "id": 8,
+    "id": 7,
     "src": "/assets/scratch-learning.webp",
     "alt": "trending course",
     "title": "Scratch programming: the easiest way to enter the coding word",
     "desc": "For every technology you rely on in your daily life, code is the language that powers it. Programming and coding are now an integral part of everyday life. Cars run on it, computers won’t work without it. "
   },
   {
-    "id": 9,
+    "id": 8,
     "src": "/assets/engineering.webp",
     "alt": "trending course",
     "title": "Importance Of Engineering Our Future With STEAM Education",
     "desc": "Engineering has become an inseparable part of your daily life. The gadgets, vehicles, and some magnificent bridges speak volumes of awe-inspiring engineering. There are other examples of fine engineering that you may see in every aspect of life. "
   },
   {
-    "id": 10,
+    "id": 9,
     "src": "/assets/impact.webp",
     "alt": "trending course",
     "title": "Impact of LEGO® ROBOTICS in STEM education",
@@ -64,7 +64,7 @@
   },
 
   {
-    "id": 11,
+    "id": 10,
     "src": "/assets/blogs.webp",
     "alt": "trending course",
     "title": "Women in STEM: Celebrating and Encouraging Female Representation",

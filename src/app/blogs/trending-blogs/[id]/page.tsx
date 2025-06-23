@@ -54,11 +54,14 @@ const page = ({ params }: { params: { id: string } }) => {
           </ol>
           <p className="text-justify">{details.conclusion}</p>
         </div>
+        <div className="w-full space-y-2">
         <hr className="border-gray-200 border-1 w-full" />
         <PaginationDemo
           hrefPrev={`/blogs/trending-blogs/${prevPost?.id}`}
           hrefNext={`/blogs/trending-blogs/${nextPost?.id}`}
         />
+        <hr className="border-gray-200 border-1 w-full" />
+        </div>
       </div>
     </div>
   );
