@@ -16,7 +16,7 @@ const Guidelines = () => {
               key={index}
             >
               <div className="w-10 h-10">
-                <FaLocationArrow className="text-sky-500 rotate-45" />
+                <FaLocationArrow className="text-cyan-500 rotate-45" />
               </div>
               <p className="text-lg">{item.point}</p>
             </li>

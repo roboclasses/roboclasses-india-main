@@ -20,15 +20,15 @@ const TotalCard = ({ subtotal, total }: totalCardT) => {
             <p className="text-xl font-bold">INR {subtotal}</p>
           </div>
           <div className="flex flex-row justify-between items-center font-semibold gap-32">
-            <p className="text-xl text-sky-500">Total</p>
-            <p className="text-xl text-sky-500">INR {total}</p>
+            <p className="text-xl text-cyan-500">Total</p>
+            <p className="text-xl text-cyan-500">INR {total}</p>
           </div>
         </CardContent>
         <CardFooter>
           <ButtonDemo
             name="PROCEED TO CHECKOUT"
             type="button"
-            className="py-6 px-16 text-xl font-semibold rounded-3xl bg-sky-500"
+            className="py-6 px-16 text-xl font-semibold rounded-3xl bg-cyan-500"
           />
         </CardFooter>
       </Card>

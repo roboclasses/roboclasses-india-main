@@ -77,7 +77,7 @@ export function JoinOurTeacherDialogDemo() {
           type="button"
         />
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[700px] justify-center dark:bg-sky-50 dark:text-black">
+      <DialogContent className="sm:max-w-[700px] justify-center dark:bg-cyan-50 dark:text-black">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
@@ -101,7 +101,7 @@ export function JoinOurTeacherDialogDemo() {
                         required
                         title="Child Name"
                         {...field}
-                        className="w-96 h-12 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                        className="w-96 h-12 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
                       />
                     </FormControl>
                     <FormMessage />
@@ -122,7 +122,7 @@ export function JoinOurTeacherDialogDemo() {
                         required
                         title="Child Age"
                         {...field}
-                        className="w-96 h-14 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                        className="w-96 h-14 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
                       />
                     </FormControl>
                     <FormMessage />
@@ -143,7 +143,7 @@ export function JoinOurTeacherDialogDemo() {
                         required
                         title="Child Email"
                         {...field}
-                        className="w-96 h-12 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                        className="w-96 h-12 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
                       />
                     </FormControl>
                     <FormMessage />
@@ -183,7 +183,7 @@ export function JoinOurTeacherDialogDemo() {
                         required
                         title="Message"
                         {...field}
-                        className="w-96 h-32 border-2 border-sky-500 rounded-lg focus:shadow-md bg-white"
+                        className="w-96 h-32 border-2 border-cyan-500 rounded-lg focus:shadow-md bg-white"
                       />
                     </FormControl>
                     <FormMessage />

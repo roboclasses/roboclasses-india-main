@@ -64,7 +64,7 @@ export function RegisterForm() {
       <form
         onSubmit={form.handleSubmit(onSubmit)}
         className="max-w-xl h-auto flex flex-col gap-4 p-5 rounded-md
-         bg-sky-200/40 items-center ml-96"
+         bg-cyan-200/40 items-center ml-96"
       >
         <div className="flex flex-col gap-1 items-center mb-6 text-black">
           <p className="text-4xl font-extrabold">CREATE ACCOUNT</p>
@@ -86,7 +86,7 @@ export function RegisterForm() {
                   required
                   title="First Name"
                   {...field}
-                  className="rounded-full border-2 border-sky-500 bg-white py-6 w-80"
+                  className="rounded-full border-2 border-cyan-500 bg-white py-6 w-80"
                 />
               </FormControl>
               <FormMessage />
@@ -107,7 +107,7 @@ export function RegisterForm() {
                   required
                   title="Child Age"
                   {...field}
-                  className="w-96 h-14 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                  className="w-96 h-14 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
                 />
               </FormControl>
               <FormMessage />
@@ -147,7 +147,7 @@ export function RegisterForm() {
                   required
                   title="Email"
                   {...field}
-                  className="rounded-full border-2 border-sky-500 bg-white py-6 w-80"
+                  className="rounded-full border-2 border-cyan-500 bg-white py-6 w-80"
                 />
               </FormControl>
               <FormMessage />
@@ -168,7 +168,7 @@ export function RegisterForm() {
                   required
                   title="Password"
                   {...field}
-                  className="rounded-full border-2 border-sky-500 bg-white py-6 w-80"
+                  className="rounded-full border-2 border-cyan-500 bg-white py-6 w-80"
                 />
               </FormControl>
               <FormMessage />
@@ -180,11 +180,11 @@ export function RegisterForm() {
           <ButtonDemo
             name="Create"
             type="submit"
-            className="bg-sky-500 text-white rounded-full shadow-md px-8 py-6"
+            className="bg-cyan-500 text-white rounded-full shadow-md px-8 py-6"
           />
         </div>
         <div className="flex text-left mt-2">
-          <Link href="/" className="text-base font-bold text-sky-500  hover:text-black">
+          <Link href="/" className="text-base font-bold text-cyan-500  hover:text-black">
             Return To Store
           </Link>
         </div>

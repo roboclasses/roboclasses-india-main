@@ -14,7 +14,7 @@ const Feature = () => {
     <div className="flex flex-col gap-20 items-center p-20 bg-white rounded-3xl">
       <div className="w-[800px] text-wrap text-gray-600">
         <p style={{ letterSpacing: "0.05em" }} >
-          <b className='text-2xl text-black bg-white dark:bg-sky-200 w-[550px]'>ROBOROMP 2024 is our annual Robotics Competition.</b> Our Aim is to become
+          <b className='text-2xl text-black bg-white dark:bg-cyan-200 w-[550px]'>ROBOROMP 2024 is our annual Robotics Competition.</b> Our Aim is to become
           the biggest online Robotics Competition and this is the first
           edition.Students of <b className='text-black dark:text-gray-600 text-lg'> Age Group 6-16 years</b>, can participate in this
           event where they will make innovative projects using different

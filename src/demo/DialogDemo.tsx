@@ -73,7 +73,7 @@ export function DialogDemo() {
       <DialogTrigger asChild>
         <GradientButton name="Free Classes" icon={<FaRegCalendarAlt size={20} />} type="button" />
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[900px] justify-center bg-white dark:bg-sky-50 dark:text-black">
+      <DialogContent className="sm:max-w-[900px] justify-center bg-white dark:bg-cyan-50 dark:text-black">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
@@ -98,7 +98,7 @@ export function DialogDemo() {
                         required
                         title="Child Name"
                         {...field}
-                        className="w-96 h-14 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                        className="w-96 h-14 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
                       />
                     </FormControl>
                     <FormDescription>This field is for child full name</FormDescription>
@@ -119,7 +119,7 @@ export function DialogDemo() {
                         required
                         title="Child Age"
                         {...field}
-                        className="w-96 h-14 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                        className="w-96 h-14 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
                       />
                     </FormControl>
                     <FormDescription>This field is for child age</FormDescription>
@@ -143,7 +143,7 @@ export function DialogDemo() {
                         required
                         title="Email"
                         {...field}
-                        className="w-96 h-14 border-2 border-sky-500 rounded-full focus:shadow-md bg-white"
+                        className="w-96 h-14 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
                       />
                     </FormControl>
                     <FormDescription>This field is for child or parent email address</FormDescription>

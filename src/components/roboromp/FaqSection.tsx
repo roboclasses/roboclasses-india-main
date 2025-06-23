@@ -20,7 +20,7 @@ const FaqSection = () => {
     <div className="flex flex-col items-center p-20 dark:bg-black gap-10">
       <p className="text-4xl font-bold">FAQ</p>
       <div className="flex flex-col items-center gap-6">
-        <Card className="w-[1000px] h-auto bg-gray-50 p-10 dark:text-black dark:bg-sky-100">
+        <Card className="w-[1000px] h-auto bg-gray-50 p-10 dark:text-black dark:bg-cyan-100">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1" className="gap-2">
               <AccordionTrigger className="text-2xl font-extrabold focus:text-lime-500">
@@ -42,7 +42,7 @@ const FaqSection = () => {
             <CardDemo {...item} />
           </div>
         ))}
-        <Card className="w-[1000px] h-auto bg-gray-50 p-10 dark:text-black dark:bg-sky-100">
+        <Card className="w-[1000px] h-auto bg-gray-50 p-10 dark:text-black dark:bg-cyan-100">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1" className="gap-2">
               <AccordionTrigger className="text-2xl font-extrabold focus:text-lime-500">
@@ -83,7 +83,7 @@ const FaqSection = () => {
             </AccordionItem>
           </Accordion>
         </Card>
-        <Card className="w-[1000px] h-auto bg-gray-50 p-10 dark:text-black dark:bg-sky-100">
+        <Card className="w-[1000px] h-auto bg-gray-50 p-10 dark:text-black dark:bg-cyan-100">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1" className="gap-2">
               <AccordionTrigger className="text-2xl font-extrabold focus:text-lime-500">

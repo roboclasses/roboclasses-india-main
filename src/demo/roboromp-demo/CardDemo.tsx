@@ -14,7 +14,7 @@ interface cardDemoT {
 
 const CardDemo = ({ title, list }: cardDemoT) => {
   return (
-    <Card className="max-w-6xl h-auto bg-gray-50 p-10 dark:text-black dark:bg-sky-100">
+    <Card className="max-w-6xl h-auto bg-gray-50 p-10 dark:text-black dark:bg-cyan-100">
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1" className="gap-2">
           <AccordionTrigger className="text-2xl font-extrabold focus:text-lime-500">

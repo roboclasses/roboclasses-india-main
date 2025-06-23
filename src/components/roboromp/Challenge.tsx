@@ -33,7 +33,7 @@ const Challenge = () => {
             icon={<Calendar size={20} />}
             type="button"
             onClick={handleClick}
-            className="py-4 px-8 font-semibold rounded-full shadow-xl border border-sky-500 bg-white text-sky-500  hover:bg-sky-500 hover:text-white transition-all flex flex-row items-center duration-300 ease-in-out delay-75"
+            className="py-4 px-8 font-semibold rounded-full shadow-xl border border-cyan-500 bg-white text-cyan-500  hover:bg-cyan-500 hover:text-white transition-all flex flex-row items-center duration-300 ease-in-out delay-75"
           />
         </div>
       </div>

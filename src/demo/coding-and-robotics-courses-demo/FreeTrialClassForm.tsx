@@ -102,7 +102,7 @@ export function FreeTrialClassForm() {
                       required
                       title="Student Name"
                       {...field}
-                      className="w-80 h-12 border-2 bg-white border-sky-500 rounded-full focus:shadow-md"
+                      className="w-80 h-12 border-2 bg-white border-cyan-500 rounded-full focus:shadow-md"
                     />
                   </FormControl>
                   <FormDescription>This field is for student name.</FormDescription>
@@ -123,7 +123,7 @@ export function FreeTrialClassForm() {
                       required
                       title="Email"
                       {...field}
-                      className="w-80 h-12 border-2 bg-white border-sky-500 rounded-full focus:shadow-md"
+                      className="w-80 h-12 border-2 bg-white border-cyan-500 rounded-full focus:shadow-md"
                     />
                   </FormControl>
                   <FormDescription>This field is for student email address.</FormDescription>
@@ -168,7 +168,7 @@ export function FreeTrialClassForm() {
                       required
                       title="Age"
                       {...field}
-                      className="w-80 h-12 border-2 bg-white border-sky-500 rounded-full focus:shadow-md"
+                      className="w-80 h-12 border-2 bg-white border-cyan-500 rounded-full focus:shadow-md"
                     />
                   </FormControl>
                   <FormDescription>This field is for student age.</FormDescription>

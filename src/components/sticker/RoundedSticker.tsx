@@ -6,7 +6,7 @@ const RoundedSticker = () => {
     <div>
       <TbSquareRoundedChevronsUpFilled
         size={27}
-        className="text-sky-500 absolute bottom-20 z-60"
+        className="text-cyan-500 absolute bottom-20 z-60"
       />
     </div>
   );

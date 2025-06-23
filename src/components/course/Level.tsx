@@ -11,13 +11,13 @@ const Level = () => {
       </div>
       <div className='flex flex-row gap-8 items-center '>
         <Link href={''}>
-        <ButtonDemo name='level 2' type='button' className='rounded-3xl py-7 px-32 bg-sky-100 text-sky-500 text-lg shadow-xl dark:text-black'/>
+        <ButtonDemo name='level 2' type='button' className='rounded-3xl py-7 px-32 bg-cyan-100 text-cyan-500 text-lg shadow-xl dark:text-black'/>
         </Link>
         <Link href={''}>
-        <ButtonDemo name='level 3' type='button' className='rounded-3xl py-7 px-32 bg-sky-100 text-sky-500 text-lg shadow-xl dark:text-black' />
+        <ButtonDemo name='level 3' type='button' className='rounded-3xl py-7 px-32 bg-cyan-100 text-cyan-500 text-lg shadow-xl dark:text-black' />
         </Link>
         <Link href={''}>
-        <ButtonDemo name='level 4' type='button' className='rounded-3xl py-7 px-32 bg-sky-100 text-sky-500 text-lg shadow-xl dark:text-black'/>
+        <ButtonDemo name='level 4' type='button' className='rounded-3xl py-7 px-32 bg-cyan-100 text-cyan-500 text-lg shadow-xl dark:text-black'/>
         </Link>
       </div>
     </div>

@@ -46,7 +46,7 @@ const Cart = () => {
       <p className="text-2xl ">Your Cart Items</p>
        <table className="min-w-full h-auto table-auto border-collapse border border-gray-300 ">
         <thead>
-          <tr className="bg-gray-100 dark:bg-sky-100 dark:text-black text-left">
+          <tr className="bg-gray-100 dark:bg-cyan-100 dark:text-black text-left">
             {Data.map((item, index) => (
               <th className="px-4 py-2 border border-gray-300" key={index}>
                 {item.name}

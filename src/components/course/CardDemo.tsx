@@ -43,7 +43,7 @@ const CardDemo = ({
             <ButtonDemo
               name="Enroll Now"
               type="button"
-              className="py-6 px-7 rounded-3xl border-b-4 border-white bg-sky-500 text-white text-lg shadow-lg mt-2"
+              className="py-6 px-7 rounded-3xl border-b-4 border-white bg-cyan-500 text-white text-lg shadow-lg mt-2"
             />
             </Link>
           </div>
@@ -60,7 +60,7 @@ const CardDemo = ({
               <ButtonDemo
                 name="Enroll Now"
                 type="button"
-                className="py-6 px-7 rounded-3xl border-b-4 border-white bg-sky-500 text-lg text-white shadow-lg mt-2"
+                className="py-6 px-7 rounded-3xl border-b-4 border-white bg-cyan-500 text-lg text-white shadow-lg mt-2"
               />
             </div>
           </div>

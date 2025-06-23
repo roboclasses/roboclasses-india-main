@@ -25,8 +25,8 @@ export function EnrollCardDemo({course}:cartTypes) {
           <RoundedButton
             name="Free Trial Class"
             type="button"
-            className="py-3 px-10 rounded-full bg-sky-500 text-white hover:bg-white 
-             hover:text-sky-500 shadow-md transition-all duration-300 delay-75 ease-in-out"
+            className="py-3 px-10 rounded-full bg-cyan-500 text-white hover:bg-white 
+             hover:text-cyan-500 shadow-md transition-all duration-300 delay-75 ease-in-out"
           />
         </CardFooter>
       </div>
