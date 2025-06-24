@@ -25,8 +25,10 @@ const comicNeue = Comic_Neue({
 
 export const metadata: Metadata = {
   title: "Coding and Robotics Courses for Kids",
-  description:
-    "Unlock your child potential with ROBO CLASSES - Coding and Robotics Courses for Kids.",
+  description: "Unlock your child potential with ROBO CLASSES - Coding and Robotics Courses for Kids.",
+  icons:{
+    icon: '/favicon.svg'
+  }
 };
 
 export default function RootLayout({
