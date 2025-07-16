@@ -494,5 +494,182 @@
         "enrolltitle": "Internet of things(IoT) with Arduino Intermidiate level Course",
         "enrollbatch": "Internet of things(IoT)",
         "enrollclass": "12 online classes with live teacher"
+    },
+    {
+        "id": 5,
+        "slug": "scratch-programming-beginner-course",
+        "herotitle": "Scratch Programming Beginner Course",
+        "featureage": "10+ years",
+        "featurebatchsize": "1:1 classes",
+        "featureclasses": "15 classes",
+        "learncoursescard": [
+            {
+                "id": 1,
+                "title": "What is scratch programming?",
+                "desc": "Scratch is a free block based(graphical) programming language with a big online community where you can create your own interactive stories, games, and animations."
+            },
+            {
+                "id": 2,
+                "title": "Why to learn scratch programming?",
+                "desc": "In today’s Era being able to code is a must skill to be a part of productive world. Scratch programming and gives you an opportunity to step into the world of programming where you can learn basics of programming and create your our own Animations and games as well."
+            },
+            {
+                "id": 3,
+                "title": "What will you learn?",
+                "desc": "Learn the essentials of scratch programming while having fun! You will create lots of games and animations while learning advanced concept of scratch programming."
+            },
+            {
+                "id": 4,
+                "title": "Creative thinking",
+                "desc": "Hands on learning experience that promotes children’s creative thinking, teamwork, and problem-solving skills."
+            }
+        ],
+        "learnsyllabus": [
+            {
+                "id": 1,
+                "title": "Events, Loops, Costumes, Animate A Character"
+            },
+            {
+                "id": 2,
+                "title": "Basic Of Animations"
+            },
+            {
+                "id": 3,
+                "title": "Change Speed Using Repeat Loops And Move Steps"
+            },
+            {
+                "id": 4,
+                "title": "Walking Animation"
+            },
+            {
+                "id": 5,
+                "title": "Adding Sounds"
+            },
+            {
+                "id": 6,
+                "title": "Cartesian Coordinates"
+            },
+            {
+                "id": 7,
+                "title": "XY Positions"
+            },
+            {
+                "id": 8,
+                "title": "Directions"
+            },
+            {
+                "id": 9,
+                "title": "Take Sprite Up, Down, Left, Right"
+            },
+            {
+                "id": 10,
+                "title": "Dress Me Up"
+            },
+            {
+                "id": 11,
+                "title": "Variables And Timer"
+            },
+            {
+                "id": 12,
+                "title": "Balloon Smasher"
+            },
+            {
+                "id": 13,
+                "title": "Remote Variables"
+            },
+            {
+                "id": 14,
+                "title": "Repeat Until And Broadcast Block"
+            },
+            {
+                "id": 15,
+                "title": "Once Upon A Time"
+            },
+            {
+                "id": 16,
+                "title": "Hare And Tortoise Story"
+            },
+            {
+                "id": 17,
+                "title": "Operators, Conditionals, Chatbot Quiz"
+            },
+            {
+                "id": 18,
+                "title": "Calculator"
+            },
+            {
+                "id": 19,
+                "title": "Guess The Number"
+            },
+            {
+                "id": 20,
+                "title": "Quiz"
+            },
+            {
+                "id": 21,
+                "title": "Maze Game"
+            },
+            {
+                "id": 22,
+                "title": "Cloning"
+            },
+            {
+                "id": 23,
+                "title": "Spiralizer"
+            },
+            {
+                "id": 24,
+                "title": "Bird Shooter"
+            },
+            {
+                "id": 25,
+                "title": "Color Wheel"
+            },
+            {
+                "id": 26,
+                "title": "Gravity"
+            },
+            {
+                "id": 27,
+                "title": "Hold The Egg"
+            },
+            {
+                "id": 28,
+                "title": "Fruit Catcher"
+            },
+            {
+                "id": 29,
+                "title": "Merry Christmas"
+            },
+            {
+                "id": 30,
+                "title": "Capstone Presentation"
+            }
+        ],
+        "learnbenefits": [
+            {
+                "id": 1,
+                "benefit": "Scratch can be used by people of all ages"
+            },
+            {
+                "id": 2,
+                "benefit": "Develop efficient problem-solving and coding skills"
+            },
+            {
+                "id": 3,
+                "benefit": "Scratch is used in over 150 counties and available in over 40 languages. This is great for teachers that are working with bilingual or ESL students."
+            },
+            {
+                "id": 4,
+                "benefit": "Scratch allows students to develop 21st century skills through the use of technology."
+            },
+            {
+                "id": 5,
+                "benefit": "Apply critical thinking and develop life skills for the careers of tomorrow"
+            }
+        ],
+        "enrolltitle": "Scratch Programming Beginner Course",
+        "enrollbatch": "15 online classes with live teache",
+        "enrollclass": "1:1 classes"
     }
 ]
