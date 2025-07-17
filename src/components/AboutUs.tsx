@@ -21,8 +21,8 @@ const AboutUs = () => {
 
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
           {AboutOne.map((about) => (
-            <Card className="flex flex-col gap-2 p-4 lg:h-[200px] h-[160px] lg:w-[350px] w-[300px] border-1 relative" key={about.title}>
-              <div className="absolute top-0 right-0 w-40 h-full bg-orange-200 rounded-l-full opacity-10"></div>
+            <Card className="flex flex-col gap-2 p-4 lg:h-[200px] h-[160px] lg:w-[350px] w-[300px] border-1 relative bg-orange-50/95" key={about.title}>
+              <div className="absolute top-0 right-0 w-40 h-full bg-orange-500 rounded-l-full opacity-10"></div>
               <Image src={about.src} alt={about.alt} height={30} width={30} />
               <p className="font-bold lg:text-base text-sm">{about.title}</p>
               <div className="lg:text-sm text-xs text-balance font-medium" style={{letterSpacing: "0.05em"}}>
