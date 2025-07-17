@@ -499,7 +499,7 @@
         "id": 5,
         "slug": "scratch-programming-beginner-course",
         "herotitle": "Scratch Programming Beginner Course",
-        "featureage": "10+ years",
+        "featureage": "7+ years",
         "featurebatchsize": "1:1 classes",
         "featureclasses": "15 classes",
         "learncoursescard": [
@@ -670,6 +670,557 @@
         ],
         "enrolltitle": "Scratch Programming Beginner Course",
         "enrollbatch": "15 online classes with live teache",
+        "enrollclass": "1:1 classes"
+    },
+    {
+        "id": 6,
+        "slug": "scratch-programming-course-workshop",
+        "herotitle": "Scratch Programming Course Workshop",
+        "featureage": "7+ years",
+        "featurebatchsize": "1:1 classes",
+        "featureclasses": "15 classes",
+        "learncoursescard": [
+            {
+                "id": 1,
+                "title": "What is scratch programming?",
+                "desc": "Scratch is a free block based(graphical) programming language with a big online community where you can create your own interactive stories, games, and animations."
+            },
+            {
+                "id": 2,
+                "title": "Why to learn scratch programming?",
+                "desc": "In today’s Era being able to code is a must skill to be a part of productive world. Scratch programming and gives you an opportunity to step into the world of programming where you can learn basics of programming and create your our own Animations and games as well."
+            },
+            {
+                "id": 3,
+                "title": "What will you learn?",
+                "desc": "Learn the essentials of scratch programming while having fun! You will create lots of games and animations while learning advanced concept of scratch programming."
+            },
+            {
+                "id": 4,
+                "title": "Creative thinking",
+                "desc": "Hands on learning experience that promotes children’s creative thinking, teamwork, and problem-solving skills."
+            }
+        ],
+        "learnsyllabus": [
+            {
+                "id": 1,
+                "title": "Events, Loops, Costumes, Animate A Character"
+            },
+            {
+                "id": 2,
+                "title": "Basic Of Animations"
+            },
+            {
+                "id": 3,
+                "title": "Change Speed Using Repeat Loops And Move Steps"
+            },
+            {
+                "id": 4,
+                "title": "Walking Animation"
+            },
+            {
+                "id": 5,
+                "title": "Adding Sounds"
+            },
+            {
+                "id": 6,
+                "title": "Cartesian Coordinates"
+            },
+            {
+                "id": 7,
+                "title": "XY Positions"
+            },
+            {
+                "id": 8,
+                "title": "Directions"
+            },
+            {
+                "id": 9,
+                "title": "Take Sprite Up, Down, Left, Right"
+            },
+            {
+                "id": 10,
+                "title": "Dress Me Up"
+            },
+            {
+                "id": 11,
+                "title": "Variables And Timer"
+            },
+            {
+                "id": 12,
+                "title": "Balloon Smasher"
+            },
+            {
+                "id": 13,
+                "title": "Remote Variables"
+            },
+            {
+                "id": 14,
+                "title": "Repeat Until And Broadcast Block"
+            },
+            {
+                "id": 15,
+                "title": "Once Upon A Time"
+            },
+            {
+                "id": 16,
+                "title": "Hare And Tortoise Story"
+            },
+            {
+                "id": 17,
+                "title": "Operators, Conditionals, Chatbot Quiz"
+            },
+            {
+                "id": 18,
+                "title": "Calculator"
+            },
+            {
+                "id": 19,
+                "title": "Guess The Number"
+            },
+            {
+                "id": 20,
+                "title": "Quiz"
+            },
+            {
+                "id": 21,
+                "title": "Maze Game"
+            },
+            {
+                "id": 22,
+                "title": "Cloning"
+            },
+            {
+                "id": 23,
+                "title": "Spiralizer"
+            },
+            {
+                "id": 24,
+                "title": "Bird Shooter"
+            },
+            {
+                "id": 25,
+                "title": "Color Wheel"
+            },
+            {
+                "id": 26,
+                "title": "Gravity"
+            },
+            {
+                "id": 27,
+                "title": "Hold The Egg"
+            },
+            {
+                "id": 28,
+                "title": "Fruit Catcher"
+            },
+            {
+                "id": 29,
+                "title": "Merry Christmas"
+            },
+            {
+                "id": 30,
+                "title": "Capstone Presentation"
+            }
+        ],
+        "learnbenefits": [
+            {
+                "id": 1,
+                "benefit": "Scratch can be used by people of all ages"
+            },
+            {
+                "id": 2,
+                "benefit": "Develop efficient problem-solving and coding skills"
+            },
+            {
+                "id": 3,
+                "benefit": "Scratch is used in over 150 counties and available in over 40 languages. This is great for teachers that are working with bilingual or ESL students."
+            },
+            {
+                "id": 4,
+                "benefit": "Scratch allows students to develop 21st century skills through the use of technology."
+            },
+            {
+                "id": 5,
+                "benefit": "Apply critical thinking and develop life skills for the careers of tomorrow"
+            }
+        ],
+        "enrolltitle": "Scratch Programming Beginner Course",
+        "enrollbatch": "15 online classes with live teache",
+        "enrollclass": "1:1 classes"
+    },
+    {
+        "id": 7,
+        "slug": "python-programming-course-beginner-level",
+        "herotitle": "Python Programming Course Beginner level",
+        "featureage": "10+ years",
+        "featurebatchsize": "1:1 classes",
+        "featureclasses": "30 classes",
+        "learncoursescard": [
+            {
+                "id": 1,
+                "title": "Why to learn python?",
+                "desc": "With a balance of being both easy to learn and widely used in the real world, we suggest learning Python for kids."
+            },
+            {
+                "id": 2,
+                "title": "Advantages of learning python",
+                "desc": "Widely used in different industries and applications(think Youtube).You can learn many next-gen technologies like robotics, AI ,ML using python."
+            },
+            {
+                "id": 3,
+                "title": "Where shall we use python?",
+                "desc": "Python is commonly used for developing websites and different kind of software, easier task automation, data analysis, and data visualization. Since it’s relatively easy to learn, Python has been adopted by many non-programmers as well."
+            },
+            {
+                "id": 4,
+                "title": "Creative thinking",
+                "desc": "Hands on learning experience that promotes children’s creative thinking, teamwork, and problem-solving skills."
+            }
+        ],
+        "learnsyllabus": [
+            {
+                "id": 1,
+                "title": "Day 1: Variables in Pytho"
+            },
+            {
+                "id": 2,
+                "title": "Day 2: Project 1: Band name generator"
+            },
+            {
+                "id": 3,
+                "title": "Day 3: Data Types in Python"
+            },
+            {
+                "id": 4,
+                "title": "Day 4: Project 2: Grade Management System"
+            },
+            {
+                "id": 5,
+                "title": "Day 5: Project 3: Basic Contact Information Storage"
+            },
+            {
+                "id": 6,
+                "title": "Day 6: Assessment 1"
+            },
+            {
+                "id": 7,
+                "title": "Day 7: Conditional Statements (if, else, elif, nested)"
+            },
+            {
+                "id": 8,
+                "title": "Day 8: Project 4: Simple Quiz Game"
+            },
+            {
+                "id": 9,
+                "title": "Day 9: Project 5: Rock Paper Scissors Game"
+            },
+            {
+                "id": 10,
+                "title": "Day 10: Python Loops (For and While)"
+            },
+            {
+                "id": 11,
+                "title": "Day 11: Project 6: Multiplication Table Generator"
+            },
+            {
+                "id": 12,
+                "title": "Day 12: Project 7: Number Guessing Game"
+            },
+                        {
+                "id": 13,
+                "title": "Day 13: Assessment 2"
+            },
+                        {
+                "id": 14,
+                "title": "Day 14: Python Functions"
+            },
+                        {
+                "id": 15,
+                "title": "Day 15: Project 8: Basic Calculator"
+            },
+                        {
+                "id": 16,
+                "title": "Day 16: Project 9: Password Strength Checker"
+            },
+                        {
+                "id": 17,
+                "title": "Day 17: Advanced Data Types (List, tuple, Dictionary)"
+            },
+                        {
+                "id": 18,
+                "title": "Day 18: Project 10: Todo List Application"
+            },
+                        {
+                "id": 19,
+                "title": "Day 19: Project 11: Student Record Management System"
+            },
+                        {
+                "id": 20,
+                "title": "Day 20: Assessment 3"
+            },
+                        {
+                "id": 21,
+                "title": "Day 21: Error Handling in Python"
+            },
+                        {
+                "id": 22,
+                "title": "Day 22: Project 12: File Reading Error Handler"
+            },
+                        {
+                "id": 23,
+                "title": "Day 23: Project 13: Input Validation System"
+            },
+            {
+                "id": 24,
+                "title": "Day 24: Project 14: Random Password Generator"
+            },
+            {
+                "id": 25,
+                "title": "Day 25: Turtle library (Animations)"
+            },
+            {
+                "id": 26,
+                "title": "Day 26: Project 15: Draw a logo"
+            },
+            {
+                "id": 27,
+                "title": "Day 27: Project 16: Turtle race game"
+            },
+            {
+                "id": 28,
+                "title": "Day 28: Project 17: Hangman game"
+            },
+            {
+                "id": 29,
+                "title": "Day 29: Practice session for assessment"
+            },
+            {
+                "id": 30,
+                "title": "Day 30: Final assessment"
+            }
+        ],
+        "learnbenefits": [
+            {
+                "id": 1,
+                "benefit": "Apply engineering design skills at each step of the design process."
+            },
+            {
+                "id": 2,
+                "benefit": "Develop efficient problem-solving and coding skills"
+            },
+            {
+                "id": 3,
+                "benefit": "Design projects that combine hardware and software components to collect and exchange data."
+            },
+            {
+                "id": 4,
+                "benefit": "Work with variables, data arrays and cloud data."
+            },
+            {
+                "id": 5,
+                "benefit": "Apply critical thinking and develop life skills for the careers of tomorrow."
+            }
+        ],
+        "enrolltitle": "Python Programming Course Beginner level",
+        "enrollbatch": "30 online classes with live teacher",
+        "enrollclass": "1:1 classes"
+    },
+    {
+        "id": 8,
+        "slug": "python-programming-workshop",
+        "herotitle": "Python Programming Course Workshop",
+        "featureage": "10+ years",
+        "featurebatchsize": "1:1 classes",
+        "featureclasses": "15 classes",
+        "learncoursescard": [
+            {
+                "id": 1,
+                "title": "Why to learn python?",
+                "desc": "With a balance of being both easy to learn and widely used in the real world, we suggest learning Python for kids."
+            },
+            {
+                "id": 2,
+                "title": "Advantages of learning python",
+                "desc": "Widely used in different industries and applications(think Youtube).You can learn many next-gen technologies like robotics, AI ,ML using python."
+            },
+            {
+                "id": 3,
+                "title": "Where shall we use python?",
+                "desc": "Python is commonly used for developing websites and different kind of software, easier task automation, data analysis, and data visualization. Since it’s relatively easy to learn, Python has been adopted by many non-programmers as well."
+            },
+            {
+                "id": 4,
+                "title": "Creative thinking",
+                "desc": "Hands on learning experience that promotes children’s creative thinking, teamwork, and problem-solving skills."
+            }
+        ],
+        "learnsyllabus": [
+            {
+                "id": 1,
+                "title": "Introduction"
+            },
+            {
+                "id": 2,
+                "title": "Goal : Getting started with python programming"
+            },
+            {
+                "id": 3,
+                "title": "Use of python in real world"
+            },
+            {
+                "id": 4,
+                "title": "Understanding the editors (Online & Offline)"
+            },
+            {
+                "id": 5,
+                "title": "Goal: Learn how to use variables keep your data safe"
+            },
+            {
+                "id": 6,
+                "title": "Variables"
+            },
+            {
+                "id": 7,
+                "title": "Variable naming & its rules"
+            },
+            {
+                "id": 8,
+                "title": "Behaviour of variables with syntax(commands)"
+            },
+            {
+                "id": 9,
+                "title": "Project 1: Band name generator"
+            },
+            {
+                "id": 10,
+                "title": "Assessment 1"
+            },
+            {
+                "id": 11,
+                "title": "Goal: Learn about data and its types, Python operators"
+            },
+            {
+                "id": 12,
+                "title": "String manipulation using index numbers"
+            },
+            {
+                "id": 13,
+                "title": "Operators in python"
+            },
+            {
+                "id": 14,
+                "title": "Project 2: BMI calculator"
+            },
+            {
+                "id": 15,
+                "title": "Project 3: Pay the bill"
+            },
+            {
+                "id": 16,
+                "title": "Assessment 2"
+            },
+            {
+                "id": 17,
+                "title": "Goal: Learn about decision making using python"
+            },
+            {
+                "id": 18,
+                "title": "If and else"
+            },
+            {
+                "id": 19,
+                "title": "Flow chart (Graphical representation of if and else)"
+            },
+            {
+                "id": 20,
+                "title": "Project 4: Treasure hunt"
+            },
+            {
+                "id": 21,
+                "title": "Project 5: Calculator"
+            },
+            {
+                "id": 22,
+                "title": "Assessment 3"
+            },
+            {
+                "id": 23,
+                "title": "Goal: Learn how to use inbuilt libraries in python"
+            },
+            {
+                "id": 24,
+                "title": "Random"
+            },
+            {
+                "id": 25,
+                "title": "Math"
+            },
+            {
+                "id": 26,
+                "title": "Turtle (Animations)"
+            },
+            {
+                "id": 27,
+                "title": "Project 6: Lucky winner"
+            },
+            {
+                "id": 28,
+                "title": "Project 7: Turtle and rabbit race"
+            },
+            {
+                "id": 29,
+                "title": "Goal: Learn how to make your code short and smart"
+            },
+            {
+                "id": 30,
+                "title": "for loop"
+            },
+            {
+                "id": 31,
+                "title": "while loop"
+            },
+            {
+                "id": 32,
+                "title": "Final assessment"
+            },
+            {
+                "id": 33,
+                "title": "Data types"
+            },
+            {
+                "id": 34,
+                "title": "Data types"
+            },
+            {
+                "id": 35,
+                "title": "Data types"
+            }
+        ],
+        "learnbenefits": [
+            {
+                "id": 1,
+                "benefit": "Apply engineering design skills at each step of the design process."
+            },
+            {
+                "id": 2,
+                "benefit": "Develop efficient problem-solving and coding skills"
+            },
+            {
+                "id": 3,
+                "benefit": "Design projects that combine hardware and software components to collect and exchange data."
+            },
+            {
+                "id": 4,
+                "benefit": "Work with variables, data arrays and cloud data."
+            },
+            {
+                "id": 5,
+                "benefit": "Apply critical thinking and develop life skills for the careers of tomorrow."
+            }
+        ],
+        "enrolltitle": "Python Programming Course Beginner level",
+        "enrollbatch": "30 online classes with live teacher",
         "enrollclass": "1:1 classes"
     }
 ]
