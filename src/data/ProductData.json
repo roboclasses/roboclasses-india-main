@@ -1222,5 +1222,383 @@
         "enrolltitle": "Python Programming Course Beginner level",
         "enrollbatch": "30 online classes with live teacher",
         "enrollclass": "1:1 classes"
+    },
+    {
+        "id": 9,
+        "slug": "artificial-intelligence-with-python-programming",
+        "herotitle": "Artificial Intelligence With Python Programming",
+        "featureage": "12 - 18 years",
+        "featurebatchsize": "1:1 classes",
+        "featureclasses": "30 classes",
+        "learncoursescard": [
+            {
+                "id": 1,
+                "title": "What is Artificial Intelligence?",
+                "desc": "Artificial intelligence (AI) is a branch of computer science concerned with building smart machines capable of performing tasks that typically require human intelligence."
+            },
+            {
+                "id": 2,
+                "title": "Work with rich python libraries",
+                "desc": "Python offers a vast choice of libraries for AI development, which contain base-level items that save coding time. These libraries also make it easy to access, handle, and transform data."
+            },
+            {
+                "id": 3,
+                "title": "Why Python for AI?",
+                "desc": "Python has rich library, it is also object oriented, easy to program. It can be also used as frontend language. That’s why it is used in artificial intelligence."
+            },
+            {
+                "id": 4,
+                "title": "Creative thinking",
+                "desc": "Hands on learning experience that promotes children’s creative thinking, teamwork, and problem-solving skills."
+            }
+        ],
+        "learnsyllabus": [
+            {
+                "id": 1,
+                "title": "Day 1: Introduction to AI & Machine Learning"
+            },
+            {
+                "id": 2,
+                "title": "Day 2: Supervised vs. Unsupervised Learning + Platform Overview"
+            },
+            {
+                "id": 3,
+                "title": "Day 3: Project 1: Image Classification"
+            },
+            {
+                "id": 4,
+                "title": "Day 4: Project 2: Sound Recognition"
+            },
+            {
+                "id": 5,
+                "title": "Day 5: Project 3: Pose detection"
+            },
+            {
+                "id": 6,
+                "title": "Day 6: Assessment 1"
+            },
+            {
+                "id": 7,
+                "title": "Day 7: Let’s talk to AI (Chat GPT Prompt techniques)"
+            },
+            {
+                "id": 8,
+                "title": "Day 8: Project 4: Chatbot with Python Part 1"
+            },
+            {
+                "id": 9,
+                "title": "Day 9: Chatbot with Python Part 2"
+            },
+            {
+                "id": 10,
+                "title": "Day 10: Project 5: AI in Emotions Part 1"
+            },
+            {
+                "id": 11,
+                "title": "Day 11: AI in Emotions Part 2"
+            },
+            {
+                "id": 12,
+                "title": "Day 12: Project 6: AI in Business Part 1"
+            },
+            {
+                "id": 13,
+                "title": "Day 13: AI in Business Part 2"
+            },
+            {
+                "id": 14,
+                "title": "Day 14: Assessment 2"
+            },
+            {
+                "id": 15,
+                "title": "Day 15: Understanding AI Ethics and Bias"
+            },
+            {
+                "id": 16,
+                "title": "Day 16: Project 7: AI-Powered Guess the Number Game Part 1"
+            },
+            {
+                "id": 17,
+                "title": "Day 17: AI-Powered Guess the Number Game Part 2"
+            },
+            {
+                "id": 18,
+                "title": "Day 18: Project 8: AI Rock, Paper, Scissors Game Part 1"
+            },
+            {
+                "id": 19,
+                "title": "Day 19: AI Rock, Paper, Scissors Game Part 2"
+            },
+            {
+                "id": 20,
+                "title": "Day 20: Assessment 3"
+            },
+            {
+                "id": 21,
+                "title": "Day 21: Project 9: AI Based Self driving car Part 1"
+            },
+            {
+                "id": 22,
+                "title": "Day 22: AI Based Self driving car Part 2"
+            },
+            {
+                "id": 23,
+                "title": "Day 23: AI Based Self driving car Part 3"
+            },
+            {
+                "id": 24,
+                "title": "Day 24: Project 10: AI Based Music Composer Part 1"
+            },
+            {
+                "id": 25,
+                "title": "Day 25: AI Based Music Composer Part 2"
+            },
+            {
+                "id": 26,
+                "title": "Day 26: Project 11: AI based Face detection Part 1"
+            },
+            {
+                "id": 27,
+                "title": "Day 27: AI based Face detection Part 2"
+            },
+            {
+                "id": 28,
+                "title": "Day 28: AI based Face detection Part 3"
+            },
+            {
+                "id": 29,
+                "title": "Day 29: Practice session for assessment"
+            },
+            {
+                "id": 30,
+                "title": "Day 30: Final assessment"
+            }
+        ],
+        "learnbenefits": [
+            {
+                "id": 1,
+                "benefit": "Apply engineering design skills at each step of the design process."
+            },
+            {
+                "id": 2,
+                "benefit": "Develop efficient problem-solving and coding skills"
+            },
+            {
+                "id": 3,
+                "benefit": "Design projects that combine hardware and software components to collect and exchange data."
+            },
+            {
+                "id": 4,
+                "benefit": "Work with variables, data arrays and cloud data."
+            },
+            {
+                "id": 5,
+                "benefit": "Apply critical thinking and develop life skills for the careers of tomorrow."
+            }
+        ],
+        "enrolltitle": "Artificial Intelligence With Python Programming",
+        "enrollbatch": "30 online classes with live teacher",
+        "enrollclass": "1:1 classes"
+    },
+    {
+        "id": 10,
+        "slug": "mit-app-inventor-mobile-app-development-course",
+        "herotitle": "MIT APP Inventor Mobile App Development Course",
+        "featureage": "9 - 13 years",
+        "featurebatchsize": "1:1 classes",
+        "featureclasses": "36 classes",
+        "learncoursescard": [
+            {
+                "id": 1,
+                "title": "What is MIT app inventor?",
+                "desc": "MIT App Inventor is an intuitive, visual programming environment that allows everyone – even children – to build fully functional apps for Android phones, iPhones, and Android/iOS tablets."
+            },
+            {
+                "id": 2,
+                "title": "Work with MIT app inventor on cloud",
+                "desc": "With over a million unique monthly visitors from 195 countries collectively creating almost 30 million apps on MIT app cloud, MIT App Inventor is changing the way the world creates apps and the way that kids learn about computing."
+            },
+            {
+                "id": 3,
+                "title": "Why MIT app inventor?",
+                "desc": "It provides hands-on lessons that are adaptable to students across all ages and abilities.Easier to learn blocks-based coding programs inspire intellectual and creative empowerment."
+            },
+            {
+                "id": 4,
+                "title": "Creative thinking",
+                "desc": "Hands on learning experience that promotes children’s creative thinking, teamwork, and problem-solving skills."
+            }
+        ],
+        "learnsyllabus": [
+            {
+                "id": 1,
+                "title": "Session 1: Introduction To MIT App Inventor"
+            },
+            {
+                "id": 2,
+                "title": "Session 2 : Build Your First App"
+            },
+            {
+                "id": 3,
+                "title": "Session 3 : Cartesian Coordinates : Come Let’s Doodle"
+            },
+            {
+                "id": 4,
+                "title": "Session 4: Understanding Layouts"
+            },
+            {
+                "id": 5,
+                "title": "Session 5: Understanding Layouts – Contd."
+            },
+            {
+                "id": 6,
+                "title": "Session 6: Arithmetic Operators"
+            },
+            {
+                "id": 7,
+                "title": "Session 7: Mood Ringer"
+            },
+            {
+                "id": 8,
+                "title": "Session 8: Guard Your App"
+            },
+            {
+                "id": 9,
+                "title": "Session 9: Sensors – I"
+            },
+            {
+                "id": 10,
+                "title": "Session 10: Sensors – II"
+            },
+            {
+                "id": 11,
+                "title": "Session 11: Sensors – III"
+            },
+            {
+                "id": 12,
+                "title": "Session 12: Capstone Project"
+            },
+            {
+                "id": 13,
+                "title": "Session 13: Revision"
+            },
+            {
+                "id": 14,
+                "title": "Session 14: Arithmetic Operators"
+            },
+            {
+                "id": 15,
+                "title": "Session 15: Yandex Translate"
+            },
+            {
+                "id": 16,
+                "title": "Session 16: Understanding Variables"
+            },
+            {
+                "id": 17,
+                "title": "Session 17: Science Time"
+            },
+            {
+                "id": 18,
+                "title": "Session 18: Smashing Game"
+            },
+            {
+                "id": 19,
+                "title": "Session 19: Storage"
+            },
+            {
+                "id": 20,
+                "title": "Session 20: Maths Time"
+            },
+            {
+                "id": 21,
+                "title": "Session 21: Built-In Blocks"
+            },
+            {
+                "id": 22,
+                "title": "Session 22: Sensors – I"
+            },
+            {
+                "id": 23,
+                "title": "Session 23: Sensors – II"
+            },
+            {
+                "id": 24,
+                "title": "Session 24: Capstone Project"
+            },
+            {
+                "id": 25,
+                "title": "Session 25: Recap And Revision"
+            },
+            {
+                "id": 26,
+                "title": "Session 26: Arcade Shooter Game"
+            },
+            {
+                "id": 27,
+                "title": "Session 27: Speed Vs Friction"
+            },
+            {
+                "id": 28,
+                "title": "Session 28: Storage – I"
+            },
+            {
+                "id": 29,
+                "title": "Session 29: Storage – II"
+            },
+            {
+                "id": 30,
+                "title": "Session 30: Hangman Game"
+            },
+            {
+                "id": 31,
+                "title": "Session 31: Memory Game"
+            },
+            {
+                "id": 32,
+                "title": "Session 32: Tic-Tac-Toe Game"
+            },
+            {
+                "id": 33,
+                "title": "Session 33: High Score Test Game"
+            },
+            {
+                "id": 34,
+                "title": "Session 34: Pong Game"
+            },
+            {
+                "id": 35,
+                "title": "Session 35: Fruit Catcher Game"
+            },
+            {
+                "id": 36,
+                "title": "Session 36: Capstone Project"
+            }
+        ],
+        "learnbenefits": [
+            {
+                "id": 1,
+                "benefit": "Easy to learn blocks-based programming"
+            },
+            {
+                "id": 2,
+                "benefit": "Develop efficient problem-solving and coding skills"
+            },
+            {
+                "id": 3,
+                "benefit": "Design projects that combine hardware and software components to collect and exchange data."
+            },
+            {
+                "id": 4,
+                "benefit": "Work with variables, data arrays and cloud data."
+            },
+            {
+                "id": 5,
+                "benefit": "Apply critical thinking and develop life skills for the careers of tomorrow."
+            }
+        ],
+        "enrolltitle": "MIT APP Inventor Mobile App Development Course",
+        "enrollbatch": "36 online classes with live teacher",
+        "enrollclass": "1:1 classes"
     }
 ]
