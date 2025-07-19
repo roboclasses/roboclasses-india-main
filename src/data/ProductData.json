@@ -1600,5 +1600,126 @@
         "enrolltitle": "MIT APP Inventor Mobile App Development Course",
         "enrollbatch": "36 online classes with live teacher",
         "enrollclass": "1:1 classes"
+    },
+    {
+        "id": 11,
+        "slug": "artificial-intelligence-with-pictoblox-programming",
+        "herotitle": "Artificial Intelligence With PictoBlox Programming",
+        "featureage": "9 - 13 years",
+        "featurebatchsize": "1:1 classes",
+        "featureclasses": "16 classes",
+        "learncoursescard": [
+            {
+                "id": 1,
+                "title": "What will you learn?",
+                "desc": "Learn artificial intelligence and machine learning techniques through graphical programming PictoBlox software."
+            },
+            {
+                "id": 2,
+                "title": "What will my children learn in this course?",
+                "desc": "Children will learn basic concepts of coding, Logic of Coding as well as online work at Home on the Projects as mentioned in the course description. Students will build their own Ai and Computer Vision projects. Basic of computational thinking will be instilled in this entire course."
+            },
+            {
+                "id": 3,
+                "title": "What is PictoBlox?",
+                "desc": "PictoBlox is based on the latest version of Scratch, that girls and boys can use to have a blast while learning to code. This approach to learning focuses on coding kid-friendly games where little ones learn a variety of concepts while they assimilate different programming languages without hardly realizing it."
+            },
+            {
+                "id": 4,
+                "title": "Creative thinking",
+                "desc": "Hands on learning experience that promotes children’s creative thinking, teamwork, and problem-solving skills."
+            }
+        ],
+        "learnsyllabus": [
+            {
+                "id": 1,
+                "title": "Session 1: Introduction To Artificial Intelligence"
+            },
+            {
+                "id": 2,
+                "title": "Session 2: Computer Vision – I"
+            },
+            {
+                "id": 3,
+                "title": "Session 3: Computer Vision-II"
+            },
+            {
+                "id": 4,
+                "title": "Session 4: Face Recognition – I"
+            },
+            {
+                "id": 5,
+                "title": "Session 5: Face Recognition – II"
+            },
+            {
+                "id": 6,
+                "title": "Session 6: Optical Character Recognition"
+            },
+            {
+                "id": 7,
+                "title": "Session 7: Speech Recognition"
+            },
+            {
+                "id": 8,
+                "title": "Session 8: QR Code Scanner"
+            },
+            {
+                "id": 9,
+                "title": "Session 9: Object Detection"
+            },
+            {
+                "id": 10,
+                "title": "Session 10: Human Body Detection"
+            },
+            {
+                "id": 11,
+                "title": "Session 11: Machine Learning"
+            },
+            {
+                "id": 12,
+                "title": "Session 12: Pose Classifier"
+            },
+            {
+                "id": 13,
+                "title": "Session 13: Rock-Paper-Scissors"
+            },
+            {
+                "id": 14,
+                "title": "Session 14: Activity: Voice Controlled Calculator"
+            },
+            {
+                "id": 15,
+                "title": "Session 15: Activity: Door Security System"
+            },
+            {
+                "id": 16,
+                "title": "Session 16: Ethics In AI"
+            }
+        ],
+        "learnbenefits": [
+            {
+                "id": 1,
+                "benefit": "Develop skills such as creativity, innovativeness, problem-solving, critical thinking, and persistence"
+            },
+            {
+                "id": 2,
+                "benefit": "Design next-gen programs"
+            },
+            {
+                "id": 3,
+                "benefit": "Learn physical computing – interaction with the outside world by programming objects using a computer"
+            },
+            {
+                "id": 4,
+                "benefit": "Master AI concepts"
+            },
+            {
+                "id": 5,
+                "benefit": "Apply critical thinking and develop life skills for the careers of tomorrow."
+            }
+        ],
+        "enrolltitle": "Artificial Intelligence With PictoBlox Programming",
+        "enrollbatch": "16 online classes with live teacher",
+        "enrollclass": "1:1 classes"
     }
 ]

@@ -67,7 +67,7 @@ const page = ({ params }: Params) => {
                 {product.learncoursescard.map((item) => (
                   <Card
                     key={item.id}
-                    className="flex flex-col gap-2 p-4 lg:h-[200px] h-[160px] lg:w-[350px] w-[300px] border-1 relative"
+                    className="flex flex-col gap-2 p-4 lg:h-[240px] h-[200px] lg:w-[350px] w-[300px] border-1 relative"
                   >
                     <div className="absolute top-0 right-0 w-40 h-full bg-orange-200 rounded-l-full opacity-10"></div>
                     <p className="font-bold lg:text-base text-sm">
