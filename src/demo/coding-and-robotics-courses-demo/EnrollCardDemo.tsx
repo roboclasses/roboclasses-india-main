@@ -18,7 +18,7 @@ export function EnrollCardDemo() {
         </div>
       </CardHeader>
       <CardFooter className="flex flex-row items-center gap-3">
-        <CyanButton name="Free Trial Class Registration" type="button" />
+        <RoundedButton name="Free Trial Class Registration" type="button" />
       </CardFooter>
     </Card>
   );
