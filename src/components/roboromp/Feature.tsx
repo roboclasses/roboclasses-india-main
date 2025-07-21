@@ -12,7 +12,7 @@ const Feature = () => {
 
   return (
     <div className="flex flex-col gap-20 items-center p-20 bg-white rounded-3xl">
-      <div className="w-[800px] text-wrap text-gray-600">
+      <div className="lg:w-[800px] w-[300px] text-wrap text-gray-600">
         <p style={{ letterSpacing: "0.05em" }} >
           <b className='text-2xl text-black bg-white dark:bg-cyan-200 w-[550px]'>ROBOROMP 2024 is our annual Robotics Competition.</b> Our Aim is to become
           the biggest online Robotics Competition and this is the first
@@ -24,14 +24,14 @@ const Feature = () => {
           Skills to today’s child!
         </p>
       </div>
-      <div className="flex flex-row items-center gap-10  ">
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-10">
         {Data.map((item) => (
           <div className="flex flex-row items-center gap-10" key={item.id}>
             <div className="flex flex-col gap-4 items-center">
               <Image src={item.img} alt={item.alt} width={120} height={120} />
-              <p className="text-lg">{item.alt}</p>
+              <p className="lg:text-lg">{item.alt}</p>
             </div>
-            <div className="border-l border-gray-300 h-20 mx-4" />
+            <div className="lg:flex hidden border-l border-gray-300 h-20 mx-4" />
           </div>
         ))}
       </div>

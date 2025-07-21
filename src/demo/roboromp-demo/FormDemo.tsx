@@ -73,18 +73,18 @@ export function FormDemo() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-[540px] h-[530px] space-y-2 p-5 rounded-xl bg-white mt-5
+        className="h-[530px] space-y-2 p-5 rounded-xl bg-white mt-5
          text-black flex flex-col items-center "
       >
         <div className="flex flex-col items-center gap-3">
-          <p className="lg:text-4xl text:xl font-bold">ROBO ROMP 2025</p>
-          <p className="lg:text-xl text-md font-extrabold text-transparent bg-clip-text bg-custom-gradient ">
+          <p className="lg:text-3xl text:2xl font-bold">ROBO ROMP 2025</p>
+          <p className="lg:text-xl text-sm font-extrabold text-transparent bg-clip-text bg-custom-gradient">
             Register to participate
           </p>
           <div className="flex flex-row items-center gap-1 my-3">
-            <hr className="border-1 border-slate-300 w-20 rounded-lg" />
-            <p className="lg:text-md text-sm font-extrabold px-2">Enter Your Details</p>
-            <hr className="border-1 border-slate-300 w-20 rounded-lg" />
+            <hr className="border-1 border-slate-300 lg:w-20 w-6 rounded-lg" />
+            <p className="lg:text-md text-xs">Enter Your Details</p>
+            <hr className="border-1 border-slate-300 lg:w-20 w-6 rounded-lg" />
           </div>
         </div>
 
@@ -101,7 +101,7 @@ export function FormDemo() {
                   type="text"
                   title="Student Name"
                   {...field}
-                  className="w-[450px] border-2 border-slate-300 rounded-lg focus:ring-1 ring-gold focus:shadow-sm"
+                  className="lg:w-[450px] border-2 border-slate-300 rounded-lg focus:ring-1 ring-gold focus:shadow-sm"
                 />
               </FormControl>
               <FormMessage />
@@ -110,6 +110,7 @@ export function FormDemo() {
         />
 
         {/* Student/Parent Mobile */}
+        <div className="max-w-md w-full">
         <FormField
           control={form.control}
           name="mobile"
@@ -119,7 +120,7 @@ export function FormDemo() {
                <PhoneInput
                   country={"in"}
                   {...field}  
-                  inputStyle={{width: "450px", height: "40px"}}
+                  inputStyle={{width: "100%", height: "40px"}}
                   inputProps={{ ref: field.ref, required: true }}
                 />
               </FormControl>
@@ -127,6 +128,7 @@ export function FormDemo() {
             </FormItem>
           )}
         />
+        </div>
         
         {/* Email Address */}
         <FormField
@@ -141,7 +143,7 @@ export function FormDemo() {
                   required
                   title="Email Address"
                   {...field}
-                  className="w-[450px] border-2 border-slate-300 rounded-lg focus:ring-1 ring-gold focus:shadow-sm"
+                  className="lg:w-[450px] border-2 border-slate-300 rounded-lg focus:ring-1 ring-gold focus:shadow-sm"
                 />
               </FormControl>
               <FormMessage />
@@ -157,7 +159,7 @@ export function FormDemo() {
             <FormItem>
               <Select onValueChange={field.onChange} value={field.value}>
                 <FormControl>
-                  <SelectTrigger title="Age" className="w-[450px] border-2 border-slate-300 rounded-lg focus:ring-1 ring-gold focus:shadow-sm">
+                  <SelectTrigger title="Age" className="lg:w-[450px] w-[230px] border-2 border-slate-300 rounded-lg focus:ring-1 ring-gold focus:shadow-sm">
                     <SelectValue placeholder="Select age group" />
                   </SelectTrigger>
                 </FormControl>
@@ -183,7 +185,7 @@ export function FormDemo() {
                   onCheckedChange={field.onChange}
                 />
               </FormControl>
-              <FormLabel className="text-gray-600">
+              <FormLabel className="text-gray-600 lg:text-base text-xs">
                 I accecpt all terms and conditions.
               </FormLabel>
             </FormItem>

@@ -14,9 +14,9 @@ const Organize = () => {
 
   return (
     <div className="flex flex-col gap-10 items-center p-20 bg-custom-gradient text-white rounded-3xl">
-      <p className="text-4xl font-bold">Organizers & Collaborators</p>
+      <p className="lg:text-4xl text-2xl font-bold">Organizers & Collaborators</p>
       <section>
-        <div className="flex flex-row items-center gap-10">
+        <div className="grid lg:grid-cols-4 grid-cols-2 gap-10">
           {Data.map((item) => (
             <OrganizeCard src={item.src} key={item.id}/>
           ))}

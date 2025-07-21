@@ -11,18 +11,16 @@ const Courses = () => {
   const allData = [...Data, ...CodeData];
 
   return (
-    <div className="flex flex-col px-52 gap-6 py-20">
-      <div className="flex flex-col items-center">
-        <p className="text-4xl font-extrabold">Courses to help you</p>
-      </div>
-      <p className="text-xl font-bold px-16">All Courses</p>
+    <div className="flex flex-col lg:px-52 gap-10 py-10 lg:py-20">
+      <p className="lg:text-4xl text-2xl font-extrabold">Courses to help you</p>
+      <p className="lg:text-xl font-bold px-16">All Courses</p>
 
-      <Carousel className="w-full max-w-8xl cursor-grab">
+      <Carousel className="w-full cursor-grab">
         <CarouselContent className="-ml-1 ">
           {allData.map((item, index) => (
             <CarouselItem
               key={index}
-              className="pl-1 md:basis-1/2 lg:basis-1/3"
+              className="lg:pl-1 md:basis-1/2 lg:basis-1/3 flex items-center justify-center"
             >
               <CardDemo {...item} />
             </CarouselItem>

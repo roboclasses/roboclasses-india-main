@@ -30,21 +30,21 @@ const WhyParticipate = () => {
 
   return (
     <div className="flex flex-col gap-10 items-center p-20 ">
-      <p className="text-4xl font-bold">Why Participate?</p>
-        <div className="grid lg:grid-cols-3 grid-cols-2 gap-8 justify-center">
+      <p className="lg:text-4xl text-2xl font-bold">Why Participate?</p>
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 justify-center">
           {Data.map((item) => (
             <div key={item.id} className='flex flex-row gap-4'>
               <div className="flex flex-col gap-2 items-center">
                 <Image
                   src={item.src}
                   alt="participation image"
-                  width={350}
-                  height={300}
+                  width={200}
+                  height={200}
                  
                 />
-                <p className="w-[300px] text-center text-lg">{item.title}</p>
+                <p className="w-[300px] text-center lg:text-lg">{item.title}</p>
               </div>
-              <div className="flex -space-x-4">
+              <div className="lg:flex hidden -space-x-4">
                 <div className="border-l-4 border-[#f0f0f0] h-20 mx-4 mt-28" />
                 <div className="border-l-2 border-gray-400 h-20 mx-4 mt-28" />
               </div>

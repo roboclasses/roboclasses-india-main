@@ -26,7 +26,7 @@ const Themes = () => {
           </p>
         </div>
       </div>
-      <div className='grid lg:grid-cols-3 grid-cols-2 justify-center gap-6'>
+      <div className='grid lg:grid-cols-3 grid-cols-1 gap-5'>
         {Data.map((item) => (
           <ThemesCard {...item} key={item.id} />
         ))}

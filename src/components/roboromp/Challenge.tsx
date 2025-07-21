@@ -15,11 +15,11 @@ const Challenge = () => {
   ];
 
   return (
-    <div className="flex flex-row justify-between px-32 py-24 items-center text-white bg-custom-gradient relative rounded-3xl">
-      <div className="absolute top-0 right-0 w-36 h-36 bg-gradient-to-l from-green-200/40 to-transparent rounded-bl-full"></div>
-      <div className="absolute bottom-0 left-0 w-36 h-36 bg-gray-200/20 rounded-tr-full"></div>
+    <div className="grid lg:grid-cols-2 grid-cols-1 p-20 text-white bg-custom-gradient relative rounded-3xl">
+      <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-l from-green-200/40 to-transparent rounded-bl-full"></div>
+      <div className="absolute bottom-0 left-0 w-24 h-24 bg-gray-200/20 rounded-tr-full"></div>
       <div className="flex flex-col justify-center gap-4">
-        <p className="text-4xl font-bold">What Can You Make?</p>
+        <p className="lg:text-4xl text-2xl font-bold">What Can You Make?</p>
         <div
           className="flex flex-col gap-1 justify-center text-lg"
           style={{ letterSpacing: "0.05em" }}
@@ -33,11 +33,10 @@ const Challenge = () => {
             icon={<Calendar size={20} />}
             type="button"
             onClick={handleClick}
-            className="py-4 px-8 font-semibold rounded-full shadow-xl border border-cyan-500 bg-white text-cyan-500  hover:bg-cyan-500 hover:text-white transition-all flex flex-row items-center duration-300 ease-in-out delay-75"
           />
-        </div>
+          </div>
       </div>
-      <div className="flex flex-row justify-between items-center">
+      <div className="lg:flex justify-between items-center">
         {Data.map((item) => (
           <Image
             src={item.src}

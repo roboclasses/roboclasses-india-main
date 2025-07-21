@@ -18,16 +18,16 @@ import {
 const FaqSection = () => {
   return (
     <div className="flex flex-col items-center p-20 dark:bg-black gap-10">
-      <p className="text-4xl font-bold">FAQ</p>
+      <p className="lg:text-4xl text-2xl font-bold">FAQ</p>
       <div className="flex flex-col items-center gap-6">
-        <Card className="w-[1000px] h-auto bg-gray-50 p-10 dark:text-black dark:bg-cyan-100">
+        <Card className="lg:w-[1000px] h-auto bg-gray-50 p-10 dark:text-black dark:bg-cyan-100">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1" className="gap-2">
-              <AccordionTrigger className="text-2xl font-extrabold focus:text-lime-500">
+              <AccordionTrigger className="lg:text-2xl font-extrabold focus:text-lime-500">
                 What are the important dates?
               </AccordionTrigger>
 
-              <AccordionContent className="text-lg flex flex-col gap-2">
+              <AccordionContent className="lg:text-lg text-sm flex flex-col gap-2">
                 <ul className="list-inside list-disc font-extrabold right-course-bullet">
                   {FaqOne.map((item, index) => (
                     <li key={index}>{item.li}</li>
@@ -38,19 +38,19 @@ const FaqSection = () => {
           </Accordion>
         </Card>
         {FaqData.map((item, index) => (
-          <div className="w-[1000px] " key={index}>
+          <div className="lg:w-[1000px]" key={index}>
             <CardDemo {...item} />
           </div>
         ))}
-        <Card className="w-[1000px] h-auto bg-gray-50 p-10 dark:text-black dark:bg-cyan-100">
+        <Card className="lg:w-[1000px] h-auto bg-gray-50 p-10 dark:text-black dark:bg-cyan-100">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1" className="gap-2">
-              <AccordionTrigger className="text-2xl font-extrabold focus:text-lime-500">
+              <AccordionTrigger className="lg:text-2xl font-extrabold focus:text-lime-500">
                 What are the things I need to submit to participate in this
                 competition?
               </AccordionTrigger>
 
-              <AccordionContent className="text-lg flex flex-col gap-2">
+              <AccordionContent className="lg:text-lg text-sm flex flex-col gap-2">
                 <p className="text-xl mb-2">You need to submit the followings:</p>
                 <ul className="list-inside list-disc font-extrabold right-course-bullet space-y-4">
                   <li>
@@ -83,14 +83,14 @@ const FaqSection = () => {
             </AccordionItem>
           </Accordion>
         </Card>
-        <Card className="w-[1000px] h-auto bg-gray-50 p-10 dark:text-black dark:bg-cyan-100">
+        <Card className="lg:w-[1000px] h-auto bg-gray-50 p-10 dark:text-black dark:bg-cyan-100">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1" className="gap-2">
-              <AccordionTrigger className="text-2xl font-extrabold focus:text-lime-500">
+              <AccordionTrigger className="lg:text-2xl font-extrabold focus:text-lime-500">
                 How can I become a partner ?
               </AccordionTrigger>
 
-              <AccordionContent className="text-lg flex flex-col gap-2">
+              <AccordionContent className="lg:text-lg text-sm flex flex-col gap-2">
                 <ul className="list-inside list-disc font-extrabold right-course-bullet space-y-6">
                   {FaqTwo.map((item, index) => (
                     <li key={index}>{item.li}</li>

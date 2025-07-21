@@ -22,9 +22,9 @@ const OurCommunity = () => {
 
   return (
     <div className="flex flex-col gap-10 items-center p-20">
-      <p className="text-4xl font-bold">Our Community</p>
+      <p className="lg:text-4xl text-2xl text-center font-bold">Our Community</p>
       <section>
-        <div className="flex flex-row items-center gap-2">
+        <div className="grid lg:grid-cols-5 grid-cols-2 gap-2">
           {Data.map((item) => (
             <button key={item.id} onClick={() => window.open(item.link)} >
               <OrganizeCard src={item.src} />
