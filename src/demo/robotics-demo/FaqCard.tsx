@@ -9,7 +9,7 @@ interface faqTypes {
 const FaqCard = ({ question, answer }: faqTypes) => {
   return (
     <div>
-      <Card className="w-[300px] shadow-lg dark:shadow-black">
+      <Card className="w-[300px] shadow-lg">
         <CardContent className="flex flex-col items-center gap-4 py-6 ">
           <strong className="font-bold text-lg">{question}</strong>
           <p className="font-medium" style={{ letterSpacing: "0.05em" }}>
