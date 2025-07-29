@@ -96,7 +96,7 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
                       required
                       title="Child Name"
                       {...field}
-                      className="w-80 h-12 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
+                      className="w-80 h-12 border-2 border-cyan-500 rounded-full focus:shadow-md dark:text-white"
                     />
                   </FormControl>
                   <FormDescription>This field is for child name.</FormDescription>
@@ -117,7 +117,7 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
                     <FormControl>
                       <SelectTrigger
                         title="Child Age"
-                        className="w-80 h-12 border-2 border-cyan-500 rounded-full "
+                        className="w-80 h-12 border-2 border-cyan-500 rounded-full"
                       >
                         <SelectValue placeholder="Select age group" />
                       </SelectTrigger>
@@ -149,7 +149,7 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
                       required
                       title="Child Email"
                       {...field}
-                      className="w-80 h-12 border-2 border-cyan-500 rounded-full focus:shadow-md bg-white"
+                      className="w-80 h-12 border-2 border-cyan-500 rounded-full focus:shadow-md dark:text-white"
                     />
                   </FormControl>
                   <FormDescription>This field is for email address.</FormDescription>
@@ -159,24 +159,44 @@ export function HomeSchoolingFormDemo({ src, title }: formTypes) {
             />
 
             <div className="w-full max-w-md">
-            <FormField
-              control={form.control}
-              name="mobile"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <PhoneInput
-                      country={"in"}
-                      {...field}
-                      inputStyle={{ width: "100%", height: "40px" }}
-                      inputProps={{ ref: field.ref, required: true }}
-                    />
-                  </FormControl>
-                  <FormDescription>This field is for mobile number.</FormDescription>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+              <FormField
+  control={form.control}
+  name="mobile"
+  render={({ field }) => (
+    <FormItem>
+      <FormControl>
+        <div className="h-[45px] dark:bg-gray-900 dark:text-white bg-white text-black rounded-md border border-gray-300 dark:border-gray-700">
+          <PhoneInput
+            country={"in"}
+            {...field}
+            inputProps={{ ref: field.ref, required: true }}
+            containerStyle={{ width: "100%", height: "100%" }}
+            inputStyle={{
+              width: "100%",
+              height: "100%",
+              backgroundColor: "transparent",
+              color: "inherit",
+              border: "none",
+              outline: "none",
+              paddingLeft: "48px", // space for flag dropdown
+            }}
+            buttonStyle={{
+              backgroundColor: "transparent",
+              border: "none",
+            }}
+            dropdownStyle={{
+              backgroundColor: "#1f2937", // Tailwind dark gray-800
+              color: "#fff",
+            }}
+          />
+        </div>
+      </FormControl>
+      <FormDescription>This field is for child or parent mobile</FormDescription>
+      <FormMessage />
+    </FormItem>
+  )}
+/>
+
             </div>
           </div>
 
