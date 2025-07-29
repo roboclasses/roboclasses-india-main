@@ -7,8 +7,8 @@ const WhiteButton = ({ name, type, onClick, icon }: ButtonTypes) => {
     <Button
       type={type}
       onClick={onClick}
-      className="flex gap-2 items-center h-12 bg-transparent ring-2 ring-white rounded-lg text-white
-       hover:bg-white hover:text-accent-foreground transition-colors duration-300 ease-in-out"
+      className="flex gap-2 items-center h-12 bg-transparent ring-2 ring-white rounded-lg text-white 
+       hover:bg-white hover:text-accent-foreground dark:hover:text-black transition-colors duration-300 ease-in-out"
     >
       {icon && <span>{icon}</span>}
       {name}

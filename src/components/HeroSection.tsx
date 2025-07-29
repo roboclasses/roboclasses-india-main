@@ -94,7 +94,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <p className="text-accent">Coding and Robotics courses for kids!</p>
+          <p className="text-accent text-white">Coding and Robotics courses for kids!</p>
           <div className="flex items-center gap-6">
             <DialogDemo />
             <WhiteButton

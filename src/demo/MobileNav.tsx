@@ -81,7 +81,7 @@ const MobileNavSheet = () => {
               />
             </Link>
           </SheetHeader>
-          <SheetDescription className="flex flex-col gap-10 text-black mt-10 text-md font-bold">
+          <SheetDescription className="flex flex-col gap-10 mt-10 text-md font-bold">
             <Link
               href={"/"}
               className={cn(

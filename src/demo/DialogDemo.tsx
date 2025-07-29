@@ -1,7 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { useForm, useFormState } from "react-hook-form";
 import { z } from "zod";
 
 import { Button } from "@/components/ui/button";
@@ -54,6 +54,8 @@ export function DialogDemo() {
     },
   });
 
+  const {isSubmitting} = form.formState;
+
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     try {
       const result = await handlePostEnquiry(data);
@@ -73,7 +75,7 @@ export function DialogDemo() {
       <DialogTrigger asChild>
         <GradientButton name="Free Classes" icon={<FaRegCalendarAlt size={20} />} type="button" />
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[900px] justify-center bg-white dark:bg-cyan-50 dark:text-black">
+      <DialogContent className="sm:max-w-[900px] justify-center">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
@@ -153,29 +155,47 @@ export function DialogDemo() {
               />
 
               <FormField
-                control={form.control}
-                name="mobile"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormControl>
-                      <PhoneInput
-                        country={"in"}
-                        {...field}
-                        inputStyle={{ width: "390px", height: "45px" }}
-                        inputProps={{ ref: field.ref, required: true }}                    
-                      />
-                    </FormControl>
-                    <FormDescription>This field is for child or parent mobile</FormDescription>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
+  control={form.control}
+  name="mobile"
+  render={({ field }) => (
+    <FormItem>
+      <FormControl>
+        <div className="w-[390px] h-[45px] dark:bg-gray-900 dark:text-white bg-white text-black rounded-md border border-gray-300 dark:border-gray-700">
+          <PhoneInput
+            country={"in"}
+            {...field}
+            inputProps={{ ref: field.ref, required: true }}
+            containerStyle={{ width: "100%", height: "100%" }}
+            inputStyle={{
+              width: "100%",
+              height: "100%",
+              backgroundColor: "transparent",
+              color: "inherit",
+              border: "none",
+              outline: "none",
+              paddingLeft: "48px", // space for flag dropdown
+            }}
+            buttonStyle={{
+              backgroundColor: "transparent",
+              border: "none",
+            }}
+            dropdownStyle={{
+              backgroundColor: "#1f2937", // Tailwind dark gray-800
+              color: "#fff",
+            }}
+          />
+        </div>
+      </FormControl>
+      <FormDescription>This field is for child or parent mobile</FormDescription>
+      <FormMessage />
+    </FormItem>
+  )}
+/>
             </div>
 
             <DialogFooter>
-              <Button type="submit" className="h-12 shadow-md focus:bg-accent-foreground focus:text-white">
-                Submit
+              <Button type="submit" disabled={isSubmitting} className="h-12 shadow-md focus:bg-accent-foreground focus:text-white">
+                {isSubmitting ? 'Submitting...' : 'Submit'}
               </Button>
             </DialogFooter>
           </form>

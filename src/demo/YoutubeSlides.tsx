@@ -11,9 +11,9 @@ const YoutubeSlides=()=> {
   ];
 
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-2 justify-center items-center gap-6 py-10">
+    <div className="grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-6 py-10">
       {Videos.map((video) => (
-        <div className="lg:bg-white rounded-lg lg:shadow-md p-2" key={video.title}>
+        <div className="bg-white rounded-lg shadow-md p-2" key={video.title}>
           <iframe
             src={video.src}
             allowFullScreen
@@ -21,7 +21,7 @@ const YoutubeSlides=()=> {
             sandbox="allow-popups allow-scripts allow-same-origin"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             loading="lazy"
-            className="lg:w-[600px] w-[150px] lg:h-64 h-40 rounded"
+            className="lg:w-[600px] w-[280px] lg:h-64 h-40 rounded"
           />
         </div>
       ))}

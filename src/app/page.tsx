@@ -12,7 +12,7 @@ import TrendingCarouselFe from '@/components/TrendingCarouselFe'
 
 function page() {
   return (
-    <div className='lg:px-16 px-4 lg:py-8 py-2 bg-white space-y-8 w-screen min-h-dvh'>
+    <div className='lg:px-16 px-4 lg:py-8 py-2 space-y-8 w-screen min-h-dvh'>
      <HeroSection />
      <AboutUs />
      <StudentSpeaks />
