@@ -33,7 +33,7 @@ export function BreadcrumbDemo({ title }: alertTypes) {
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbPage className='font-semibold lg:text-base text-xs'>{title}</BreadcrumbPage>
+          <BreadcrumbPage className='font-semibold lg:text-base text-xs dark:text-black'>{title}</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>

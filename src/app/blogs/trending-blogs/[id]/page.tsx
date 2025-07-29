@@ -23,7 +23,7 @@ const page = ({ params }: { params: { id: string } }) => {
   }
 
   return (
-    <div className="flex flex-col lg:gap-20 gap-10 lg:px-20 px-10 lg:py-10 py-5 bg-white space-y-8" key={details.id} >
+    <div className="flex flex-col lg:gap-20 gap-10 lg:px-20 px-10 lg:py-10 py-5 space-y-8" key={details.id} >
       <BlogsBanner title={details.title} />
       <div className="flex flex-col items-center gap-10 lg:px-20">
         <Image

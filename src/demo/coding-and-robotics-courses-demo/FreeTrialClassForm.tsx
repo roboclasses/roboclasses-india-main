@@ -82,7 +82,7 @@ export function FreeTrialClassForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="lg:w-5/6 h-auto flex lg:flex-row flex-col lg:gap-16 gap-6 bg-white dark:bg-gray-800 dark:text-white items-center p-10 rounded-lg shadow-2xl"
+        className="lg:w-5/6 h-auto flex lg:flex-row flex-col lg:gap-16 gap-6  dark:bg-gray-800 dark:text-white items-center p-10 rounded-lg shadow-2xl"
       >
         <Image src={FREE} alt="free class image" height={239} width={277} />
         <div className="flex flex-col gap-6 items-center">
@@ -102,7 +102,7 @@ export function FreeTrialClassForm() {
                       required
                       title="Student Name"
                       {...field}
-                      className="w-80 h-12 border-2 bg-white border-cyan-500 rounded-full focus:shadow-md"
+                      className="w-80 h-12 border-2 dark:text-white border-cyan-500 rounded-full focus:shadow-md"
                     />
                   </FormControl>
                   <FormDescription>This field is for student name.</FormDescription>
@@ -123,7 +123,7 @@ export function FreeTrialClassForm() {
                       required
                       title="Email"
                       {...field}
-                      className="w-80 h-12 border-2 bg-white border-cyan-500 rounded-full focus:shadow-md"
+                      className="w-80 h-12 border-2 dark:text-white border-cyan-500 rounded-full focus:shadow-md"
                     />
                   </FormControl>
                   <FormDescription>This field is for student email address.</FormDescription>
@@ -137,23 +137,43 @@ export function FreeTrialClassForm() {
           <div className="flex lg:flex-row flex-col items-center gap-4 w-full">
             <div className="w-full max-w-md">
             <FormField
-              control={form.control}
-              name="mobile"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <PhoneInput
-                      country={"in"}
-                      {...field}
-                      inputStyle={{ width: "100%", height: "40px" }}
-                      inputProps={{ ref: field.ref, required: true }}
-                    />
-                  </FormControl>
-                  <FormDescription>This field is for student mobile number.</FormDescription>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+  control={form.control}
+  name="mobile"
+  render={({ field }) => (
+    <FormItem>
+      <FormControl>
+        <div className="h-[45px] dark:bg-gray-900 dark:text-white bg-white text-black rounded-md border border-gray-300 dark:border-gray-700">
+          <PhoneInput
+            country={"in"}
+            {...field}
+            inputProps={{ ref: field.ref, required: true }}
+            containerStyle={{ width: "100%", height: "100%" }}
+            inputStyle={{
+              width: "100%",
+              height: "100%",
+              backgroundColor: "transparent",
+              color: "inherit",
+              border: "none",
+              outline: "none",
+              paddingLeft: "48px", // space for flag dropdown
+            }}
+            buttonStyle={{
+              backgroundColor: "transparent",
+              border: "none",
+            }}
+            dropdownStyle={{
+              backgroundColor: "#1f2937", // Tailwind dark gray-800
+              color: "#fff",
+            }}
+          />
+        </div>
+      </FormControl>
+      <FormDescription>This field is for child or parent mobile</FormDescription>
+      <FormMessage />
+    </FormItem>
+  )}
+/>
+
             </div>
 
             <FormField
@@ -168,7 +188,7 @@ export function FreeTrialClassForm() {
                       required
                       title="Age"
                       {...field}
-                      className="w-80 h-12 border-2 bg-white border-cyan-500 rounded-full focus:shadow-md"
+                      className="w-80 h-12 dark:text-white border-2 border-cyan-500 rounded-full focus:shadow-md"
                     />
                   </FormControl>
                   <FormDescription>This field is for student age.</FormDescription>

@@ -5,7 +5,7 @@ import React from "react";
 
 const Competition = () => {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:p-20 p-10 bg-white dark:bg-black">
+    <div className="grid lg:grid-cols-2 grid-cols-1 lg:p-20 p-10">
       <div className="flex flex-col justify-center gap-6 max-w-lg">
         <p className="lg:text-4xl text-2xl font-bold">Competition time</p>
         <div className="lg:text-base text-sm">
