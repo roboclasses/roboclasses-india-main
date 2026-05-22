@@ -7,4 +7,4 @@ export const YT_L = 'https://www.youtube.com/channel/UCFew2Gvzvt2Q55bUo6nW7nw'
 export const INSTA_L = 'https://www.instagram.com/roboclasses'
 export const X_L= 'https://x.com/ClassesRobo'
 export const IN_L = 'https://www.linkedin.com/company/robo-classes'
-export const PrivyrApiUrl = "https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/Wez9PSMD"
+// export const PrivyrApiUrl = "https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/Wez9PSMD"
